@@ -75,7 +75,7 @@ RefTree_init(RefTree *rt) {
     rt->capacity = 0;
     ZIP_INIT(&rt->head);
     size_t space = (sizeof(UA_ExpandedNodeId) + sizeof(RefEntry)) * UA_BROWSE_INITIAL_SIZE;
-    rt->targets = (UA_ExpandedNodeId*)UA_malloc(space);
+    rt->targets = (UA_ExpandedNodeId*)UA_mallocSDRAM(space);
     if(!rt->targets)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     rt->capacity = UA_BROWSE_INITIAL_SIZE;

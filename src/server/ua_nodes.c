@@ -1,4 +1,4 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
+﻿/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  *
@@ -493,7 +493,7 @@ static UA_StatusCode
 addReferenceTarget(UA_NodeReferenceKind *refs, const UA_ExpandedNodeId *target,
                    UA_UInt32 targetIdHash, UA_UInt32 targetNameHash) {
     UA_ReferenceTarget *entry = (UA_ReferenceTarget*)
-        UA_malloc(sizeof(UA_ReferenceTarget));
+        UA_mallocSDRAM(sizeof(UA_ReferenceTarget));
     if(!entry)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 

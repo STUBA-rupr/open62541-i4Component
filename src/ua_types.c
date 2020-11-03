@@ -1,4 +1,4 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
+﻿/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. 
  *
@@ -1258,7 +1258,7 @@ UA_Array_new(size_t size, const UA_DataType *type) {
         return NULL;
     if(size == 0)
         return UA_EMPTY_ARRAY_SENTINEL;
-    return UA_calloc(size, type->memSize);
+    return UA_callocSDRAM(size, type->memSize);
 }
 
 UA_StatusCode
@@ -1276,7 +1276,7 @@ UA_Array_copy(const void *src, size_t size,
         return UA_STATUSCODE_BADINTERNALERROR;
 
     /* calloc, so we don't have to check retval in every iteration of copying */
-    *dst = UA_calloc(size, type->memSize);
+    *dst = UA_callocSDRAM(size, type->memSize);
     if(!*dst)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 

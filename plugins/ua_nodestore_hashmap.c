@@ -166,7 +166,7 @@ createEntry(UA_NodeClass nodeClass) {
         break;
     case UA_NODECLASS_VARIABLETYPE:
         size += sizeof(UA_VariableTypeNode);
-        break;
+        break;                                                
     case UA_NODECLASS_REFERENCETYPE:
         size += sizeof(UA_ReferenceTypeNode);
         break;
@@ -179,7 +179,7 @@ createEntry(UA_NodeClass nodeClass) {
     default:
         return NULL;
     }
-    UA_NodeMapEntry *entry = (UA_NodeMapEntry*)UA_calloc(1, size);
+    UA_NodeMapEntry *entry = (UA_NodeMapEntry*)UA_callocSDRAM(1, size);
     if(!entry)
         return NULL;
     entry->node.head.nodeClass = nodeClass;
@@ -472,14 +472,14 @@ UA_NodeMap_delete(void *context) {
 UA_StatusCode
 UA_Nodestore_HashMap(UA_Nodestore *ns) {
     /* Allocate and initialize the nodemap */
-    UA_NodeMap *nodemap = (UA_NodeMap*)UA_malloc(sizeof(UA_NodeMap));
+    UA_NodeMap *nodemap = (UA_NodeMap*)UA_mallocSDRAM(sizeof(UA_NodeMap));
     if(!nodemap)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     nodemap->sizePrimeIndex = higher_prime_index(UA_NODEMAP_MINSIZE);
     nodemap->size = primes[nodemap->sizePrimeIndex];
     nodemap->count = 0;
     nodemap->slots = (UA_NodeMapSlot*)
-        UA_calloc(nodemap->size, sizeof(UA_NodeMapSlot));
+        UA_callocSDRAM(nodemap->size, sizeof(UA_NodeMapSlot));
     if(!nodemap->slots) {
         UA_free(nodemap);
         return UA_STATUSCODE_BADOUTOFMEMORY;

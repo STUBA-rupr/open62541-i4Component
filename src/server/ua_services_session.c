@@ -307,7 +307,7 @@ Service_CreateSession(UA_Server *server, UA_SecureChannel *channel,
 
     /* Allocate the response */
     response->serverEndpoints = (UA_EndpointDescription *)
-        UA_Array_new(server->config.endpointsSize, &UA_TYPES[UA_TYPES_ENDPOINTDESCRIPTION]);
+        UA_Array_new_safe(server->config.endpointsSize, &UA_TYPES[UA_TYPES_ENDPOINTDESCRIPTION]);
     if(!response->serverEndpoints) {
         response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;
         UA_Server_removeSessionByToken(server, &newSession->header.authenticationToken,

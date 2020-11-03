@@ -251,7 +251,7 @@ callWithMethodAndObject(UA_Server *server, UA_Session *session,
 
     /* Allocate the inputArgumentResults array */
     result->inputArgumentResults = (UA_StatusCode*)
-        UA_Array_new(request->inputArgumentsSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
+        UA_Array_new_safe(request->inputArgumentsSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
     if(!result->inputArgumentResults) {
         result->statusCode = UA_STATUSCODE_BADOUTOFMEMORY;
         return;
@@ -283,7 +283,7 @@ callWithMethodAndObject(UA_Server *server, UA_Session *session,
     if(outputArguments)
         outputArgsSize = outputArguments->value.data.value.value.arrayLength;
     result->outputArguments = (UA_Variant*)
-        UA_Array_new(outputArgsSize, &UA_TYPES[UA_TYPES_VARIANT]);
+        UA_Array_new_safe(outputArgsSize, &UA_TYPES[UA_TYPES_VARIANT]);
     if(!result->outputArguments) {
         result->statusCode = UA_STATUSCODE_BADOUTOFMEMORY;
         return;

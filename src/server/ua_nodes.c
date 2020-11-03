@@ -1,4 +1,4 @@
-﻿/* This Source Code Form is subject to the terms of the Mozilla Public
+/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  *
@@ -516,7 +516,7 @@ static UA_StatusCode
 addReferenceKind(UA_NodeHead *head, UA_Byte refTypeIndex, UA_Boolean isForward,
                  const UA_ExpandedNodeId *targetNodeId, UA_UInt32 targetBrowseNameHash) {
     UA_NodeReferenceKind *refs = (UA_NodeReferenceKind*)
-        UA_realloc(head->references, sizeof(UA_NodeReferenceKind) * (head->referencesSize+1));
+        UA_realloc_helper(head->references, sizeof(UA_NodeReferenceKind) * (head->referencesSize+1));
     if(!refs)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 

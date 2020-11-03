@@ -169,7 +169,7 @@ prepareNotificationMessage(UA_Server *server, UA_Subscription *sub,
      * If a Subscription contains MonitoredItems for events and data, this array
      * should have not more than 2 elements. */
     message->notificationData = (UA_ExtensionObject*)
-        UA_Array_new(2, &UA_TYPES[UA_TYPES_EXTENSIONOBJECT]);
+        UA_Array_new_safe(2, &UA_TYPES[UA_TYPES_EXTENSIONOBJECT]);
     if(!message->notificationData)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     message->notificationDataSize = 2;
@@ -192,7 +192,7 @@ prepareNotificationMessage(UA_Server *server, UA_Subscription *sub,
         if(dcnSize > notifications)
             dcnSize = notifications;
         dcn->monitoredItems = (UA_MonitoredItemNotification*)
-            UA_Array_new(dcnSize, &UA_TYPES[UA_TYPES_MONITOREDITEMNOTIFICATION]);
+            UA_Array_new_safe(dcnSize, &UA_TYPES[UA_TYPES_MONITOREDITEMNOTIFICATION]);
         if(!dcn->monitoredItems) {
             UA_NotificationMessage_clear(message);
             return UA_STATUSCODE_BADOUTOFMEMORY;
@@ -218,7 +218,7 @@ prepareNotificationMessage(UA_Server *server, UA_Subscription *sub,
         size_t enlSize = sub->eventNotifications;
         if(enlSize > notifications)
             enlSize = notifications;
-        enl->events = (UA_EventFieldList*) UA_Array_new(enlSize, &UA_TYPES[UA_TYPES_EVENTFIELDLIST]);
+        enl->events = (UA_EventFieldList*) UA_Array_new_safe(enlSize, &UA_TYPES[UA_TYPES_EVENTFIELDLIST]);
         if(!enl->events) {
             UA_NotificationMessage_clear(message);
             return UA_STATUSCODE_BADOUTOFMEMORY;

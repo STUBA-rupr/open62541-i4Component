@@ -17,21 +17,30 @@
 #define UA_sleep_ms(X) vTaskDelay(pdMS_TO_TICKS(X))
 
 #ifdef OPEN62541_FEERTOS_USE_OWN_MEM
+#define USE_SDRAM 1
+//# define UA_free vPortFree
+#if USE_SDRAM == 1
+# define UA_free UA_free_helper
+# define UA_malloc pvPortMalloc
+# define UA_mallocSDRAM pvPortMallocSDRAM
+# define UA_calloc pvPortCalloc
+# define UA_callocSDRAM pvPortCallocSDRAM
+# define UA_realloc pvPortRealloc
+# define UA_reallocSDRAM pvPortReallocSDRAM
+#else
 # define UA_free vPortFree
 # define UA_malloc pvPortMalloc
+# define UA_mallocSDRAM pvPortMalloc
 # define UA_calloc pvPortCalloc
+# define UA_callocSDRAM pvPortCalloc
 # define UA_realloc pvPortRealloc
+# define UA_reallocSDRAM pvPortRealloc
+#endif // USE_SDRAM
 #else
 # define UA_free free
 # define UA_malloc malloc
 # define UA_calloc calloc
 # define UA_realloc realloc
-#endif
-
-#ifdef UA_ENABLE_DISCOVERY_SEMAPHORE
-# ifndef UA_fileExists
-#  define UA_fileExists(X) (0) //file managing is not part of freeRTOS. If the system provides it, please define it before
-# endif // UA_fileExists
 #endif
 
 // No log colors on freeRTOS

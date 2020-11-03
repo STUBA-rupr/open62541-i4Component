@@ -1091,13 +1091,13 @@ UA_PubSubManager_generatePublishedDataSetDataType(UA_PublishedDataSetDataType *d
     
     size_t index = 0;
     tmp->publishedDataSize = src->fieldSize;
-    tmp->publishedData = (UA_PublishedVariableDataType*)UA_Array_new(tmp->publishedDataSize, &UA_TYPES[UA_TYPES_PUBLISHEDVARIABLEDATATYPE]);
+    tmp->publishedData = (UA_PublishedVariableDataType*)UA_Array_new_safe(tmp->publishedDataSize, &UA_TYPES[UA_TYPES_PUBLISHEDVARIABLEDATATYPE]);
     if(tmp->publishedData == NULL) {
         UA_LOG_ERROR(UA_Log_Stdout, UA_LOGCATEGORY_SERVER, "Allocation memory failed");
         return UA_STATUSCODE_BADOUTOFMEMORY;
     }
 
-    dst->dataSetMetaData.fields = (UA_FieldMetaData*)UA_Array_new(dst->dataSetMetaData.fieldsSize, &UA_TYPES[UA_TYPES_FIELDMETADATA]);
+    dst->dataSetMetaData.fields = (UA_FieldMetaData*)UA_Array_new_safe(dst->dataSetMetaData.fieldsSize, &UA_TYPES[UA_TYPES_FIELDMETADATA]);
     if(dst->dataSetMetaData.fields == NULL) {
         UA_free(tmp->publishedData);
         UA_LOG_ERROR(UA_Log_Stdout, UA_LOGCATEGORY_SERVER, "Allocation memory failed");
@@ -1176,7 +1176,7 @@ UA_PubSubManager_generateWriterGroupDataType(UA_WriterGroupDataType *dst,
     UA_ExtensionObject_copy(&src->config.messageSettings, &dst->messageSettings);
 
     dst->groupPropertiesSize = src->config.groupPropertiesSize;
-    dst->groupProperties = (UA_KeyValuePair*)UA_Array_new(dst->groupPropertiesSize, &UA_TYPES[UA_TYPES_KEYVALUEPAIR]);
+    dst->groupProperties = (UA_KeyValuePair*)UA_Array_new_safe(dst->groupPropertiesSize, &UA_TYPES[UA_TYPES_KEYVALUEPAIR]);
     for(index = 0; index < dst->groupPropertiesSize; index++) {
         UA_KeyValuePair_copy(&src->config.groupProperties[index], &dst->groupProperties[index]);
     }
@@ -1306,7 +1306,7 @@ UA_PubSubManager_generatePubSubConnectionDataType(UA_PubSubConnectionDataType *d
        should be checked beforehand. */
     dst->address.encoding = UA_EXTENSIONOBJECT_DECODED;
     dst->address.content.decoded.type = src->config->address.type;
-    retVal = UA_Array_copy(src->config->address.data, 1, &dst->address.content.decoded.data, src->config->address.type);
+    retVal = UA_Array_copy_safe(src->config->address.data, 1, &dst->address.content.decoded.data, src->config->address.type);
     if(retVal != UA_STATUSCODE_GOOD)
         return retVal;
 
@@ -1314,7 +1314,7 @@ UA_PubSubManager_generatePubSubConnectionDataType(UA_PubSubConnectionDataType *d
 
         dst->transportSettings.encoding = UA_EXTENSIONOBJECT_DECODED;
         dst->transportSettings.content.decoded.type = src->config->connectionTransportSettings.type;
-        retVal = UA_Array_copy(src->config->connectionTransportSettings.data, 
+        retVal = UA_Array_copy_safe(src->config->connectionTransportSettings.data, 
                                 1, 
                                 &dst->transportSettings.content.decoded.data,
                                 src->config->connectionTransportSettings.type);

@@ -937,7 +937,7 @@ UA_Client_preparePublishRequest(UA_Client *client, UA_PublishRequest *request) {
 
     /* Create the array. Returns a sentinel pointer if the length is zero. */
     request->subscriptionAcknowledgements = (UA_SubscriptionAcknowledgement*)
-        UA_Array_new(request->subscriptionAcknowledgementsSize,
+        UA_Array_new_safe(request->subscriptionAcknowledgementsSize,
                      &UA_TYPES[UA_TYPES_SUBSCRIPTIONACKNOWLEDGEMENT]);
     if(!request->subscriptionAcknowledgements) {
         request->subscriptionAcknowledgementsSize = 0;

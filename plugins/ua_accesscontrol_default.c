@@ -311,7 +311,7 @@ UA_AccessControl_default(UA_ServerConfig *config, UA_Boolean allowAnonymous,
         policies++;
     ac->userTokenPoliciesSize = 0;
     ac->userTokenPolicies = (UA_UserTokenPolicy *)
-        UA_Array_new(policies, &UA_TYPES[UA_TYPES_USERTOKENPOLICY]);
+        UA_Array_new_safe(policies, &UA_TYPES[UA_TYPES_USERTOKENPOLICY]);
     if(!ac->userTokenPolicies)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     ac->userTokenPoliciesSize = policies;

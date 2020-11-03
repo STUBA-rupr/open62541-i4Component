@@ -187,7 +187,7 @@ void Service_FindServers(UA_Server *server, UA_Session *session,
         return;
 
     /* Allocate memory */
-    response->servers = (UA_ApplicationDescription*)UA_Array_new(allocSize, &UA_TYPES[UA_TYPES_APPLICATIONDESCRIPTION]);
+    response->servers = (UA_ApplicationDescription*)UA_Array_new_safe(allocSize, &UA_TYPES[UA_TYPES_APPLICATIONDESCRIPTION]);
     if(!response->servers) {
         response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;
         return;
@@ -260,7 +260,7 @@ Service_GetEndpoints(UA_Server *server, UA_Session *session,
     }
 
     response->endpoints =
-        (UA_EndpointDescription*)UA_Array_new(relevant_count * clone_times,
+        (UA_EndpointDescription*)UA_Array_new_safe(relevant_count * clone_times,
                                               &UA_TYPES[UA_TYPES_ENDPOINTDESCRIPTION]);
     if(!response->endpoints) {
         response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;
@@ -283,7 +283,7 @@ Service_GetEndpoints(UA_Server *server, UA_Session *session,
             retval = UA_String_copy(endpointUrl, &response->endpoints[k].endpointUrl);
             if(retval != UA_STATUSCODE_GOOD)
                 goto error;
-            retval = UA_Array_copy(endpointUrl, 1,
+            retval = UA_Array_copy_safe(endpointUrl, 1,
                                    (void**)&response->endpoints[k].server.discoveryUrls,
                                    &UA_TYPES[UA_TYPES_STRING]);
             if(retval != UA_STATUSCODE_GOOD)
@@ -331,7 +331,7 @@ process_RegisterServer(UA_Server *server, UA_Session *session,
     const UA_String* mdnsServerName = NULL;
     if(requestDiscoveryConfigurationSize) {
         *responseConfigurationResults =
-            (UA_StatusCode *)UA_Array_new(requestDiscoveryConfigurationSize,
+            (UA_StatusCode *)UA_Array_new_safe(requestDiscoveryConfigurationSize,
                                           &UA_TYPES[UA_TYPES_STATUSCODE]);
         if(!(*responseConfigurationResults)) {
             responseHeader->serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;

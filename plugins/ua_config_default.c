@@ -98,7 +98,7 @@ createEndpoint(UA_ServerConfig *conf, UA_EndpointDescription *endpoint,
     endpoint->securityLevel = (UA_Byte) securityMode;
 
     /* Enable all login mechanisms from the access control plugin  */
-    UA_StatusCode retval = UA_Array_copy(conf->accessControl.userTokenPolicies,
+    UA_StatusCode retval = UA_Array_copy_safe(conf->accessControl.userTokenPolicies,
                                          conf->accessControl.userTokenPoliciesSize,
                                          (void **)&endpoint->userIdentityTokens,
                                          &UA_TYPES[UA_TYPES_USERTOKENPOLICY]);

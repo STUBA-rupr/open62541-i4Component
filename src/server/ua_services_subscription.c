@@ -218,7 +218,7 @@ Service_Publish(UA_Server *server, UA_Session *session,
     /* Allocate the results array to acknowledge the acknowledge */
     if(request->subscriptionAcknowledgementsSize > 0) {
         response->results = (UA_StatusCode *)
-            UA_Array_new(request->subscriptionAcknowledgementsSize,
+            UA_Array_new_safe(request->subscriptionAcknowledgementsSize,
                          &UA_TYPES[UA_TYPES_STATUSCODE]);
         if(!response->results) {
             UA_free(entry);
@@ -343,7 +343,7 @@ static UA_StatusCode
 setTransferredSequenceNumbers(const UA_Subscription *sub, UA_TransferResult *result) {
     /* Allocate memory */
     result->availableSequenceNumbers = (UA_UInt32*)
-        UA_Array_new(sub->retransmissionQueueSize, &UA_TYPES[UA_TYPES_UINT32]);
+        UA_Array_new_safe(sub->retransmissionQueueSize, &UA_TYPES[UA_TYPES_UINT32]);
     if(!result->availableSequenceNumbers)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     result->availableSequenceNumbersSize = sub->retransmissionQueueSize;

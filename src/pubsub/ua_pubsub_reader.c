@@ -52,7 +52,7 @@ UA_PubSubDataSetReader_generateKeyFrameMessage(UA_Server *server,
     dataSetMessage->header.dataSetMessageType = UA_DATASETMESSAGE_DATAKEYFRAME;
     dataSetMessage->data.keyFrameData.fieldCount = (UA_UInt16) dataSetReader->subscribedDataSetTarget.targetVariablesSize;
     dataSetMessage->data.keyFrameData.dataSetFields = (UA_DataValue *)
-            UA_Array_new(dataSetReader->subscribedDataSetTarget.targetVariablesSize, &UA_TYPES[UA_TYPES_DATAVALUE]);
+            UA_Array_new_safe(dataSetReader->subscribedDataSetTarget.targetVariablesSize, &UA_TYPES[UA_TYPES_DATAVALUE]);
     if(!dataSetMessage->data.keyFrameData.dataSetFields)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 
@@ -1154,7 +1154,7 @@ UA_Server_DataSetReader_addTargetVariables(UA_Server *server, UA_NodeId *parentN
         UA_VariableAttributes vAttr = UA_VariableAttributes_default;
         vAttr.valueRank = pDataSetReader->config.dataSetMetaData.fields[i].valueRank;
         if(pDataSetReader->config.dataSetMetaData.fields[i].arrayDimensionsSize > 0) {
-            retval = UA_Array_copy(pDataSetReader->config.dataSetMetaData.fields[i].arrayDimensions,
+            retval = UA_Array_copy_safe(pDataSetReader->config.dataSetMetaData.fields[i].arrayDimensions,
                                    pDataSetReader->config.dataSetMetaData.fields[i].arrayDimensionsSize,
                                    (void**)&vAttr.arrayDimensions, &UA_TYPES[UA_TYPES_UINT32]);
             if(retval == UA_STATUSCODE_GOOD) {

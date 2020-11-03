@@ -1728,7 +1728,7 @@ Service_HistoryRead(UA_Server *server, UA_Session *session,
 
     /* Allocate the results array */
     response->results = (UA_HistoryReadResult*)
-        UA_Array_new(request->nodesToReadSize, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
+        UA_Array_new_safe(request->nodesToReadSize, &UA_TYPES[UA_TYPES_HISTORYREADRESULT]);
     if(!response->results) {
         UA_free(historyData);
         response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;
@@ -1765,7 +1765,7 @@ Service_HistoryUpdate(UA_Server *server, UA_Session *session,
 
     response->resultsSize = request->historyUpdateDetailsSize;
     response->results = (UA_HistoryUpdateResult*)
-        UA_Array_new(response->resultsSize, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
+        UA_Array_new_safe(response->resultsSize, &UA_TYPES[UA_TYPES_HISTORYUPDATERESULT]);
     if(!response->results) {
         response->resultsSize = 0;
         response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;

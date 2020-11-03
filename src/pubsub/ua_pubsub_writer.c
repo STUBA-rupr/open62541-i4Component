@@ -1458,13 +1458,13 @@ UA_PubSubDataSetWriter_generateKeyFrameMessage(UA_Server *server,
     dataSetMessage->header.dataSetMessageType = UA_DATASETMESSAGE_DATAKEYFRAME;
     dataSetMessage->data.keyFrameData.fieldCount = currentDataSet->fieldSize;
     dataSetMessage->data.keyFrameData.dataSetFields = (UA_DataValue *)
-            UA_Array_new(currentDataSet->fieldSize, &UA_TYPES[UA_TYPES_DATAVALUE]);
+            UA_Array_new_safe(currentDataSet->fieldSize, &UA_TYPES[UA_TYPES_DATAVALUE]);
     if(!dataSetMessage->data.keyFrameData.dataSetFields)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 
 #ifdef UA_ENABLE_JSON_ENCODING
     dataSetMessage->data.keyFrameData.fieldNames = (UA_String *)
-        UA_Array_new(currentDataSet->fieldSize, &UA_TYPES[UA_TYPES_STRING]);
+        UA_Array_new_safe(currentDataSet->fieldSize, &UA_TYPES[UA_TYPES_STRING]);
     if(!dataSetMessage->data.keyFrameData.fieldNames) {
         UA_DataSetMessage_free(dataSetMessage);
         return UA_STATUSCODE_BADOUTOFMEMORY;

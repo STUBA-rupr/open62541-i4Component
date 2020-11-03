@@ -1108,7 +1108,7 @@ void Service_RegisterNodes(UA_Server *server, UA_Session *session,
     }
 
     response->responseHeader.serviceResult =
-        UA_Array_copy(request->nodesToRegister, request->nodesToRegisterSize,
+        UA_Array_copy_safe(request->nodesToRegister, request->nodesToRegisterSize,
                       (void**)&response->registeredNodeIds, &UA_TYPES[UA_TYPES_NODEID]);
     if(response->responseHeader.serviceResult == UA_STATUSCODE_GOOD)
         response->registeredNodeIdsSize = request->nodesToRegisterSize;

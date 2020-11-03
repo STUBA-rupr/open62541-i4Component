@@ -103,7 +103,7 @@ Service_SetTriggering(UA_Server *server, UA_Session *session,
     /* Allocate the results arrays */
     if(request->linksToRemoveSize > 0) {
         response->removeResults = (UA_StatusCode*)
-            UA_Array_new(request->linksToRemoveSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
+            UA_Array_new_safe(request->linksToRemoveSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
         if(!response->removeResults) {
             response->responseHeader.serviceResult = UA_STATUSCODE_BADOUTOFMEMORY;
             return;

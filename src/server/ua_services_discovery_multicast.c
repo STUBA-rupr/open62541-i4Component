@@ -453,7 +453,7 @@ UA_Discovery_addRecord(UA_Server *server, const UA_String *servername,
         // if capabilitiesSize is 0, then add default cap 'NA'
         listEntry->serverOnNetwork.serverCapabilitiesSize = UA_MAX(1, capabilitiesSize);
         listEntry->serverOnNetwork.serverCapabilities =
-                (UA_String *) UA_Array_new(listEntry->serverOnNetwork.serverCapabilitiesSize, &UA_TYPES[UA_TYPES_STRING]);
+                (UA_String *) UA_Array_new_safe(listEntry->serverOnNetwork.serverCapabilitiesSize, &UA_TYPES[UA_TYPES_STRING]);
         if (!listEntry->serverOnNetwork.serverCapabilities)
             return UA_STATUSCODE_BADOUTOFMEMORY;
         if (capabilitiesSize == 0) {

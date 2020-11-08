@@ -614,7 +614,7 @@ UA_Node_deleteReference(UA_Node *node, UA_Byte refTypeIndex, UA_Boolean isForwar
             if(i-1 != head->referencesSize)
                 head->references[i-1] = head->references[node->head.referencesSize];
             UA_NodeReferenceKind *newRefs = (UA_NodeReferenceKind*)
-                UA_realloc(head->references, sizeof(UA_NodeReferenceKind) * head->referencesSize);
+                UA_reallocSDRAM(head->references, sizeof(UA_NodeReferenceKind) * head->referencesSize);
             /* Ignore errors in case memory buffer could not be shrinked down */
             if(newRefs) {
                 /* Repair the backpointer in the queue */

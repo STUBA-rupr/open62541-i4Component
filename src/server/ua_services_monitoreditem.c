@@ -113,7 +113,7 @@ Service_SetTriggering(UA_Server *server, UA_Session *session,
 
     if(request->linksToAddSize> 0) {
         response->addResults = (UA_StatusCode*)
-            UA_Array_new(request->linksToAddSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
+            UA_Array_new_safe(request->linksToAddSize, &UA_TYPES[UA_TYPES_STATUSCODE]);
         if(!response->addResults) {
             UA_Array_delete(response->removeResults,
                             request->linksToAddSize, &UA_TYPES[UA_TYPES_STATUSCODE]);

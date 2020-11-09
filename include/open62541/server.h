@@ -295,6 +295,7 @@ UA_ServerConfig_setCustomHostname(UA_ServerConfig *config,
     UA_String_clear(&config->customHostname);
     UA_String_copy(&customHostname, &config->customHostname);
 }
+
 /**
  * .. _server-lifecycle:
  *
@@ -743,9 +744,16 @@ UA_BrowseResult UA_EXPORT UA_THREADSAFE
 UA_Server_browseNext(UA_Server *server, UA_Boolean releaseContinuationPoint,
                      const UA_ByteString *continuationPoint);
 
-/* Nonstandard version of the browse service that recurses into child nodes.
+/* Non-standard version of the Browse service that recurses into child nodes.
+ *
  * Possible loops (that can occur for non-hierarchical references) are handled
- * by adding every target node at most once to the results array. */
+ * internally. Every node is added at most once to the results array.
+ *
+ * Nodes are only added if they match the NodeClassMask in the
+ * BrowseDescription. However, child nodes are still recursed into if the
+ * NodeClass does not match. So it is possible, for example, to get all
+ * VariableNodes below a certain ObjectNode, with additional objects in the
+ * hierarchy below. */
 UA_StatusCode UA_EXPORT UA_THREADSAFE
 UA_Server_browseRecursive(UA_Server *server, const UA_BrowseDescription *bd,
                           size_t *resultsSize, UA_ExpandedNodeId **results);
@@ -1545,32 +1553,20 @@ UA_Server_updateCertificate(UA_Server *server,
 /**
  * Utility Functions
  * ----------------- */
+
+/* Lookup a datatype by its NodeId. Takes the custom types in the server
+ * configuration into account. Return NULL if none found. */
+UA_EXPORT const UA_DataType *
+UA_Server_findDataType(UA_Server *server, const UA_NodeId *typeId);
+
 /* Add a new namespace to the server. Returns the index of the new namespace */
-UA_UInt16 UA_EXPORT UA_THREADSAFE UA_Server_addNamespace(UA_Server *server, const char* name);
+UA_UInt16 UA_EXPORT UA_THREADSAFE
+UA_Server_addNamespace(UA_Server *server, const char* name);
 
 /* Get namespace by name from the server. */
 UA_StatusCode UA_EXPORT UA_THREADSAFE
 UA_Server_getNamespaceByName(UA_Server *server, const UA_String namespaceUri,
                              size_t* foundIndex);
-
-#ifdef UA_ENABLE_HISTORIZING
-UA_Boolean UA_EXPORT UA_THREADSAFE
-UA_Server_AccessControl_allowHistoryUpdateUpdateData(UA_Server *server,
-                                                     const UA_NodeId *sessionId,
-                                                     void *sessionContext,
-                                                     const UA_NodeId *nodeId,
-                                                     UA_PerformUpdateType performInsertReplace,
-                                                     const UA_DataValue *value);
-
-UA_Boolean UA_EXPORT UA_THREADSAFE
-UA_Server_AccessControl_allowHistoryUpdateDeleteRawModified(UA_Server *server,
-                                                            const UA_NodeId *sessionId,
-                                                            void *sessionContext,
-                                                            const UA_NodeId *nodeId,
-                                                            UA_DateTime startTimestamp,
-                                                            UA_DateTime endTimestamp,
-                                                            bool isDeleteModified);
-#endif /* UA_ENABLE_HISTORIZING */
 
 /**
 * .. _async-operations:
@@ -1672,5 +1668,9 @@ UA_ServerStatistics UA_EXPORT
 UA_Server_getStatistics(UA_Server *server);
 
 _UA_END_DECLS
+
+#ifdef UA_ENABLE_PUBSUB
+#include <open62541/server_pubsub.h>
+#endif
 
 #endif /* UA_SERVER_H_ */

@@ -405,7 +405,7 @@ UA_Server_processServiceOperationsAsync(UA_Server *server, UA_Session *session,
 
     /* Allocate the response array. No padding after size_t */
     void **respPos = (void**)((uintptr_t)responseOperations + sizeof(size_t));
-    *respPos = UA_Array_new(ops, responseOperationsType);
+    *respPos = UA_Array_new_safe(ops, responseOperationsType);
     if(!*respPos)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     *responseOperations = ops;

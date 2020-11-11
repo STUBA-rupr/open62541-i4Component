@@ -516,7 +516,7 @@ static UA_StatusCode
 addReferenceKind(UA_NodeHead *head, UA_Byte refTypeIndex, UA_Boolean isForward,
                  const UA_ExpandedNodeId *targetNodeId, UA_UInt32 targetBrowseNameHash) {
     UA_NodeReferenceKind *refs = (UA_NodeReferenceKind*)
-        UA_realloc_helper(head->references, sizeof(UA_NodeReferenceKind) * (head->referencesSize+1));
+        UA_reallocSDRAM(head->references, sizeof(UA_NodeReferenceKind) * (head->referencesSize+1));
     if(!refs)
         return UA_STATUSCODE_BADOUTOFMEMORY;
 
@@ -614,7 +614,7 @@ UA_Node_deleteReference(UA_Node *node, UA_Byte refTypeIndex, UA_Boolean isForwar
             if(i-1 != head->referencesSize)
                 head->references[i-1] = head->references[node->head.referencesSize];
             UA_NodeReferenceKind *newRefs = (UA_NodeReferenceKind*)
-                UA_realloc(head->references, sizeof(UA_NodeReferenceKind) * head->referencesSize);
+                UA_reallocSDRAM(head->references, sizeof(UA_NodeReferenceKind) * head->referencesSize);
             /* Ignore errors in case memory buffer could not be shrinked down */
             if(newRefs) {
                 /* Repair the backpointer in the queue */

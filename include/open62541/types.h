@@ -1067,6 +1067,9 @@ void UA_EXPORT UA_delete(void *p, const UA_DataType *type);
 void UA_EXPORT *
 UA_Array_new(size_t size, const UA_DataType *type) UA_FUNC_ATTR_MALLOC;
 
+void UA_EXPORT *
+UA_Array_new_safe(size_t size, const UA_DataType *type) UA_FUNC_ATTR_MALLOC;
+
 /* Allocates and copies an array
  *
  * @param src The memory location of the source array
@@ -1077,6 +1080,10 @@ UA_Array_new(size_t size, const UA_DataType *type) UA_FUNC_ATTR_MALLOC;
 UA_StatusCode UA_EXPORT
 UA_Array_copy(const void *src, size_t size, void **dst,
               const UA_DataType *type) UA_FUNC_ATTR_WARN_UNUSED_RESULT;
+              
+UA_StatusCode UA_EXPORT
+UA_Array_copy_safe(const void *src, size_t size, void **dst,
+              const UA_DataType *type) UA_FUNC_ATTR_WARN_UNUSED_RESULT;              
 
 /* Deletes an array.
  *

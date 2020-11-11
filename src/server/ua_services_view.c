@@ -314,7 +314,7 @@ static UA_StatusCode UA_FUNC_ATTR_WARN_UNUSED_RESULT
 RefResult_double(RefResult *rr) {
     size_t newSize = rr->capacity * 2;
     UA_ReferenceDescription *rd = (UA_ReferenceDescription*)
-        UA_realloc(rr->descr, newSize * sizeof(UA_ReferenceDescription));
+        UA_reallocSDRAM(rr->descr, newSize * sizeof(UA_ReferenceDescription));
     if(!rd)
         return UA_STATUSCODE_BADOUTOFMEMORY;
     memset(&rd[rr->size], 0, sizeof(UA_ReferenceDescription) * (newSize - rr->size));

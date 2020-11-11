@@ -191,7 +191,7 @@ getParentTypeAndInterfaceHierarchy(UA_Server *server, const UA_NodeId *typeNode,
     UA_assert(interfacesSize < 1000);
 
     UA_NodeId *hierarchy = (UA_NodeId*)
-        UA_malloc(sizeof(UA_NodeId) * (1 + subTypesSize + interfacesSize));
+        UA_mallocSDRAM(sizeof(UA_NodeId) * (1 + subTypesSize + interfacesSize));
     if(!hierarchy) {
         UA_Array_delete(subTypes, subTypesSize, &UA_TYPES[UA_TYPES_EXPANDEDNODEID]);
         UA_Array_delete(interfaces, interfacesSize, &UA_TYPES[UA_TYPES_EXPANDEDNODEID]);

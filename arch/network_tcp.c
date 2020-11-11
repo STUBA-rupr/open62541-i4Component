@@ -340,8 +340,8 @@ addServerSocket(ServerNetworkLayerTCP *layer, struct addrinfo *ai) {
                 memset(&sin6->sin6_addr, 0, sizeof(sin6->sin6_addr));
                 sin6->sin6_scope_id = 0;
                 ret = 0;
-            }*/
-        }
+            }
+        }    */
         if(ret == 0) {
             ret = UA_bind(newsock, ai->ai_addr, (socklen_t)ai->ai_addrlen);
             if(ret == 0) {

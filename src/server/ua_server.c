@@ -178,25 +178,26 @@ cleanup:
 /* Server Lifecycle */
 /********************/
 
+static void
+serverExecuteRepeatedCallback(UA_Server *server, UA_ApplicationCallback cb,
+                              void *callbackApplication, void *data);
+
 /* The server needs to be stopped before it can be deleted */
 void UA_Server_delete(UA_Server *server) {
-    /* Delete all internal data */
-    UA_Server_deleteSecureChannels(server);
     UA_LOCK(server->serviceMutex);
+
+    UA_Server_deleteSecureChannels(server);
     session_list_entry *current, *temp;
     LIST_FOREACH_SAFE(current, &server->sessions, pointers, temp) {
         UA_Server_removeSession(server, current, UA_DIAGNOSTICEVENT_CLOSE);
     }
-    UA_UNLOCK(server->serviceMutex);
     UA_Array_delete(server->namespaces, server->namespacesSize, &UA_TYPES[UA_TYPES_STRING]);
 
 #ifdef UA_ENABLE_SUBSCRIPTIONS
     UA_MonitoredItem *mon, *mon_tmp;
     LIST_FOREACH_SAFE(mon, &server->localMonitoredItems, listEntry, mon_tmp) {
         LIST_REMOVE(mon, listEntry);
-        UA_LOCK(server->serviceMutex);
         UA_MonitoredItem_delete(server, mon);
-        UA_UNLOCK(server->serviceMutex);
     }
 
     /* Remove subscriptions without a session */
@@ -216,7 +217,7 @@ void UA_Server_delete(UA_Server *server) {
 #endif
 
 #ifdef UA_ENABLE_DISCOVERY
-    UA_DiscoveryManager_deleteMembers(&server->discoveryManager, server);
+    UA_DiscoveryManager_clear(&server->discoveryManager, server);
 #endif
 
 #if UA_MULTITHREADING >= 100
@@ -224,15 +225,14 @@ void UA_Server_delete(UA_Server *server) {
 #endif
 
     /* Clean up the Admin Session */
-    UA_LOCK(server->serviceMutex);
-    UA_Session_deleteMembersCleanup(&server->adminSession, server);
-    UA_UNLOCK(server->serviceMutex);
+    UA_Session_clear(&server->adminSession, server);
 
-    /* Clean up the work queue */
-    UA_WorkQueue_cleanup(&server->workQueue);
+    UA_UNLOCK(server->serviceMutex); /* The timer has its own mutex */
 
-    /* Delete the timed work */
-    UA_Timer_deleteMembers(&server->timer);
+    /* Execute all remaining delayed events and clean up the timer */
+    UA_Timer_process(&server->timer, UA_DateTime_nowMonotonic() + 1,
+             (UA_TimerExecutionCallback)serverExecuteRepeatedCallback, server);
+    UA_Timer_clear(&server->timer);
 
     /* Clean up the config */
     UA_ServerConfig_clean(&server->config);
@@ -289,8 +289,6 @@ UA_Server_init(UA_Server *server) {
 
     /* Initialize the handling of repeated callbacks */
     UA_Timer_init(&server->timer);
-
-    UA_WorkQueue_init(&server->workQueue);
 
     /* Initialize the adminSession */
     UA_Session_init(&server->adminSession);
@@ -470,9 +468,11 @@ UA_Server_updateCertificate(UA_Server *server,
     while(i < server->config.endpointsSize) {
         UA_EndpointDescription *ed = &server->config.endpoints[i];
         if(UA_ByteString_equal(&ed->serverCertificate, oldCertificate)) {
-            UA_String_deleteMembers(&ed->serverCertificate);
+            UA_String_clear(&ed->serverCertificate);
             UA_String_copy(newCertificate, &ed->serverCertificate);
-            UA_SecurityPolicy *sp = UA_SecurityPolicy_getSecurityPolicyByUri(server, &server->config.endpoints[i].securityPolicyUri);
+            UA_SecurityPolicy *sp =
+                UA_SecurityPolicy_getSecurityPolicyByUri(server,
+                   &server->config.endpoints[i].securityPolicyUri);
             if(!sp)
                 return UA_STATUSCODE_BADINTERNALERROR;
             sp->updateCertificateAndPrivateKey(sp, *newCertificate, *newPrivateKey);
@@ -598,7 +598,7 @@ UA_Server_run_startup(UA_Server *server) {
     for(size_t i = 0; i < server->config.networkLayersSize; ++i) {
         UA_ServerNetworkLayer *nl = &server->config.networkLayers[i];
         nl->statistics = &server->serverStats.ns;
-        result |= nl->start(nl, &server->config.customHostname);
+        result |= nl->start(nl, &server->config.logger, &server->config.customHostname);
     }
     if(result != UA_STATUSCODE_GOOD)
         return result;
@@ -621,13 +621,6 @@ UA_Server_run_startup(UA_Server *server) {
         UA_String_copy(&nl->discoveryUrl, &server->config.applicationDescription.discoveryUrls[i]);
     }
 
-    /* Spin up the worker threads */
-#if UA_MULTITHREADING >= 200
-    UA_LOG_INFO(&server->config.logger, UA_LOGCATEGORY_SERVER,
-                "Spinning up %" PRIu16 " worker thread(s)", server->config.nThreads);
-    UA_WorkQueue_start(&server->workQueue, server->config.nThreads);
-#endif
-
     /* Start the multicast discovery server */
 #ifdef UA_ENABLE_DISCOVERY_MULTICAST
     if(server->config.mdnsEnabled)
@@ -641,12 +634,10 @@ UA_Server_run_startup(UA_Server *server) {
 
 static void
 serverExecuteRepeatedCallback(UA_Server *server, UA_ApplicationCallback cb,
-                        void *callbackApplication, void *data) {
-#if UA_MULTITHREADING >= 200
-    UA_WorkQueue_enqueue(&server->workQueue, cb, callbackApplication, data);
-#else
+                              void *callbackApplication, void *data) {
+    /* Service mutex is not set inside the timer that triggers the callback */
+    UA_LOCK_ASSERT(server->serviceMutex, 0);
     cb(callbackApplication, data);
-#endif
 }
 
 UA_UInt16
@@ -682,6 +673,9 @@ UA_Server_run_iterate(UA_Server *server, UA_Boolean waitInternal) {
         }
     }
 #endif
+
+    UA_LOCK(server->serviceMutex);
+
 #if defined(UA_ENABLE_DISCOVERY_MULTICAST) && (UA_MULTITHREADING < 200)
     if(server->config.mdnsEnabled) {
         /* TODO multicastNextRepeat does not consider new input data (requests)
@@ -696,9 +690,7 @@ UA_Server_run_iterate(UA_Server *server, UA_Boolean waitInternal) {
     }
 #endif
 
-#if UA_MULTITHREADING < 200
-    UA_WorkQueue_manuallyProcessDelayed(&server->workQueue);
-#endif
+    UA_UNLOCK(server->serviceMutex);
 
     now = UA_DateTime_nowMonotonic();
     timeout = 0;
@@ -715,22 +707,11 @@ UA_Server_run_shutdown(UA_Server *server) {
         nl->stop(nl, server);
     }
 
-#if UA_MULTITHREADING >= 200
-    /* Shut down the workers */
-    UA_LOG_INFO(&server->config.logger, UA_LOGCATEGORY_SERVER,
-                "Shutting down %u worker thread(s)",
-                (int unsigned)server->workQueue.workersSize);
-    UA_WorkQueue_stop(&server->workQueue);
-#endif
-
 #ifdef UA_ENABLE_DISCOVERY_MULTICAST
     /* Stop multicast discovery */
     if(server->config.mdnsEnabled)
         stopMulticastDiscoveryServer(server);
 #endif
-
-    /* Execute all delayed callbacks */
-    UA_WorkQueue_cleanup(&server->workQueue);
 
     return UA_STATUSCODE_GOOD;
 }
@@ -766,40 +747,3 @@ UA_Server_run(UA_Server *server, const volatile UA_Boolean *running) {
     }
     return UA_Server_run_shutdown(server);
 }
-
-#ifdef UA_ENABLE_HISTORIZING
-/* Allow insert of historical data */
-UA_Boolean
-UA_Server_AccessControl_allowHistoryUpdateUpdateData(UA_Server *server,
-                                                     const UA_NodeId *sessionId, void *sessionContext,
-                                                     const UA_NodeId *nodeId,
-                                                     UA_PerformUpdateType performInsertReplace,
-                                                     const UA_DataValue *value) {
-    if(server->config.accessControl.allowHistoryUpdateUpdateData &&
-            !server->config.accessControl.allowHistoryUpdateUpdateData(server, &server->config.accessControl,
-                                                                       sessionId, sessionContext, nodeId,
-                                                                       performInsertReplace, value)) {
-        return false;
-    }
-    return true;
-}
-
-/* Allow delete of historical data */
-UA_Boolean
-UA_Server_AccessControl_allowHistoryUpdateDeleteRawModified(UA_Server *server,
-                                                            const UA_NodeId *sessionId, void *sessionContext,
-                                                            const UA_NodeId *nodeId,
-                                                            UA_DateTime startTimestamp,
-                                                            UA_DateTime endTimestamp,
-                                                            bool isDeleteModified) {
-    if(server->config.accessControl.allowHistoryUpdateDeleteRawModified &&
-            !server->config.accessControl.allowHistoryUpdateDeleteRawModified(server, &server->config.accessControl,
-                                                                              sessionId, sessionContext, nodeId,
-                                                                              startTimestamp, endTimestamp,
-                                                                              isDeleteModified)) {
-        return false;
-    }
-    return true;
-
-}
-#endif /* UA_ENABLE_HISTORIZING */

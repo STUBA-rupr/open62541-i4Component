@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\open62541-i4Component\examples\nodeset\server_nodeset.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace_example_generated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\example_nodeids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\examples\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\namespace_example_generated.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\example_nodeids.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\examples\nodeset\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A5809C94-49FF-32C2-A39C-61B61DF76A5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C91119E9-2ADA-3103-A3E0-974224A3E12E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6B08728B-A626-35A8-A12C-F89FEA4C7F8E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_log_stdout.c">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_accesscontrol_default.c">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_nodestore_ziptree.c">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_nodestore_hashmap.c">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_config_default.c">
+      <Filter>plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\crypto\ua_pki_none.c">
+      <Filter>plugins\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\crypto\ua_securitypolicy_none.c">
+      <Filter>plugins\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\win32\ua_clock.c">
+      <Filter>arch\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\win32\ua_architecture_functions.c">
+      <Filter>arch\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\network_tcp.c">
+      <Filter>arch</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\config.h">
+      <Filter>buildWIN\src_generated\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\arch\win32\ua_architecture.h">
+      <Filter>arch\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ms_stdint.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\architecture_definitions.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h">
+      <Filter>buildWIN\src_generated\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h">
+      <Filter>buildWIN\src_generated\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\common.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\types.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h">
+      <Filter>buildWIN\src_generated\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h">
+      <Filter>buildWIN\src_generated\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\util.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\log.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\network.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pki.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\securitypolicy.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ziptree.h">
+      <Filter>deps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h">
+      <Filter>include\open62541\plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel_async.h">
+      <Filter>include\open62541</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\statuscodes.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\nodeids.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A5809C94-49FF-32C2-A39C-61B61DF76A5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch">
+      <UniqueIdentifier>{423ED2B5-7557-38BD-962B-C9C3059D2EB0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\win32">
+      <UniqueIdentifier>{BB0874E3-7C8D-37AF-BD6E-2E97DD2E8DDB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buildWIN">
+      <UniqueIdentifier>{1C8BD084-BC62-3738-840B-72FB9D7E2DC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buildWIN\src_generated">
+      <UniqueIdentifier>{6BFDA53D-CF1F-3A17-A700-1BF8E5D77FB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="buildWIN\src_generated\open62541">
+      <UniqueIdentifier>{1928DF45-153F-30F9-87CA-3A94FFFDC5EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{B531D1D2-FBA2-3BBD-BAC7-CBB67A1F22EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{DB80EE0B-40A4-39FB-8E2B-876FB2CC62E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\open62541">
+      <UniqueIdentifier>{B6BCFE7D-6157-34AD-8D84-C1E973DB4AD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\open62541\plugin">
+      <UniqueIdentifier>{1716FE60-D45C-3345-9628-3878E87AD496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins">
+      <UniqueIdentifier>{2C2B205F-18FE-302A-B5B4-BA777D559C00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\crypto">
+      <UniqueIdentifier>{6C077292-C286-3AF6-A1A7-44A3C57CA228}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\open62541-i4Component\examples\tutorial_server_object.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Projects\open62541-i4Component\examples\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C91119E9-2ADA-3103-A3E0-974224A3E12E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

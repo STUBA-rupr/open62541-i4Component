@@ -15,6 +15,12 @@
 #include "ua_types_encoding_binary.h"
 #include "ziptree.h"
 
+#if WIN32
+#define UA_callocSDRAM UA_calloc
+#define UA_mallocSDRAM UA_malloc
+#define UA_reallocSDRAM UA_realloc
+#endif
+
 /* ZipTree for the lookup of references by their identifier */
 
 static enum ZIP_CMP

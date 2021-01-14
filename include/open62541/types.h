@@ -16,6 +16,11 @@
 #ifndef UA_TYPES_H_
 #define UA_TYPES_H_
 
+#if WIN32
+#define UA_Array_copy_safe UA_Array_copy
+#define UA_Array_new_safe UA_Array_new
+#endif
+
 #include <open62541/config.h>
 #include <open62541/common.h>
 #include <open62541/statuscodes.h>

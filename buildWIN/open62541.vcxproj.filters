@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_types.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_types_encoding_binary.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_types_print.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\types_generated.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\transport_generated.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\statuscodes.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_util.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_timer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_connection.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_securechannel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_securechannel_crypto.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_session.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_nodes.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_ns0.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_config.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_binary.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_discovery.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_server_async.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_networkmessage.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_writer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_reader.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_manager.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_ns0.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_view.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_method.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_session.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_attribute.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_discovery.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_subscription.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_monitoreditem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_securechannel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_nodemanagement.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_services_discovery_multicast.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_client.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_client_connect.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_client_discovery.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_client_highlevel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_client_subscriptions.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\libc_time.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\pcg_basic.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\base64.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_pubsub_config.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\namespace0_generated.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_types_lex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_subscription.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_subscription_monitoreditem.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-object.dir\$(Configuration)\ua_subscription_datachange.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_log_stdout.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_accesscontrol_default.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_nodestore_ziptree.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_nodestore_hashmap.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_config_default.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_pki_none.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_securitypolicy_none.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_clock.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\ua_architecture_functions.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Projects\open62541-i4Component\buildWIN\open62541-plugins.dir\$(Configuration)\network_tcp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{8A77C355-2E74-3070-8567-4043CC3A3381}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

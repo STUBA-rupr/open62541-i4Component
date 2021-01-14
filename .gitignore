@@ -17,6 +17,8 @@
 *.gcno
 *.gcda
 *.swp
+*.opendb
+*.VC.opendb
 .dirstamp
 /bin
 m4

@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindLATEX.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.16/Modules/FindPackageMessage.cmake
+C:/Projects/open62541-i4Component/doc/CMakeLists.txt
+C:/Projects/open62541-i4Component/doc/conf.py
+C:/Projects/open62541-i4Component/tools/cmake/FindSphinx.cmake

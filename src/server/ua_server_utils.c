@@ -12,6 +12,12 @@
 
 #include "ua_server_internal.h"
 
+#if WIN32
+#define UA_callocSDRAM UA_calloc
+#define UA_mallocSDRAM UA_malloc
+#define UA_reallocSDRAM UA_realloc
+#endif
+
 const UA_DataType *
 UA_Server_findDataType(UA_Server *server, const UA_NodeId *typeId) {
     return UA_findDataTypeWithCustom(typeId, server->config.customDataTypes);

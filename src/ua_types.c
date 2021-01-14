@@ -25,6 +25,7 @@
 
 #define UA_MAX_ARRAY_DIMS 100 /* Max dimensions of an array */
 
+
 /* Datatype Handling
  * -----------------
  * This file contains handling functions for the builtin types and functions

@@ -1,0 +1,1802 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6AF84D7-2216-334E-A0CF-E5F33700E7CE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>doc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\types.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/types.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/types.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/types.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/types.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\common.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/common.h C:/Projects/open62541-i4Component/buildWIN/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/common.h C:/Projects/open62541-i4Component/buildWIN/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/common.h C:/Projects/open62541-i4Component/buildWIN/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/common.h C:/Projects/open62541-i4Component/buildWIN/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\util.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/util.h C:/Projects/open62541-i4Component/buildWIN/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/util.h C:/Projects/open62541-i4Component/buildWIN/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/util.h C:/Projects/open62541-i4Component/buildWIN/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/util.h C:/Projects/open62541-i4Component/buildWIN/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\statuscodes.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes.h C:/Projects/open62541-i4Component/buildWIN/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes.h C:/Projects/open62541-i4Component/buildWIN/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes.h C:/Projects/open62541-i4Component/buildWIN/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes.h C:/Projects/open62541-i4Component/buildWIN/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\types_generated.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated.h C:/Projects/open62541-i4Component/buildWIN/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\server.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server.h C:/Projects/open62541-i4Component/buildWIN/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server.h C:/Projects/open62541-i4Component/buildWIN/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server.h C:/Projects/open62541-i4Component/buildWIN/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server.h C:/Projects/open62541-i4Component/buildWIN/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\client_subscriptions.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_subscriptions.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_subscriptions.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_subscriptions.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_subscriptions.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\client.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\client_highlevel.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_highlevel.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_highlevel.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_highlevel.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/client_highlevel.h C:/Projects/open62541-i4Component/buildWIN/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\plugin_log.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/log.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/log.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/log.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/log.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\plugin_network.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/network.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/network.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/network.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/network.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\plugin_accesscontrol.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/accesscontrol.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/accesscontrol.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/accesscontrol.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/accesscontrol.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\services.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/src/server/ua_services.h C:/Projects/open62541-i4Component/buildWIN/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/src/server/ua_services.h C:/Projects/open62541-i4Component/buildWIN/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/src/server/ua_services.h C:/Projects/open62541-i4Component/buildWIN/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/src/server/ua_services.h C:/Projects/open62541-i4Component/buildWIN/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\nodestore.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/nodestore.h C:/Projects/open62541-i4Component/buildWIN/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/nodestore.h C:/Projects/open62541-i4Component/buildWIN/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/nodestore.h C:/Projects/open62541-i4Component/buildWIN/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/nodestore.h C:/Projects/open62541-i4Component/buildWIN/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\plugin_pubsub_connection.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/plugin/pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\pubsub.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server_pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server_pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server_pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/include/open62541/server_pubsub.h C:/Projects/open62541-i4Component/buildWIN/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_datatypes.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_datatypes.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_datatypes.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_datatypes.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_datatypes.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_firststeps.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_variable.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variable.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variable.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variable.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variable.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_variabletype.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variabletype.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variabletype.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variabletype.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_variabletype.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_datasource.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_datasource.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_datasource.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_datasource.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_datasource.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_events.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_events.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_events.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_events.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_events.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_alarms_conditions.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_alarms_conditions.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_alarms_conditions.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_alarms_conditions.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_alarms_conditions.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_monitoreditems.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_monitoreditems.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_monitoreditems.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_monitoreditems.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_monitoreditems.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_object.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_object.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_object.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_object.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_object.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_server_method.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_method.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_method.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_method.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_server_method.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_client_firststeps.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_client_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_client_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_client_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/tutorial_client_firststeps.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\27730fec5f012ef6388acb0d3350e20f\tutorial_pubsub_publish.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/pubsub/tutorial_pubsub_publish.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/pubsub/tutorial_pubsub_publish.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/pubsub/tutorial_pubsub_publish.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/c2rst.py C:/Projects/open62541-i4Component/examples/pubsub/tutorial_pubsub_publish.c C:/Projects/open62541-i4Component/buildWIN/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\c2rst.py;C:\Projects\open62541-i4Component\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\d0414760f49450eec934d130323bbdf9\doc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building HTML documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b html C:/Projects/open62541-i4Component/buildWIN/doc_src C:/Projects/open62541-i4Component/buildWIN/doc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building_arch.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\index.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\installing.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\internal.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler_pump.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541_html.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\protocol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\toc.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorials.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark-pubsub.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\doc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building HTML documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b html C:/Projects/open62541-i4Component/buildWIN/doc_src C:/Projects/open62541-i4Component/buildWIN/doc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building_arch.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\index.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\installing.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\internal.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler_pump.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541_html.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\protocol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\toc.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorials.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark-pubsub.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\doc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building HTML documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b html C:/Projects/open62541-i4Component/buildWIN/doc_src C:/Projects/open62541-i4Component/buildWIN/doc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building_arch.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\index.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\installing.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\internal.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler_pump.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541_html.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\protocol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\toc.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorials.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark-pubsub.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\doc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building HTML documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b html C:/Projects/open62541-i4Component/buildWIN/doc_src C:/Projects/open62541-i4Component/buildWIN/doc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc_src\types.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\common.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\util.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\statuscodes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\types_generated.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\server.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_subscriptions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\client_highlevel.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_log.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_network.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_accesscontrol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\services.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodestore.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\plugin_pubsub_connection.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\pubsub.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_datatypes.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variable.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_variabletype.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_datasource.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_events.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_alarms_conditions.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_monitoreditems.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_object.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_server_method.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_client_firststeps.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorial_pubsub_publish.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\building_arch.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\index.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\installing.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\internal.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\nodeset_compiler_pump.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\open62541_html.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\protocol.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\toc.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\tutorials.rst;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark-pubsub.png;C:\Projects\open62541-i4Component\buildWIN\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\doc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Projects\open62541-i4Component\doc\conf.py;C:\Projects\open62541-i4Component\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Projects\open62541-i4Component\doc\conf.py;C:\Projects\open62541-i4Component\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Projects\open62541-i4Component\doc\conf.py;C:\Projects\open62541-i4Component\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Projects\open62541-i4Component\doc\conf.py;C:\Projects\open62541-i4Component\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\open62541-i4Component\buildWIN\doc\CMakeFiles\doc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\ZERO_CHECK.vcxproj">
+      <Project>{3B5D5D17-477D-3DFE-8880-099E76C6AE4C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541.vcxproj">
+      <Project>{BE1BA860-BA25-34EA-B0A6-E725577BD74C}</Project>
+      <Name>open62541</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

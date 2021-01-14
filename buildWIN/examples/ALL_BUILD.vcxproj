@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77E26A10-ED8A-388B-978B-6BACAB0EE90A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\examples;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\ZERO_CHECK.vcxproj">
+      <Project>{3B5D5D17-477D-3DFE-8880-099E76C6AE4C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\access_control_client.vcxproj">
+      <Project>{EA559AE1-9EBD-3D1E-A605-E6CE065382B5}</Project>
+      <Name>access_control_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\access_control_server.vcxproj">
+      <Project>{D1ED05DA-5BBF-3601-928F-176F761D0A08}</Project>
+      <Name>access_control_server</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client.vcxproj">
+      <Project>{E79E12DE-1516-3678-AB8D-749D6365C130}</Project>
+      <Name>client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client_async.vcxproj">
+      <Project>{9E7EF9E2-7DF4-3A0A-8E58-14452271E533}</Project>
+      <Name>client_async</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client_connect.vcxproj">
+      <Project>{FD81CD60-C5B6-341C-81E8-0C59532AB3B3}</Project>
+      <Name>client_connect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client_connect_loop.vcxproj">
+      <Project>{C398C84B-1281-3663-A672-69CFE177080D}</Project>
+      <Name>client_connect_loop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client_connectivitycheck_loop.vcxproj">
+      <Project>{18DD292D-C71A-38B9-BE02-AA1416564719}</Project>
+      <Name>client_connectivitycheck_loop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\client_subscription_loop.vcxproj">
+      <Project>{0A681781-EB0E-3233-9CA8-5B4B62556A43}</Project>
+      <Name>client_subscription_loop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\custom_datatype_client.vcxproj">
+      <Project>{0E99946D-57A8-3A55-8214-41CC822032C5}</Project>
+      <Name>custom_datatype_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\custom_datatype_server.vcxproj">
+      <Project>{AD5D309F-74F8-34A9-83C2-21AF4CF389D7}</Project>
+      <Name>custom_datatype_server</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_ctt.vcxproj">
+      <Project>{0AF8B5A6-8ED6-37AC-A22E-2D78962BDD40}</Project>
+      <Name>server_ctt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_inheritance.vcxproj">
+      <Project>{83804A08-51C9-301A-83A8-045BB36150A8}</Project>
+      <Name>server_inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_instantiation.vcxproj">
+      <Project>{57A1422C-6E59-3664-9BA4-F7C041DF1F28}</Project>
+      <Name>server_instantiation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_loglevel.vcxproj">
+      <Project>{5EB75657-8488-3458-8E55-7258A71404A2}</Project>
+      <Name>server_loglevel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_mainloop.vcxproj">
+      <Project>{6D6AAA3B-1164-33E8-8E0D-FCBEAD811196}</Project>
+      <Name>server_mainloop</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\nodeset\server_nodeset.vcxproj">
+      <Project>{930F6F72-A872-3A9E-8EBB-C7E17AA6E2AE}</Project>
+      <Name>server_nodeset</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\nodeset\server_nodeset_plcopen.vcxproj">
+      <Project>{FFD9188D-458A-3289-987C-1D8562DC7894}</Project>
+      <Name>server_nodeset_plcopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\nodeset\server_nodeset_powerlink.vcxproj">
+      <Project>{5DA7A394-18D2-3C42-A14F-FA1D4507A0A3}</Project>
+      <Name>server_nodeset_powerlink</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_repeated_job.vcxproj">
+      <Project>{CFED61E6-163E-3C2D-8D3D-07D3497DF65F}</Project>
+      <Name>server_repeated_job</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\server_settimestamp.vcxproj">
+      <Project>{86936851-8126-3702-8496-6B39EF5CD98A}</Project>
+      <Name>server_settimestamp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\nodeset\server_testnodeset.vcxproj">
+      <Project>{8B4230BA-FE53-39B7-892B-AB91BF733720}</Project>
+      <Name>server_testnodeset</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_client_events.vcxproj">
+      <Project>{22A21F46-C915-3E43-AC7E-8F9A821B9785}</Project>
+      <Name>tutorial_client_events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_client_firststeps.vcxproj">
+      <Project>{1AD2860F-500C-3732-B884-D72823A72881}</Project>
+      <Name>tutorial_client_firststeps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_datatypes.vcxproj">
+      <Project>{8523A3F7-6CEA-3CD9-AFC2-51AB37C848C4}</Project>
+      <Name>tutorial_datatypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_datasource.vcxproj">
+      <Project>{9F570507-12B3-3E04-92AA-D77503572C0F}</Project>
+      <Name>tutorial_server_datasource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_firststeps.vcxproj">
+      <Project>{ABC29E6E-BEAA-3A4D-98F6-0ADF6FFE69A0}</Project>
+      <Name>tutorial_server_firststeps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_method.vcxproj">
+      <Project>{8FC690A9-61A3-3BC8-9C4C-58C8A46B7962}</Project>
+      <Name>tutorial_server_method</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_monitoreditems.vcxproj">
+      <Project>{9A8CCE61-E551-3CDF-9E4A-69562BA4D144}</Project>
+      <Name>tutorial_server_monitoreditems</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_object.vcxproj">
+      <Project>{39524127-943D-399A-BFBA-FAC9CF61F8D1}</Project>
+      <Name>tutorial_server_object</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_variable.vcxproj">
+      <Project>{002199C5-CAB9-3ECF-B2B6-D858665CC772}</Project>
+      <Name>tutorial_server_variable</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\tutorial_server_variabletype.vcxproj">
+      <Project>{9990EF14-CFDC-369B-A7D3-B3D61CBB942D}</Project>
+      <Name>tutorial_server_variabletype</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

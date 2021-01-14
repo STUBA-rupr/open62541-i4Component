@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\8508485f90824d5bb0d696ed6c77e96c\open62541-code-generation.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\open62541-code-generation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A5809C94-49FF-32C2-A39C-61B61DF76A5A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

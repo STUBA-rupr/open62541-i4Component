@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\buildFREERTOS",
-    "\\src"
+    ""
   ],
-  "SelectedNode": "\\buildFREERTOS\\open62541.sln",
+  "SelectedNode": "\\plugins",
   "PreviewInSolutionExplorer": false
 }

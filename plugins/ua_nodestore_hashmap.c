@@ -9,6 +9,13 @@
 #include <open62541/util.h>
 #include <open62541/plugin/nodestore_default.h>
 
+#if WIN32
+#define UA_callocSDRAM UA_calloc
+#define UA_mallocSDRAM UA_malloc
+
+#endif
+
+
 #ifndef container_of
 #define container_of(ptr, type, member) \
     (type *)((uintptr_t)ptr - offsetof(type,member))

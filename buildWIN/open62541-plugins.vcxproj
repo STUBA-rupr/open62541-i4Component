@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9672DC2-6A36-3375-85AE-25A5CA700B07}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>open62541-plugins</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">open62541-plugins.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">open62541-plugins.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">open62541-plugins</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">open62541-plugins.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">open62541-plugins.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">open62541-plugins</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">open62541-plugins.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">open62541-plugins.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">open62541-plugins</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">open62541-plugins.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">open62541-plugins.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">open62541-plugins</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\plugins;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\statuscodes.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\nodeids.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/nodeids.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/nodeids.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/nodeids.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/nodeids.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Projects\open62541-i4Component\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Projects\open62541-i4Component\include\open62541\config.h.in;C:\Projects\open62541-i4Component\open62541.pc.in;C:\Projects\open62541-i4Component\tools\cmake\AssignSourceGroup.cmake;C:\Projects\open62541-i4Component\tools\cmake\FindClangTools.cmake;C:\Projects\open62541-i4Component\tools\cmake\SetGitBasedVersion.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_build.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_target.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_internal.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_public.cmake;C:\Projects\open62541-i4Component\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Projects\open62541-i4Component\include\open62541\config.h.in;C:\Projects\open62541-i4Component\open62541.pc.in;C:\Projects\open62541-i4Component\tools\cmake\AssignSourceGroup.cmake;C:\Projects\open62541-i4Component\tools\cmake\FindClangTools.cmake;C:\Projects\open62541-i4Component\tools\cmake\SetGitBasedVersion.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_build.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_target.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_internal.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_public.cmake;C:\Projects\open62541-i4Component\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Projects\open62541-i4Component\include\open62541\config.h.in;C:\Projects\open62541-i4Component\open62541.pc.in;C:\Projects\open62541-i4Component\tools\cmake\AssignSourceGroup.cmake;C:\Projects\open62541-i4Component\tools\cmake\FindClangTools.cmake;C:\Projects\open62541-i4Component\tools\cmake\SetGitBasedVersion.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_build.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_target.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_internal.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_public.cmake;C:\Projects\open62541-i4Component\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Projects/open62541-i4Component/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Projects/open62541-i4Component -BC:/Projects/open62541-i4Component/buildWIN --check-stamp-file C:/Projects/open62541-i4Component/buildWIN/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Projects\open62541-i4Component\include\open62541\config.h.in;C:\Projects\open62541-i4Component\open62541.pc.in;C:\Projects\open62541-i4Component\tools\cmake\AssignSourceGroup.cmake;C:\Projects\open62541-i4Component\tools\cmake\FindClangTools.cmake;C:\Projects\open62541-i4Component\tools\cmake\SetGitBasedVersion.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_build.cmake;C:\Projects\open62541-i4Component\tools\cmake\linting_target.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_internal.cmake;C:\Projects\open62541-i4Component\tools\cmake\macros_public.cmake;C:\Projects\open62541-i4Component\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_log_stdout.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_accesscontrol_default.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_nodestore_ziptree.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_nodestore_hashmap.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\ua_config_default.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\crypto\ua_pki_none.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\plugins\crypto\ua_securitypolicy_none.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\win32\ua_clock.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\win32\ua_architecture_functions.c" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\arch\network_tcp.c" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\config.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\arch\win32\ua_architecture.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ms_stdint.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\architecture_definitions.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\common.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\types.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\util.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\log.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\network.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pki.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\securitypolicy.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ziptree.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel_async.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\ZERO_CHECK.vcxproj">
+      <Project>{3B5D5D17-477D-3DFE-8880-099E76C6AE4C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-generator-namespace.vcxproj">
+      <Project>{F9D4D4DB-485E-369B-9E66-28BC68DD7491}</Project>
+      <Name>open62541-generator-namespace</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-generator-transport.vcxproj">
+      <Project>{E7FC74AC-A884-3E0B-AB46-359017661AC0}</Project>
+      <Name>open62541-generator-transport</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-generator-types.vcxproj">
+      <Project>{4BF318FE-37F3-30A5-BEED-34205FAFD771}</Project>
+      <Name>open62541-generator-types</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

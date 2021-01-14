@@ -14,6 +14,7 @@
 #include "ua_server_internal.h"
 #include "ua_services.h"
 
+
 #ifdef UA_ENABLE_DISCOVERY
 
 #include "ua_client_internal.h"

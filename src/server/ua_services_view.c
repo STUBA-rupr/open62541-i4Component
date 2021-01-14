@@ -20,6 +20,12 @@
 #include "ua_services.h"
 #include "ziptree.h"
 
+#if WIN32
+#define UA_callocSDRAM UA_calloc
+#define UA_mallocSDRAM UA_malloc
+#define UA_reallocSDRAM UA_realloc
+#endif
+
 #define UA_MAX_TREE_RECURSE 50 /* How deep up/down the tree do we recurse at most? */
 
 UA_StatusCode

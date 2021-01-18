@@ -40,7 +40,7 @@
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
-  <UAVariable NodeId="ns=1;i=1" BrowseName="IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=1" BrowseName="1:IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>IdType</DisplayName>
     <Description Locale="en">IdType</Description>
     <References>
@@ -49,7 +49,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=2" BrowseName="Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=2" BrowseName="1:Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>Id</DisplayName>
     <Description Locale="en">Id</Description>
     <References>
@@ -58,7 +58,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObjectType NodeId="ns=1;i=3" BrowseName="AASIrdiConceptDescriptionType">
+  <UAObjectType NodeId="ns=1;i=3" BrowseName="1:AASIrdiConceptDescriptionType">
     <DisplayName>AASIrdiConceptDescriptionType</DisplayName>
     <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
     <References>
@@ -72,7 +72,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=17598</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=58" BrowseName="Category" ParentNodeId="ns=1;i=3" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=58" BrowseName="1:Category" ParentNodeId="ns=1;i=3" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -81,7 +81,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=59" BrowseName="Identification" ParentNodeId="ns=1;i=3">
+  <UAObject NodeId="ns=1;i=59" BrowseName="1:Identification" ParentNodeId="ns=1;i=3">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -90,7 +90,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=60" BrowseName="Administration" ParentNodeId="ns=1;i=3">
+  <UAObject NodeId="ns=1;i=60" BrowseName="1:Administration" ParentNodeId="ns=1;i=3">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -99,7 +99,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=61" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=3">
+  <UAObject NodeId="ns=1;i=61" BrowseName="1:IsCaseOf" ParentNodeId="ns=1;i=3">
     <DisplayName>IsCaseOf</DisplayName>
     <Description Locale="en">IsCaseOf</Description>
     <References>
@@ -108,7 +108,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=62" BrowseName="DataSpecification" ParentNodeId="ns=1;i=3">
+  <UAObject NodeId="ns=1;i=62" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=3">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -117,7 +117,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=63" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=3">
+  <UAObject NodeId="ns=1;i=63" BrowseName="1:DataSpecificationIEC61360" ParentNodeId="ns=1;i=3">
     <DisplayName>DataSpecificationIEC61360</DisplayName>
     <Description Locale="en">DataSpecificationIEC61360</Description>
     <References>
@@ -126,7 +126,7 @@
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=3</Reference>
     </References>
   </UAObject>
-  <UAObjectType NodeId="ns=1;i=4" BrowseName="AASUriConceptDescriptionType">
+  <UAObjectType NodeId="ns=1;i=4" BrowseName="1:AASUriConceptDescriptionType">
     <DisplayName>AASUriConceptDescriptionType</DisplayName>
     <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
     <References>
@@ -140,7 +140,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=17600</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=64" BrowseName="Category" ParentNodeId="ns=1;i=4" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=64" BrowseName="1:Category" ParentNodeId="ns=1;i=4" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -149,7 +149,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=65" BrowseName="Identification" ParentNodeId="ns=1;i=4">
+  <UAObject NodeId="ns=1;i=65" BrowseName="1:Identification" ParentNodeId="ns=1;i=4">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -158,7 +158,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=66" BrowseName="Administration" ParentNodeId="ns=1;i=4">
+  <UAObject NodeId="ns=1;i=66" BrowseName="1:Administration" ParentNodeId="ns=1;i=4">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -167,7 +167,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=67" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=4">
+  <UAObject NodeId="ns=1;i=67" BrowseName="1:IsCaseOf" ParentNodeId="ns=1;i=4">
     <DisplayName>IsCaseOf</DisplayName>
     <Description Locale="en">IsCaseOf</Description>
     <References>
@@ -176,7 +176,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=68" BrowseName="DataSpecification" ParentNodeId="ns=1;i=4">
+  <UAObject NodeId="ns=1;i=68" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=4">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -185,7 +185,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=69" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=4">
+  <UAObject NodeId="ns=1;i=69" BrowseName="1:DataSpecificationIEC61360" ParentNodeId="ns=1;i=4">
     <DisplayName>DataSpecificationIEC61360</DisplayName>
     <Description Locale="en">DataSpecificationIEC61360</Description>
     <References>
@@ -194,7 +194,7 @@
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=4</Reference>
     </References>
   </UAObject>
-  <UAObjectType NodeId="ns=1;i=5" BrowseName="AASCustomConceptDescriptionType">
+  <UAObjectType NodeId="ns=1;i=5" BrowseName="1:AASCustomConceptDescriptionType">
     <DisplayName>AASCustomConceptDescriptionType</DisplayName>
     <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
     <References>
@@ -208,7 +208,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=17589</Reference>
     </References>
   </UAObjectType>
-  <UAVariable NodeId="ns=1;i=70" BrowseName="Category" ParentNodeId="ns=1;i=5" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=70" BrowseName="1:Category" ParentNodeId="ns=1;i=5" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -217,7 +217,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=71" BrowseName="Identification" ParentNodeId="ns=1;i=5">
+  <UAObject NodeId="ns=1;i=71" BrowseName="1:Identification" ParentNodeId="ns=1;i=5">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -226,7 +226,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=72" BrowseName="Administration" ParentNodeId="ns=1;i=5">
+  <UAObject NodeId="ns=1;i=72" BrowseName="1:Administration" ParentNodeId="ns=1;i=5">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -235,7 +235,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=73" BrowseName="IsCaseOf" ParentNodeId="ns=1;i=5">
+  <UAObject NodeId="ns=1;i=73" BrowseName="1:IsCaseOf" ParentNodeId="ns=1;i=5">
     <DisplayName>IsCaseOf</DisplayName>
     <Description Locale="en">IsCaseOf</Description>
     <References>
@@ -244,7 +244,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=74" BrowseName="DataSpecification" ParentNodeId="ns=1;i=5">
+  <UAObject NodeId="ns=1;i=74" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=5">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -253,7 +253,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=75" BrowseName="DataSpecificationIEC61360" ParentNodeId="ns=1;i=5">
+  <UAObject NodeId="ns=1;i=75" BrowseName="1:DataSpecificationIEC61360" ParentNodeId="ns=1;i=5">
     <DisplayName>DataSpecificationIEC61360</DisplayName>
     <Description Locale="en">DataSpecificationIEC61360</Description>
     <References>
@@ -262,7 +262,7 @@
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=5</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=6" BrowseName="Identification" ParentNodeId="ns=1;i=2000">
+  <UAObject NodeId="ns=1;i=6" BrowseName="1:Identification" ParentNodeId="ns=1;i=2000">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -271,7 +271,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=7" BrowseName="Administration" ParentNodeId="ns=1;i=2000">
+  <UAObject NodeId="ns=1;i=7" BrowseName="1:Administration" ParentNodeId="ns=1;i=2000">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -280,7 +280,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=8" BrowseName="Keys" ParentNodeId="ns=1;i=1005" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=8" BrowseName="1:Keys" ParentNodeId="ns=1;i=1005" DataType="i=12" AccessLevel="3">
     <DisplayName>Keys</DisplayName>
     <Description Locale="en">Keys</Description>
     <References>
@@ -288,7 +288,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=9" BrowseName="Category" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=9" BrowseName="1:Category" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -297,7 +297,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=16" BrowseName="PreferredName" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=16" BrowseName="1:PreferredName" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
     <DisplayName>PreferredName</DisplayName>
     <Description Locale="en">PreferredName</Description>
     <References>
@@ -306,7 +306,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=17" BrowseName="ShortName" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=17" BrowseName="1:ShortName" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>ShortName</DisplayName>
     <Description Locale="en">ShortName</Description>
     <References>
@@ -315,7 +315,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=18" BrowseName="Unit" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=18" BrowseName="1:Unit" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>Unit</DisplayName>
     <Description Locale="en">Unit</Description>
     <References>
@@ -324,7 +324,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=19" BrowseName="UnitId" ParentNodeId="ns=1;i=3001">
+  <UAObject NodeId="ns=1;i=19" BrowseName="1:UnitId" ParentNodeId="ns=1;i=3001">
     <DisplayName>UnitId</DisplayName>
     <Description Locale="en">UnitId</Description>
     <References>
@@ -333,7 +333,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=20" BrowseName="SourceOfDefinition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=20" BrowseName="1:SourceOfDefinition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
     <DisplayName>SourceOfDefinition</DisplayName>
     <Description Locale="en">SourceOfDefinition</Description>
     <References>
@@ -342,7 +342,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=21" BrowseName="Symbol" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=21" BrowseName="1:Symbol" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>Symbol</DisplayName>
     <Description Locale="en">Symbol</Description>
     <References>
@@ -351,7 +351,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=22" BrowseName="DataType" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=22" BrowseName="1:DataType" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>DataType</DisplayName>
     <Description Locale="en">DataType</Description>
     <References>
@@ -360,7 +360,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=23" BrowseName="Definition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=23" BrowseName="1:Definition" ParentNodeId="ns=1;i=3001" DataType="i=21" ValueRank="1" AccessLevel="3">
     <DisplayName>Definition</DisplayName>
     <Description Locale="en">Definition</Description>
     <References>
@@ -369,7 +369,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=24" BrowseName="ValueFormat" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=24" BrowseName="1:ValueFormat" ParentNodeId="ns=1;i=3001" DataType="i=12" AccessLevel="3">
     <DisplayName>ValueFormat</DisplayName>
     <Description Locale="en">ValueFormat</Description>
     <References>
@@ -378,7 +378,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=25" BrowseName="SemanticId" ParentNodeId="ns=1;i=1002">
+  <UAObject NodeId="ns=1;i=25" BrowseName="1:SemanticId" ParentNodeId="ns=1;i=1002">
     <DisplayName>SemanticId</DisplayName>
     <Description Locale="en">SemanticId</Description>
     <References>
@@ -387,7 +387,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=26" BrowseName="Type" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=26" BrowseName="1:Type" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
     <DisplayName>Type</DisplayName>
     <Description Locale="en">Type</Description>
     <References>
@@ -396,7 +396,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=27" BrowseName="Value" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=27" BrowseName="1:Value" ParentNodeId="ns=1;i=1002" DataType="i=12" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -405,7 +405,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=28" BrowseName="ValueId" ParentNodeId="ns=1;i=1002">
+  <UAObject NodeId="ns=1;i=28" BrowseName="1:ValueId" ParentNodeId="ns=1;i=1002">
     <DisplayName>ValueId</DisplayName>
     <Description Locale="en">ValueId</Description>
     <References>
@@ -414,7 +414,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=29" BrowseName="Category" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=29" BrowseName="1:Category" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -423,7 +423,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=30" BrowseName="SemanticId" ParentNodeId="ns=1;i=1008">
+  <UAObject NodeId="ns=1;i=30" BrowseName="1:SemanticId" ParentNodeId="ns=1;i=1008">
     <DisplayName>SemanticId</DisplayName>
     <Description Locale="en">SemanticId</Description>
     <References>
@@ -432,7 +432,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=31" BrowseName="Kind" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=31" BrowseName="1:Kind" ParentNodeId="ns=1;i=1008" DataType="i=12" AccessLevel="3">
     <DisplayName>Kind</DisplayName>
     <Description Locale="en">Kind</Description>
     <References>
@@ -441,7 +441,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=32" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1008">
+  <UAObject NodeId="ns=1;i=32" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=1008">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -450,7 +450,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=33" BrowseName="Qualifier" ParentNodeId="ns=1;i=1008">
+  <UAObject NodeId="ns=1;i=33" BrowseName="1:Qualifier" ParentNodeId="ns=1;i=1008">
     <DisplayName>Qualifier</DisplayName>
     <Description Locale="en">Qualifier</Description>
     <References>
@@ -459,7 +459,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1002</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=34" BrowseName="Category" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=34" BrowseName="1:Category" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -468,7 +468,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=35" BrowseName="Identification" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=35" BrowseName="1:Identification" ParentNodeId="ns=1;i=1007">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -477,7 +477,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=36" BrowseName="Administration" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=36" BrowseName="1:Administration" ParentNodeId="ns=1;i=1007">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -486,7 +486,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=37" BrowseName="SemanticId" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=37" BrowseName="1:SemanticId" ParentNodeId="ns=1;i=1007">
     <DisplayName>SemanticId</DisplayName>
     <Description Locale="en">SemanticId</Description>
     <References>
@@ -495,7 +495,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=38" BrowseName="Kind" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=38" BrowseName="1:Kind" ParentNodeId="ns=1;i=1007" DataType="i=12" AccessLevel="3">
     <DisplayName>Kind</DisplayName>
     <Description Locale="en">Kind</Description>
     <References>
@@ -504,7 +504,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=39" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=39" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=1007">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -513,7 +513,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=40" BrowseName="Qualifier" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=40" BrowseName="1:Qualifier" ParentNodeId="ns=1;i=1007">
     <DisplayName>Qualifier</DisplayName>
     <Description Locale="en">Qualifier</Description>
     <References>
@@ -522,7 +522,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1002</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=41" BrowseName="SubmodelElement" ParentNodeId="ns=1;i=1007">
+  <UAObject NodeId="ns=1;i=41" BrowseName="1:SubmodelElement" ParentNodeId="ns=1;i=1007">
     <DisplayName>SubmodelElement</DisplayName>
     <Description Locale="en">SubmodelElement</Description>
     <References>
@@ -531,7 +531,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1008</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=42" BrowseName="ValueType" ParentNodeId="ns=1;i=1009" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=42" BrowseName="1:ValueType" ParentNodeId="ns=1;i=1009" DataType="i=12" AccessLevel="3">
     <DisplayName>ValueType</DisplayName>
     <Description Locale="en">ValueType</Description>
     <References>
@@ -540,7 +540,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=43" BrowseName="Value" ParentNodeId="ns=1;i=1009" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=43" BrowseName="1:Value" ParentNodeId="ns=1;i=1009" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -549,7 +549,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=44" BrowseName="AllowDuplicates" ParentNodeId="ns=1;i=1010" DataType="i=1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=44" BrowseName="1:AllowDuplicates" ParentNodeId="ns=1;i=1010" DataType="i=1" AccessLevel="3">
     <DisplayName>AllowDuplicates</DisplayName>
     <Description Locale="en">AllowDuplicates</Description>
     <References>
@@ -561,7 +561,7 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=45" BrowseName="MimeType" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=45" BrowseName="1:MimeType" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=2" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -570,7 +570,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=46" BrowseName="Value" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=46" BrowseName="1:Value" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=1" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -579,7 +579,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=47" BrowseName="File" ParentNodeId="ns=1;i=1013">
+  <UAObject NodeId="ns=1;i=47" BrowseName="1:File" ParentNodeId="ns=1;i=1013">
     <DisplayName>File</DisplayName>
     <Description Locale="en">File</Description>
     <References>
@@ -587,7 +587,7 @@
       <Reference ReferenceType="i=40">i=11575</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=48" BrowseName="MimeType" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=48" BrowseName="1:MimeType" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -596,7 +596,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=49" BrowseName="Value" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=49" BrowseName="1:Value" ParentNodeId="ns=1;i=1015" DataType="i=12" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -605,7 +605,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=50" BrowseName="Value" ParentNodeId="ns=1;i=1016">
+  <UAObject NodeId="ns=1;i=50" BrowseName="1:Value" ParentNodeId="ns=1;i=1016">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -614,7 +614,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=51" BrowseName="First" ParentNodeId="ns=1;i=1017">
+  <UAObject NodeId="ns=1;i=51" BrowseName="1:First" ParentNodeId="ns=1;i=1017">
     <DisplayName>First</DisplayName>
     <Description Locale="en">First</Description>
     <References>
@@ -623,7 +623,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=52" BrowseName="Second" ParentNodeId="ns=1;i=1017">
+  <UAObject NodeId="ns=1;i=52" BrowseName="1:Second" ParentNodeId="ns=1;i=1017">
     <DisplayName>Second</DisplayName>
     <Description Locale="en">Second</Description>
     <References>
@@ -632,14 +632,14 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAMethod NodeId="ns=1;i=53" BrowseName="Operation" ParentNodeId="ns=1;i=1019" MethodDeclarationId="">
+  <UAMethod NodeId="ns=1;i=53" BrowseName="1:Operation" ParentNodeId="ns=1;i=1019" MethodDeclarationId="">
     <DisplayName>Operation</DisplayName>
     <Description Locale="en">Operation</Description>
     <References>
       <Reference ReferenceType="i=47" IsForward="false">ns=1;i=1019</Reference>
     </References>
   </UAMethod>
-  <UAObject NodeId="ns=1;i=54" BrowseName="in" ParentNodeId="ns=1;i=1019">
+  <UAObject NodeId="ns=1;i=54" BrowseName="1:in" ParentNodeId="ns=1;i=1019">
     <DisplayName>in</DisplayName>
     <Description Locale="en">in</Description>
     <References>
@@ -647,7 +647,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1018</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=55" BrowseName="out" ParentNodeId="ns=1;i=1019">
+  <UAObject NodeId="ns=1;i=55" BrowseName="1:out" ParentNodeId="ns=1;i=1019">
     <DisplayName>out</DisplayName>
     <Description Locale="en">out</Description>
     <References>
@@ -655,7 +655,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1018</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=56" BrowseName="Category" ParentNodeId="ns=1;i=1020" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=56" BrowseName="1:Category" ParentNodeId="ns=1;i=1020" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -664,7 +664,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=57" BrowseName="DictionaryEntry" ParentNodeId="ns=1;i=1020">
+  <UAObject NodeId="ns=1;i=57" BrowseName="1:DictionaryEntry" ParentNodeId="ns=1;i=1020">
     <DisplayName>DictionaryEntry</DisplayName>
     <Description Locale="en">DictionaryEntry</Description>
     <References>
@@ -673,7 +673,7 @@
       <Reference ReferenceType="i=40">i=17589</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=76" BrowseName="Category" ParentNodeId="ns=1;i=1022" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=76" BrowseName="1:Category" ParentNodeId="ns=1;i=1022" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -682,7 +682,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=77" BrowseName="SemanticId" ParentNodeId="ns=1;i=1022">
+  <UAObject NodeId="ns=1;i=77" BrowseName="1:SemanticId" ParentNodeId="ns=1;i=1022">
     <DisplayName>SemanticId</DisplayName>
     <Description Locale="en">SemanticId</Description>
     <References>
@@ -691,7 +691,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=78" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1022">
+  <UAObject NodeId="ns=1;i=78" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=1022">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -700,7 +700,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=79" BrowseName="ContainedElement" ParentNodeId="ns=1;i=1022">
+  <UAObject NodeId="ns=1;i=79" BrowseName="1:ContainedElement" ParentNodeId="ns=1;i=1022">
     <DisplayName>ContainedElement</DisplayName>
     <Description Locale="en">ContainedElement</Description>
     <References>
@@ -709,7 +709,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=80" BrowseName="Category" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=80" BrowseName="1:Category" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -718,7 +718,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=81" BrowseName="Identification" ParentNodeId="ns=1;i=1023">
+  <UAObject NodeId="ns=1;i=81" BrowseName="1:Identification" ParentNodeId="ns=1;i=1023">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -727,7 +727,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=82" BrowseName="Administration" ParentNodeId="ns=1;i=1023">
+  <UAObject NodeId="ns=1;i=82" BrowseName="1:Administration" ParentNodeId="ns=1;i=1023">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -736,7 +736,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=83" BrowseName="Kind" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=83" BrowseName="1:Kind" ParentNodeId="ns=1;i=1023" DataType="i=12" AccessLevel="3">
     <DisplayName>Kind</DisplayName>
     <Description Locale="en">Kind</Description>
     <References>
@@ -745,7 +745,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=84" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1023">
+  <UAObject NodeId="ns=1;i=84" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=1023">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -754,7 +754,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=85" BrowseName="AssetIdentificationModel" ParentNodeId="ns=1;i=1023">
+  <UAObject NodeId="ns=1;i=85" BrowseName="1:AssetIdentificationModel" ParentNodeId="ns=1;i=1023">
     <DisplayName>AssetIdentificationModel</DisplayName>
     <Description Locale="en">AssetIdentificationModel</Description>
     <References>
@@ -763,7 +763,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=86" BrowseName="Category" ParentNodeId="ns=1;i=1024" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=86" BrowseName="1:Category" ParentNodeId="ns=1;i=1024" DataType="i=12" AccessLevel="3">
     <DisplayName>Category</DisplayName>
     <Description Locale="en">Category</Description>
     <References>
@@ -772,7 +772,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=87" BrowseName="Identification" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=87" BrowseName="1:Identification" ParentNodeId="ns=1;i=1024">
     <DisplayName>Identification</DisplayName>
     <Description Locale="en">Identification</Description>
     <References>
@@ -781,7 +781,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1000</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=88" BrowseName="Administration" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=88" BrowseName="1:Administration" ParentNodeId="ns=1;i=1024">
     <DisplayName>Administration</DisplayName>
     <Description Locale="en">Administration</Description>
     <References>
@@ -790,7 +790,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1001</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=89" BrowseName="DataSpecification" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=89" BrowseName="1:DataSpecification" ParentNodeId="ns=1;i=1024">
     <DisplayName>DataSpecification</DisplayName>
     <Description Locale="en">DataSpecification</Description>
     <References>
@@ -799,7 +799,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=90" BrowseName="DerivedFrom" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=90" BrowseName="1:DerivedFrom" ParentNodeId="ns=1;i=1024">
     <DisplayName>DerivedFrom</DisplayName>
     <Description Locale="en">DerivedFrom</Description>
     <References>
@@ -808,7 +808,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1005</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=91" BrowseName="Asset" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=91" BrowseName="1:Asset" ParentNodeId="ns=1;i=1024">
     <DisplayName>Asset</DisplayName>
     <Description Locale="en">Asset</Description>
     <References>
@@ -817,7 +817,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1023</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=92" BrowseName="View" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=92" BrowseName="1:View" ParentNodeId="ns=1;i=1024">
     <DisplayName>View</DisplayName>
     <Description Locale="en">View</Description>
     <References>
@@ -826,7 +826,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1022</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=93" BrowseName="Submodel" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=93" BrowseName="1:Submodel" ParentNodeId="ns=1;i=1024">
     <DisplayName>Submodel</DisplayName>
     <Description Locale="en">Submodel</Description>
     <References>
@@ -835,7 +835,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1007</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=94" BrowseName="ConceptDictionary" ParentNodeId="ns=1;i=1024">
+  <UAObject NodeId="ns=1;i=94" BrowseName="1:ConceptDictionary" ParentNodeId="ns=1;i=1024">
     <DisplayName>ConceptDictionary</DisplayName>
     <Description Locale="en">ConceptDictionary</Description>
     <References>
@@ -844,7 +844,7 @@
       <Reference ReferenceType="i=40">ns=1;i=1020</Reference>
     </References>
   </UAObject>
-  <UAObjectType NodeId="ns=1;i=1000" BrowseName="AASIdentifierType">
+  <UAObjectType NodeId="ns=1;i=1000" BrowseName="1:AASIdentifierType">
     <DisplayName>AASIdentifierType</DisplayName>
     <Description Locale="en">Used to uniquely identify an entity by using an identifier.</Description>
     <References>
@@ -853,7 +853,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1001" BrowseName="AASAdministrativeInformationType">
+  <UAObjectType NodeId="ns=1;i=1001" BrowseName="1:AASAdministrativeInformationType">
     <DisplayName>AASAdministrativeInformationType</DisplayName>
     <Description Locale="en">Administrative metainformation for an element like version information.</Description>
     <References>
@@ -862,7 +862,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1002" BrowseName="AASQualifierType">
+  <UAObjectType NodeId="ns=1;i=1002" BrowseName="1:AASQualifierType">
     <DisplayName>AASQualifierType</DisplayName>
     <References>
       <Reference ReferenceType="i=47">ns=1;i=25</Reference>
@@ -872,7 +872,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1005" BrowseName="AASReferenceType">
+  <UAObjectType NodeId="ns=1;i=1005" BrowseName="1:AASReferenceType">
     <DisplayName>AASReferenceType</DisplayName>
     <Description Locale="en">AASReferenceType</Description>
     <References>
@@ -880,7 +880,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1007" BrowseName="AASSubmodelType">
+  <UAObjectType NodeId="ns=1;i=1007" BrowseName="1:AASSubmodelType">
     <DisplayName>AASSubmodelType</DisplayName>
     <Description Locale="en">A Submodel defines a specific aspect of the asset represented by the AAS. A submodel is used to structure the digital representation and technical functionality of an Administration Shell into distinguishable parts. Each submodel refers to a well-defined domain or subject matter. Submodels can become standardized and thus become submodels types. Submodels can have different life-cycles. </Description>
     <References>
@@ -896,7 +896,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1008" BrowseName="AASSubmodelElementType">
+  <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:AASSubmodelElementType">
     <DisplayName>AASSubmodelElementType</DisplayName>
     <Description Locale="en">A data element is a submodel element that is not further composed out of other submodel elements. A data element is a submodel element that has a value. The type of value differs for different subtypes of data elements.</Description>
     <References>
@@ -917,7 +917,7 @@
       <Reference ReferenceType="i=45">ns=1;i=1019</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1009" BrowseName="AASPropertyType">
+  <UAObjectType NodeId="ns=1;i=1009" BrowseName="1:AASPropertyType">
     <DisplayName>AASPropertyType</DisplayName>
     <Description Locale="en">A property is a data element that has a single value.</Description>
     <References>
@@ -926,7 +926,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1010" BrowseName="AASSubmodelElementCollectionType">
+  <UAObjectType NodeId="ns=1;i=1010" BrowseName="1:AASSubmodelElementCollectionType">
     <DisplayName>AASSubmodelElementCollectionType</DisplayName>
     <Description Locale="en">A submodel element collection is a set or list of submodel elements.</Description>
     <References>
@@ -935,14 +935,14 @@
       <Reference ReferenceType="i=45">ns=1;i=1011</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1011" BrowseName="AASSubmodelElementOrderedCollectionType">
+  <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:AASSubmodelElementOrderedCollectionType">
     <DisplayName>AASSubmodelElementOrderedCollectionType</DisplayName>
     <Description Locale="en">A submodel element collection is a set or list of submodel elements.</Description>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1010</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1013" BrowseName="AASFileType">
+  <UAObjectType NodeId="ns=1;i=1013" BrowseName="1:AASFileType">
     <DisplayName>AASFileType</DisplayName>
     <Description Locale="en">A File is a data element that represents an address to a file. The value is an URI that can represent an absolute or relative path.</Description>
     <References>
@@ -952,7 +952,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1015" BrowseName="AASBlobType">
+  <UAObjectType NodeId="ns=1;i=1015" BrowseName="1:AASBlobType">
     <DisplayName>AASBlobType</DisplayName>
     <Description Locale="en">A BLOB is a data element that represents a file that is contained with its source code in the value attribute.</Description>
     <References>
@@ -961,7 +961,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1016" BrowseName="AASReferenceElementType">
+  <UAObjectType NodeId="ns=1;i=1016" BrowseName="1:AASReferenceElementType">
     <DisplayName>AASReferenceElementType</DisplayName>
     <Description Locale="en">A reference element is a data element that defines a logical reference to another element within the same or another AAS or a reference to an external object or entity.</Description>
     <References>
@@ -969,7 +969,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1017" BrowseName="AASRelationshipElementType">
+  <UAObjectType NodeId="ns=1;i=1017" BrowseName="1:AASRelationshipElementType">
     <DisplayName>AASRelationshipElementType</DisplayName>
     <Description Locale="en">A relationship element is used to define a relationship between two referable elements.</Description>
     <References>
@@ -978,14 +978,14 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1018" BrowseName="OperationVariableType">
+  <UAObjectType NodeId="ns=1;i=1018" BrowseName="1:OperationVariableType">
     <DisplayName>OperationVariableType</DisplayName>
     <Description Locale="en">An operation variable is a submodel element that is used as input or output variable of an operation.</Description>
     <References>
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1019" BrowseName="AASOperationType">
+  <UAObjectType NodeId="ns=1;i=1019" BrowseName="1:AASOperationType">
     <DisplayName>AASOperationType</DisplayName>
     <Description Locale="en">An operation is a submodel element with input and output variables.</Description>
     <References>
@@ -995,7 +995,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=1008</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1020" BrowseName="AASConceptDictionaryType">
+  <UAObjectType NodeId="ns=1;i=1020" BrowseName="1:AASConceptDictionaryType">
     <DisplayName>AASConceptDictionaryType</DisplayName>
     <Description Locale="en">A dictionary contains elements that can be reused. The concept dictionary contains concept descriptions. Typically a concept description dictionary of an AAS contains only concept descriptions of elements used within submodels of the AAS</Description>
     <References>
@@ -1005,7 +1005,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1022" BrowseName="AASViewType">
+  <UAObjectType NodeId="ns=1;i=1022" BrowseName="1:AASViewType">
     <DisplayName>AASViewType</DisplayName>
     <Description Locale="en">A view is a collection of referable elements w.r.t. to a specific viewpoint of one or more stakeholders.</Description>
     <References>
@@ -1017,7 +1017,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1023" BrowseName="AASAssetType">
+  <UAObjectType NodeId="ns=1;i=1023" BrowseName="1:AASAssetType">
     <DisplayName>AASAssetType</DisplayName>
     <Description Locale="en">An Asset describes meta data of an asset that is represented by an AAS. The asset may either represent an asset type or an asset instance. The asset has a globally unique identifier plus – if needed – additional domain specific(proprietary) identifiers. </Description>
     <References>
@@ -1031,7 +1031,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=1024" BrowseName="AASAssetAdministrationShellType">
+  <UAObjectType NodeId="ns=1;i=1024" BrowseName="1:AASAssetAdministrationShellType">
     <DisplayName>AASAssetAdministrationShellType</DisplayName>
     <Description Locale="en">An AssetAdministration Shell.</Description>
     <References>
@@ -1048,7 +1048,7 @@
       <Reference ReferenceType="i=45" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=2000" BrowseName="IAASIdentifiableType">
+  <UAObjectType NodeId="ns=1;i=2000" BrowseName="1:IAASIdentifiableType">
     <DisplayName>IAASIdentifiableType</DisplayName>
     <Description Locale="en">An element that has a globally unique identifier. </Description>
     <References>
@@ -1057,7 +1057,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=2001</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=2001" BrowseName="IAASReferableType">
+  <UAObjectType NodeId="ns=1;i=2001" BrowseName="1:IAASReferableType">
     <DisplayName>IAASReferableType</DisplayName>
     <Description Locale="en">An element that is referable but has no globally unique. The id of the element is unique within the name space of the element.</Description>
     <References>
@@ -1066,7 +1066,7 @@
       <Reference ReferenceType="i=45">ns=1;i=2000</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=3000" BrowseName="AASDataSpecificationType">
+  <UAObjectType NodeId="ns=1;i=3000" BrowseName="1:AASDataSpecificationType">
     <DisplayName>AASDataSpecificationType</DisplayName>
     <Description Locale="en">A data specification template defines the additional attributes an element may or shall have.</Description>
     <References>
@@ -1075,7 +1075,7 @@
       <Reference ReferenceType="i=45">ns=1;i=3001</Reference>
     </References>
   </UAObjectType>
-  <UAObjectType NodeId="ns=1;i=3001" BrowseName="AASDataSpecificationIEC61360Type">
+  <UAObjectType NodeId="ns=1;i=3001" BrowseName="1:AASDataSpecificationIEC61360Type">
     <DisplayName>AASDataSpecificationIEC61360Type</DisplayName>
     <Description Locale="en">Data Specification Template conformant to IEC61360.</Description>
     <References>
@@ -1095,7 +1095,7 @@
       <Reference ReferenceType="i=45" IsForward="false">ns=1;i=3000</Reference>
     </References>
   </UAObjectType>
-  <UAReferenceType NodeId="ns=1;i=4000" BrowseName="AASReference">
+  <UAReferenceType NodeId="ns=1;i=4000" BrowseName="1:AASReference">
     <DisplayName>AASReference</DisplayName>
     <References />
     <InverseName>AASReferencedBy</InverseName>

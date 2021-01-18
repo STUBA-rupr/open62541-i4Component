@@ -15,12 +15,36 @@ if(NOT CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     set(PROJECT_BINARY_DIR ${CMAKE_BINARY_DIR})
 endif()
 
+# follows aproach from https://github.com/open62541/open62541/issues/3747
+
+#ua_generate_nodeid_header(
+#    NAME "i4aas"
+#    FILE_CSV "${FILE_CSV_DIRPREFIX}/OpcUai4aasModel.csv"
+#    OUTPUT_DIR "${PROJECT_SOURCE_DIR}/src_generated"
+#    TARGET_SUFFIX "ids-i4aas"
+#    ID_PREFIX "I4AAS_"
+#)
+
+#ua_generate_nodeset(
+#    NAME "i4aas"
+#    FILE "${FILE_NS_DIRPREFIX}/EcI4.0-STM32_rA02_Nodeset2_part1.xml"
+#    OUTPUT_DIR "${PROJECT_SOURCE_DIR}/src_generated"
+#   # First NS0 Types, then other dependent namespaces
+#    DEPENDS_TYPES "UA_TYPES"
+#    DEPENDS_NS "${open62541_NODESET_DIR}/Schema/Opc.Ua.NodeSet2.xml"
+#)
+
+
 # generate namespace from XML file
 ua_generate_nodeset_and_datatypes(
-        NAME "EIc40"
-        FILE_NS "${FILE_NS_DIRPREFIX}/EcI4.0-STM32_rA02_Nodeset2.xml"
-        DEPENDS "${CMAKE_SOURCE_DIR}/tools/schema/Opc.Ua.NodeSet2.xml"
-    )
+        NAME "i4aas"
+        FILE_CSV "${FILE_CSV_DIRPREFIX}/OpcUai4aasModel.csv"
+        FILE_BSD "${FILE_BSD_DIRPREFIX}/Opc.Ua.i4aas.Types.bsd"        
+        NAMESPACE_MAP "2:http://opcfoundation.org/UA/i4aas;3:http://admin-shell.io/samples/i4aas/instance"
+        FILE_NS "${FILE_NS_DIRPREFIX}/EcI4.0-STM32_rA02_Nodeset2_part1.xml"
+        #DEPENDS "${CMAKE_SOURCE_DIR}/tools/schema/Opc.Ua.NodeSet2.xml"
+        INTERNAL
+   )
 
 # generate namespace from XML file
 #if(NOT CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)

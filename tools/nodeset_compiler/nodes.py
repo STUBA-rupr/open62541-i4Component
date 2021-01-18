@@ -179,6 +179,7 @@ class Node(object):
             self.dataType.ns = nsMapping[self.dataType.ns]
         new_refs = set()
         for ref in self.references:
+            print("ref.source.ns: %d, ref.target.ns %d" % (ref.source.ns, ref.target.ns))
             ref.source.ns = nsMapping[ref.source.ns]
             ref.target.ns = nsMapping[ref.target.ns]
             ref.referenceType.ns = nsMapping[ref.referenceType.ns]

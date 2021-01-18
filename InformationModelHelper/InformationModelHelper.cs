@@ -34,7 +34,11 @@ namespace InformationModelHelper
                 }
             }
         }
-
+        /// <summary>
+        /// Adds also "<namespaceindex>:" prefix to browsename
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <param name="uaNodeSets"></param>
         public static void SplitNodeSet2byNamespaces(Stream stream, out Opc.Ua.Export.UANodeSet[] uaNodeSets)
         {
             Opc.Ua.Export.UANodeSet uaNodeSet;
@@ -56,6 +60,9 @@ namespace InformationModelHelper
 
                 // remove all nodes from other namespaces
                 uaNodeSets[ii].Items = uaNodeSet.Items.Where(i => i.NodeId.StartsWith("ns=" + (ii + 1))).ToArray();
+
+                // update browsename
+                uaNodeSets[ii].Items.ToList().ForEach(u => u.BrowseName = (ii+1) + ":" + u.BrowseName);
             }
         }
         /// <summary>
@@ -81,6 +88,25 @@ namespace InformationModelHelper
             stream = new MemoryStream();
             xDoc.Save(stream);
             // Rewind the stream ready to read from it elsewhere
+            stream.Position = 0;
+        }
+
+        public static void GenerateNodeIdCSV(Opc.Ua.Export.UANodeSet uaNodeSet, out Stream stream)
+        {
+            stream = new MemoryStream();
+
+            int  len = typeof(Opc.Ua.Export.UANodeSet).Namespace.Length;
+            
+            StreamWriter streamWriter = new StreamWriter(stream);
+            uaNodeSet.Items.ToList().ForEach(
+                i => streamWriter.WriteLine(
+                    i.BrowseName + "," +
+                    (uint)(new Opc.Ua.NodeId(i.NodeId)).Identifier + "," +
+                    i.GetType().ToString().Substring(len + 1)
+                ));
+            // necessary to have all data
+            streamWriter.Flush();
+            // rewind 
             stream.Position = 0;
         }
     }

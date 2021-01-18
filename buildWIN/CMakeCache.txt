@@ -840,6 +840,12 @@ UA_NODESET_EXAMPLE_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/s
 UA_NODESET_EXAMPLE_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_example_generated.c
 //UA_NODESET_EXAMPLE target
 UA_NODESET_EXAMPLE_TARGET:INTERNAL=open62541-generator-ns-example
+//UA_NODESET_I4AAS header files
+UA_NODESET_I4AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_i4aas_generated.h
+//UA_NODESET_I4AAS source files
+UA_NODESET_I4AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_i4aas_generated.c
+//UA_NODESET_I4AAS target
+UA_NODESET_I4AAS_TARGET:INTERNAL=open62541-generator-ns-i4aas
 //UA_NODESET_NS0 header files
 UA_NODESET_NS0_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated.h
 //UA_NODESET_NS0 source files
@@ -876,6 +882,10 @@ UA_TYPES_DI_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_gene
 UA_TYPES_DI_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_di_generated.c
 //types header files
 UA_TYPES_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_generated_encoding_binary.h
+//types_i4aas header files
+UA_TYPES_I4AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated_encoding_binary.h
+//types_i4aas source files
+UA_TYPES_I4AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated.c
 //types_powerlink header files
 UA_TYPES_POWERLINK_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated_encoding_binary.h
 //types_powerlink source files

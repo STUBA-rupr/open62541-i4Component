@@ -1,4 +1,4 @@
-/* Generated from Opc.Ua.i4aas.Types.bsd with script C:/Projects/open62541-i4Component/tools/generate_datatypes.py * on host VM-WIN16-FEI by user rudolf at 2021-01-18 04:35:50 */
+/* Generated from Opc.Ua.i4aas.Types.bsd with script C:/Projects/open62541-i4Component/tools/generate_datatypes.py * on host VM-WIN16-FEI by user rudolf at 2021-01-20 11:07:03 */
 
 #ifndef TYPES_I4AAS_GENERATED_H_
 #define TYPES_I4AAS_GENERATED_H_

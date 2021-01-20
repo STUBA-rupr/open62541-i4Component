@@ -62,7 +62,8 @@ namespace InformationModelHelper
                 uaNodeSets[ii].Items = uaNodeSet.Items.Where(i => i.NodeId.StartsWith("ns=" + (ii + 1))).ToArray();
 
                 // update browsename
-                uaNodeSets[ii].Items.ToList().ForEach(u => u.BrowseName = (ii+1) + ":" + u.BrowseName);
+                uaNodeSets[ii].Items.Where(u => u.GetType().ToString().EndsWith("UAObjectType")).ToList().ForEach(u => u.BrowseName = (ii + 1) + ":" + u.BrowseName);
+                //uaNodeSets[ii].Items.Wh .ToList().ForEach(u => u.BrowseName = (ii+1) + ":" + u.BrowseName);
             }
         }
         /// <summary>

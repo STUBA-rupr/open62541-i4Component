@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
            LastModified="2020-06-02T00:00:00Z" 
@@ -49,7 +49,8 @@
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
   </Aliases>
-<UAVariable NodeId="ns=1;i=1" BrowseName="1:IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
+  
+<UAVariable NodeId="ns=1;i=1" BrowseName="IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>IdType</DisplayName>
     <Description Locale="en">IdType</Description>
     <References>
@@ -58,7 +59,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=2" BrowseName="1:Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=2" BrowseName="Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>Id</DisplayName>
     <Description Locale="en">Id</Description>
     <References>
@@ -67,6 +68,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
+    
   <UAObjectType NodeId="ns=1;i=3" BrowseName="1:AASIrdiConceptDescriptionType">
     <DisplayName>AASIrdiConceptDescriptionType</DisplayName>
     <Description Locale="en">The semantics of a property or other elements that may have a semantic description is defined by a concept description. The description of the concept should follow a standardized schema (realized as data specification template).</Description>
@@ -570,7 +572,7 @@
       <Boolean xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">false</Boolean>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=45" BrowseName="1:MimeType" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=45" BrowseName="1:MimeType" ParentNodeId="ns=1;i=1013" DataType="String" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -579,7 +581,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=46" BrowseName="1:Value" ParentNodeId="ns=1;i=1013" DataType="ns=1;i=1" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=46" BrowseName="1:Value" ParentNodeId="ns=1;i=1013" DataType="String" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -1088,8 +1090,10 @@
     <DisplayName>AASDataSpecificationIEC61360Type</DisplayName>
     <Description Locale="en">Data Specification Template conformant to IEC61360.</Description>
     <References>
+    <!-- 
       <Reference ReferenceType="i=47">ns=2;i=10</Reference>
       <Reference ReferenceType="i=47">ns=2;i=13</Reference>
+      -->
       <Reference ReferenceType="i=47">ns=1;i=19</Reference>
       <Reference ReferenceType="i=17603">ns=1;i=2000</Reference>
       <Reference ReferenceType="i=46">ns=1;i=9</Reference>

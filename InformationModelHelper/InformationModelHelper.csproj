@@ -219,10 +219,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="EcI4.0-STM32_rA03_Nodeset2.csv" />
     <None Include="packages.config" />
     <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EcI4.0-STM32_rA03_Nodeset2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="EcI4.0-STM32_rA03_Nodeset2_part1.xml" />
+    <Content Include="Opc.Ua.AAS.Nodeset2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Aliases.xml" />
     <Content Include="EcI4.0-STM32_rA02_Nodeset2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

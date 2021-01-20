@@ -211,3 +211,5 @@ C:\Projects\open62541-i4Component\InformationModelHelper\obj\Debug\InformationMo
 C:\Projects\open62541-i4Component\InformationModelHelper\obj\Debug\InformationModelHelper.csproj.CopyComplete
 C:\Projects\open62541-i4Component\InformationModelHelper\obj\Debug\InformationModelHelper.exe
 C:\Projects\open62541-i4Component\InformationModelHelper\obj\Debug\InformationModelHelper.pdb
+C:\Projects\open62541-i4Component\InformationModelHelper\bin\Debug\Opc.Ua.AAS.Nodeset2.xml
+C:\Projects\open62541-i4Component\InformationModelHelper\bin\Debug\EcI4.0-STM32_rA03_Nodeset2.xml

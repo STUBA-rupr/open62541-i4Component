@@ -184,7 +184,7 @@ def generateCommonVariableCode(node, nodeset):
         code.append("/* DataType inherited */")
 
     dataTypeNode = nodeset.getBaseDataType(nodeset.getDataTypeNode(node.dataType))
-
+    # print("processing node: " + str(node.id))
     if dataTypeNode is None:
         raise RuntimeError("Cannot get BaseDataType for dataType : " + str(node.dataType) + " of node " + node.browseName.name + " " + str(node.id))
 

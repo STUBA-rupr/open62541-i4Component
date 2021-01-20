@@ -822,6 +822,12 @@ UA_FORCE_CPP-ADVANCED:INTERNAL=1
 UA_MSVC_FORCE_STATIC_CRT-ADVANCED:INTERNAL=1
 //STRINGS property for variable: UA_NAMESPACE_ZERO
 UA_NAMESPACE_ZERO-STRINGS:INTERNAL=MINIMAL;REDUCED;FULL
+//UA_NODESET_AAS header files
+UA_NODESET_AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_AAS_generated.h
+//UA_NODESET_AAS source files
+UA_NODESET_AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_AAS_generated.c
+//UA_NODESET_AAS target
+UA_NODESET_AAS_TARGET:INTERNAL=open62541-generator-ns-AAS
 //UA_NODESET_DI header files
 UA_NODESET_DI_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_di_generated.h
 //UA_NODESET_DI source files
@@ -876,6 +882,10 @@ UA_PACK_DEBIAN-ADVANCED:INTERNAL=1
 UA_TRANSPORT_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport_generated_encoding_binary.h
 //transport source files
 UA_TRANSPORT_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport_generated.c
+//types_AAS header files
+UA_TYPES_AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_AAS_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_AAS_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_AAS_generated_encoding_binary.h
+//types_AAS source files
+UA_TYPES_AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_AAS_generated.c
 //types_di header files
 UA_TYPES_DI_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_di_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_di_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_di_generated_encoding_binary.h
 //types_di source files

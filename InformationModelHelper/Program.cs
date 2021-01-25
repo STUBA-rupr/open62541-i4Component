@@ -17,23 +17,56 @@ namespace InformationModelHelper
 
             InformationModelHelper.FixNodeSet2(ref stream);
             InformationModelHelper.SplitNodeSet2byNamespaces(stream, out uaNodeSets);
-            InformationModelHelper.GenerateNodeIdCSV(uaNodeSets[0], out stream);
 
-            using (FileStream file = File.Create("../../" + nsName + ".csv"))
+            // add reference OrganizedBy to AASROOT to point to Objects (ns=0;i=85)
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                uaNodeSets[1].Items.First(i => i.BrowseName.EndsWith("AASROOT")).NodeId,
+                "ns=0;i=85",
+                InformationModelHelper.GetAliasValue("Organizes"),
+                false,
+                false);
+
+            // add degC to temperature.value
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                "ns=2;i=209",
+                "ns=2;i=109",
+                InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
+
+            // add hPa to pressure.value
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                "ns=2;i=224",
+                "ns=2;i=133",
+                InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
+
+            // add % to humidity.value
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                "ns=2;i=237",
+                "ns=2;i=121",
+                InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
+
+            // replace DataType="ns=1;i=1" or DataType="ns=1;i=2" with String
+            
+
+            for (int ii = 0; ii < uaNodeSets.Count(); ii++)
             {
-                stream.Position = 0;
-                stream.CopyTo(file);
-                file.Close();
-            }
-            
-            
-            for(int ii = 0; ii < uaNodeSets.Count(); ii++)
-            {                                
+                // save NS
                 using (Stream file = File.Create("../../" + nsName + "_part" + (ii + 1) + ".xml"))
                 {
                     uaNodeSets[ii].Write(file);                    
                     file.Close();
                 }
+
+                // save CSV
+                InformationModelHelper.GenerateNodeIdCSV(uaNodeSets[ii], out stream);
+
+                using (FileStream file = File.Create("../../" + nsName + "_part" + (ii + 1) + ".csv"))
+                {
+                    stream.Position = 0;
+                    stream.CopyTo(file);
+                    file.Close();
+                }
+
+
             }
             
         }

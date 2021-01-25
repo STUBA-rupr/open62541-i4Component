@@ -1,17 +1,9 @@
-﻿<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           LastModified="2020-06-02T00:00:00Z"
-           xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
-    <NamespaceUris>
-        <Uri>http://opcfoundation.org/UA/i4aas</Uri>
-        <Uri>http://admin-shell.io/samples/i4aas/instance</Uri>
-    </NamespaceUris>
-    <Models>
-        <Model ModelUri="http://opcfoundation.org/UA/i4aas" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z">
-            <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" />
-        </Model>
-    </Models>
-    <Aliases>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/i4aas/</Uri>
+  </NamespaceUris>
+  <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
     <Alias Alias="Byte">i=3</Alias>
@@ -47,6 +39,7 @@
     <Alias Alias="HasModellingRule">i=37</Alias>
     <Alias Alias="HasEncoding">i=38</Alias>
     <Alias Alias="HasDescription">i=39</Alias>
+    <Alias Alias="Range">i=884</Alias>
   </Aliases>
   <UAVariable NodeId="ns=1;i=1" BrowseName="IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>IdType</DisplayName>

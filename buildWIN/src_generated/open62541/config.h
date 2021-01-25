@@ -11,8 +11,8 @@
 #define UA_OPEN62541_VER_MAJOR 1
 #define UA_OPEN62541_VER_MINOR 1
 #define UA_OPEN62541_VER_PATCH 2
-#define UA_OPEN62541_VER_LABEL "-295-gc1a1204a-dirty" /* Release candidate label, etc. */
-#define UA_OPEN62541_VER_COMMIT "v1.1.2-295-gc1a1204a-dirty"
+#define UA_OPEN62541_VER_LABEL "-296-gea9eeb0e-dirty" /* Release candidate label, etc. */
+#define UA_OPEN62541_VER_COMMIT "v1.1.2-296-gea9eeb0e-dirty"
 
 /**
  * Feature Options

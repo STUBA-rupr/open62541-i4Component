@@ -27,6 +27,15 @@
     <ClCompile Include="open62541.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="namespace_instance_generated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="types_i4aas_generated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="types_instance_generated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="i4aas_nodeids.h">
@@ -39,6 +48,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="types_i4aas_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="instance_nodeids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="namespace_instance_generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="types_instance_generated.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

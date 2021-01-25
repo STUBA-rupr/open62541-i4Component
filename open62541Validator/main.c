@@ -3,6 +3,7 @@
 #pragma warning(disable : 4996)
 
 #include "namespace_i4aas_generated.h"
+#include "namespace_instance_generated.h"
 #include "open62541.h"
 
 
@@ -77,9 +78,18 @@ int main() {
         return (int)UA_STATUSCODE_BADUNEXPECTEDERROR;
     }
 
+    retval |= namespace_instance_generated(server);
+    if(retval != UA_STATUSCODE_GOOD) {
+        UA_LOG_ERROR(UA_Log_Stdout, UA_LOGCATEGORY_SERVER,
+                     "Adding the namespace_instance_generated namespace failed. Please "
+                     "check previous "
+                     "error output.");
+        UA_Server_delete(server);
+        return (int)UA_STATUSCODE_BADUNEXPECTEDERROR;
+    }
+
     // Add method call backs
-    ns[0] = UA_Server_addNamespace(server, "http://opcfoundation.org/UA/");
-    ns[1] = UA_Server_addNamespace(server, "http://opcfoundation.org/UA/i4aas");
+    
 
     /*#if defined(UA_ENABLE_METHODCALLS) && defined(UA_ENABLE_SUBSCRIPTIONS)
             retval |= UA_Server_setMethodNode_callback(server,

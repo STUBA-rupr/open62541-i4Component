@@ -13,6 +13,59 @@ namespace InformationModelHelper
 {
     public class InformationModelHelper
     {
+        public static string GetAliasValue(string aliasName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+
+            using (Stream stream = typeof(InformationModelHelper).Assembly.GetManifestResourceStream("InformationModelHelper.Aliases.xml"))
+            {
+                XDocument xDoc = XDocument.Load(stream);
+
+                XElement root = xDoc.Root;
+                XPathNavigator nav = root.CreateNavigator();
+                XNamespace ns = nav.NamespaceURI;
+                XName name = ns + "Alias";
+
+                return xDoc.Descendants(name).First(e => e.Attribute("Alias").Value.Equals(aliasName)).Value;
+            }
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="uaNodeSet">as string e.g. ns=2;i=101</param>
+        /// <param name="srcNodeId">as string e.g. ns=2;i=101</param>
+        /// <param name="dstNodeId">as string e.g. ns=2;i=101</param>
+        /// <param name="refType">as string e.g. i=35</param>
+        /// <param name="addReverse">add reverse reference</param>
+        /// <param name="isForward"></param>
+        public static void AddReference(ref Opc.Ua.Export.UANodeSet uaNodeSet, string srcNodeId, string dstNodeId, 
+            string refType, bool addReverse, bool isForward = true)
+        {
+            try
+            {
+                // find source
+                Opc.Ua.Export.UANode uANode;
+                uANode = uaNodeSet.Items.First(i => i.NodeId.Equals(srcNodeId));
+
+                // Concate new reference
+                uANode.References = uANode.References.Concat(new[] {new Opc.Ua.Export.Reference() {
+                    IsForward = isForward, ReferenceType = refType, Value = dstNodeId }}).ToArray();
+
+                //add reverse reference
+                if(addReverse)
+                {
+                    uANode = uaNodeSet.Items.First(i => i.NodeId.Equals(dstNodeId));
+                    // Concate new reference
+                    uANode.References = uANode.References.Concat(new[] {new Opc.Ua.Export.Reference() {
+                    IsForward = !isForward, ReferenceType = refType, Value = srcNodeId }}).ToArray();
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw e;
+            }
+        }
         public static void AddAliases(ref Opc.Ua.Export.UANodeSet uaNodeSet)
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -73,7 +126,7 @@ namespace InformationModelHelper
         public static void FixNodeSet2(ref Stream stream)
         {
             XDocument xDoc = XDocument.Load(stream);
-            // remove duplicates reference keys in References
+            // 1: Remove duplicates reference keys in References
             XElement root = xDoc.Root;            
             XPathNavigator nav = root.CreateNavigator();
             XNamespace ns = nav.NamespaceURI;

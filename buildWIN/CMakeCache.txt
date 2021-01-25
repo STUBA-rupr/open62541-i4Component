@@ -852,6 +852,12 @@ UA_NODESET_I4AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src
 UA_NODESET_I4AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_i4aas_generated.c
 //UA_NODESET_I4AAS target
 UA_NODESET_I4AAS_TARGET:INTERNAL=open62541-generator-ns-i4aas
+//UA_NODESET_INSTANCE header files
+UA_NODESET_INSTANCE_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_instance_generated.h
+//UA_NODESET_INSTANCE source files
+UA_NODESET_INSTANCE_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace_instance_generated.c
+//UA_NODESET_INSTANCE target
+UA_NODESET_INSTANCE_TARGET:INTERNAL=open62541-generator-ns-instance
 //UA_NODESET_NS0 header files
 UA_NODESET_NS0_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated.h
 //UA_NODESET_NS0 source files
@@ -896,6 +902,10 @@ UA_TYPES_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generat
 UA_TYPES_I4AAS_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated_encoding_binary.h
 //types_i4aas source files
 UA_TYPES_I4AAS_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_i4aas_generated.c
+//types_instance header files
+UA_TYPES_INSTANCE_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_instance_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_instance_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_instance_generated_encoding_binary.h
+//types_instance source files
+UA_TYPES_INSTANCE_SOURCES:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_instance_generated.c
 //types_powerlink header files
 UA_TYPES_POWERLINK_HEADERS:INTERNAL=C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated_handling.h;C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types_powerlink_generated_encoding_binary.h
 //types_powerlink source files

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-20T09:51:09.5320958Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LastModified="2021-01-25T10:11:57.3449231Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/i4aas/</Uri>
     <Uri>http://admin-shell.io/samples/i4aas/instance/</Uri>
@@ -2053,7 +2053,7 @@
       <Reference ReferenceType="i=46">ns=2;i=207</Reference>
       <Reference ReferenceType="i=46">ns=2;i=208</Reference>
       <Reference ReferenceType="i=47">ns=2;i=209</Reference>
-      <Reference ReferenceType="i=17597">ns=2;i=644</Reference>
+      <Reference ReferenceType="i=17597">ns=2;i=99</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1010</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=188</Reference>
     </References>
@@ -2088,7 +2088,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">(ConceptDescription)(local)[IRI]https://www.phi-ware.com/ids/cd/2461_3162_1102_4297</String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">(ConceptDescription)(local)[IRI]www.example.com/ids/cd/9070_4140_1012_6743</String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=2;i=207" BrowseName="Kind" ParentNodeId="ns=2;i=203" DataType="i=12" AccessLevel="3">
@@ -2211,7 +2211,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <Float xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">23.5</Float>
+      <Float xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">23.51</Float>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=2;i=218" BrowseName="pressure" ParentNodeId="ns=2;i=188">
@@ -2225,6 +2225,7 @@
       <Reference ReferenceType="i=46">ns=2;i=222</Reference>
       <Reference ReferenceType="i=46">ns=2;i=223</Reference>
       <Reference ReferenceType="i=47">ns=2;i=224</Reference>
+      <Reference ReferenceType="i=17597">ns=2;i=123</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1010</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=188</Reference>
     </References>
@@ -2258,6 +2259,9 @@
       <Reference ReferenceType="i=46" IsForward="false">ns=2;i=220</Reference>
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">(ConceptDescription)(local)[IRI]https://www.phi-ware.com/ids/cd/1381_3162_1102_0495</String>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=2;i=222" BrowseName="Kind" ParentNodeId="ns=2;i=218" DataType="i=12" AccessLevel="3">
     <DisplayName>Kind</DisplayName>
@@ -2348,11 +2352,10 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">float</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=230" BrowseName="Value" ParentNodeId="ns=2;i=224" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=230" BrowseName="Value" ParentNodeId="ns=2;i=224" DataType="i=10" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -2360,8 +2363,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </String>
+      <Float xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1001.2</Float>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=2;i=231" BrowseName="humidity" ParentNodeId="ns=2;i=188">
@@ -2375,6 +2377,7 @@
       <Reference ReferenceType="i=46">ns=2;i=235</Reference>
       <Reference ReferenceType="i=46">ns=2;i=236</Reference>
       <Reference ReferenceType="i=47">ns=2;i=237</Reference>
+      <Reference ReferenceType="i=17597">ns=2;i=111</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1010</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=188</Reference>
     </References>
@@ -2408,6 +2411,9 @@
       <Reference ReferenceType="i=46" IsForward="false">ns=2;i=233</Reference>
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">(ConceptDescription)(local)[IRI]https://www.phi-ware.com/ids/cd/7281_3162_1102_1618</String>
+    </Value>
   </UAVariable>
   <UAVariable NodeId="ns=2;i=235" BrowseName="Kind" ParentNodeId="ns=2;i=231" DataType="i=12" AccessLevel="3">
     <DisplayName>Kind</DisplayName>
@@ -2498,11 +2504,10 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </String>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">float</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=243" BrowseName="Value" ParentNodeId="ns=2;i=237" DataType="i=12" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=243" BrowseName="Value" ParentNodeId="ns=2;i=237" DataType="i=10" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -2510,8 +2515,7 @@
       <Reference ReferenceType="i=40">i=68</Reference>
     </References>
     <Value>
-      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
-      </String>
+      <Float xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">60.54</Float>
     </Value>
   </UAVariable>
   <UAObject NodeId="ns=2;i=244" BrowseName="Documentation" ParentNodeId="ns=2;i=135">
@@ -8231,7 +8235,7 @@
       <ListOfLocalizedText xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
         <LocalizedText>
           <Locale>EN?</Locale>
-          <Text>humidity</Text>
+          <Text>value</Text>
         </LocalizedText>
       </ListOfLocalizedText>
     </Value>
@@ -8413,13 +8417,11 @@
       <Reference ReferenceType="i=47">ns=2;i=641</Reference>
       <Reference ReferenceType="i=47">ns=2;i=642</Reference>
       <Reference ReferenceType="i=47">ns=2;i=643</Reference>
-      <Reference ReferenceType="i=47">ns=2;i=644</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=96</Reference>
       <Reference ReferenceType="i=47">ns=2;i=640</Reference>
       <Reference ReferenceType="i=47">ns=2;i=641</Reference>
       <Reference ReferenceType="i=47">ns=2;i=642</Reference>
       <Reference ReferenceType="i=47">ns=2;i=643</Reference>
-      <Reference ReferenceType="i=47">ns=2;i=644</Reference>
       <Reference ReferenceType="i=40">i=17591</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=96</Reference>
     </References>
@@ -8457,14 +8459,6 @@
     <References>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=98</Reference>
       <Reference ReferenceType="i=40">ns=1;i=3</Reference>
-      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=98</Reference>
-    </References>
-  </UAObject>
-  <UAObject NodeId="ns=2;i=644" BrowseName="0:https://www.phi-ware.com/ids/cd/2461_3162_1102_4297" ParentNodeId="ns=2;i=98">
-    <DisplayName>https://www.phi-ware.com/ids/cd/2461_3162_1102_4297</DisplayName>
-    <Description Locale="en">https://www.phi-ware.com/ids/cd/2461_3162_1102_4297</Description>
-    <References>
-      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=98</Reference>
       <Reference ReferenceType="i=47" IsForward="false">ns=2;i=98</Reference>
     </References>
   </UAObject>

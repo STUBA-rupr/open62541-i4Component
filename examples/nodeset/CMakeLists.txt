@@ -46,6 +46,17 @@ ua_generate_nodeset_and_datatypes(
         INTERNAL
    )
 
+   # generate namespace from XML file
+ua_generate_nodeset_and_datatypes(
+        NAME "instance"
+        FILE_CSV "${FILE_CSV_DIRPREFIX}/EcI4.0-STM32_rA03_Nodeset2_part2.csv"
+        FILE_BSD "${FILE_BSD_DIRPREFIX}/Opc.Ua.i4aas.Types.bsd"        
+        NAMESPACE_MAP "2:http://opcfoundation.org/UA/i4aas;3:http://admin-shell.io/samples/i4aas/instance"
+        FILE_NS "${FILE_NS_DIRPREFIX}/EcI4.0-STM32_rA03_Nodeset2_part2.xml"
+        DEPENDS "i4aas"
+        INTERNAL
+   )
+
 # generate namespace from XML file
 #if(NOT CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
     ua_generate_nodeset_and_datatypes(

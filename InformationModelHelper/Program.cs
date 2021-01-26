@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Linq;
+using System.Xml.XPath;
+using System.Reflection;
 
 namespace InformationModelHelper
 {
@@ -45,7 +48,28 @@ namespace InformationModelHelper
                 InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
 
             // replace DataType="ns=1;i=1" or DataType="ns=1;i=2" with String
+
+            // Load range XML
+            var assembly = Assembly.GetExecutingAssembly();
+            // Get the highest nodeid
+            int maxId = uaNodeSets[1].Items.Where(i => i.NodeId.Split(';')[0].Equals("ns=2")).Max(i => Int32.Parse(i.NodeId.Split(';')[1].Split('=')[1]));
+
+            using (Stream _stream = typeof(InformationModelHelper).Assembly.GetManifestResourceStream("InformationModelHelper.UAVariableRange.xml"))
+            {
+                XDocument xDoc = XDocument.Load(_stream);
+
+                XElement root = xDoc.Root;
+                XPathNavigator nav = root.CreateNavigator();
+                XNamespace ns = nav.NamespaceURI;
+
+            }
+
+                
             
+
+
+            return;
+
 
             for (int ii = 0; ii < uaNodeSets.Count(); ii++)
             {

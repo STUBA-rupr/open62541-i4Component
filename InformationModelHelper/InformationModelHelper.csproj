@@ -231,6 +231,9 @@
     <Content Include="Opc.Ua.AAS.Nodeset2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="UAVariableRange.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Aliases.xml" />
     <Content Include="EcI4.0-STM32_rA02_Nodeset2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

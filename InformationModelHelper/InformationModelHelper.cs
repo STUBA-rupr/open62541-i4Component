@@ -12,7 +12,7 @@ using System.Reflection;
 namespace InformationModelHelper
 {
     public class InformationModelHelper
-    {
+    {        
         public static string GetAliasValue(string aliasName)
         {
             var assembly = Assembly.GetExecutingAssembly();

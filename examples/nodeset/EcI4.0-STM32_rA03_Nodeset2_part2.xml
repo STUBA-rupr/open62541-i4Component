@@ -1,4 +1,4 @@
-<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+﻿<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            LastModified="2020-06-02T00:00:00Z"
            xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
@@ -951,6 +951,7 @@
       <Reference ReferenceType="i=17597">ns=2;i=99</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
       <Reference ReferenceType="i=47">ns=2;i=109</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=644</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=2;i=210" BrowseName="Category" ParentNodeId="ns=2;i=209" DataType="i=12" AccessLevel="3">
@@ -1114,6 +1115,7 @@
       <Reference ReferenceType="i=17597">ns=2;i=123</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
       <Reference ReferenceType="i=47">ns=2;i=133</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=645</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=2;i=225" BrowseName="Category" ParentNodeId="ns=2;i=224" DataType="i=12" AccessLevel="3">
@@ -1260,6 +1262,7 @@
       <Reference ReferenceType="i=17597">ns=2;i=111</Reference>
       <Reference ReferenceType="i=40">ns=1;i=1009</Reference>
       <Reference ReferenceType="i=47">ns=2;i=121</Reference>
+      <Reference ReferenceType="i=47">ns=2;i=646</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=2;i=238" BrowseName="Category" ParentNodeId="ns=2;i=237" DataType="i=12" AccessLevel="3">
@@ -7046,4 +7049,64 @@
       <Reference ReferenceType="i=40">ns=1;i=3</Reference>
     </References>
   </UAObject>
+  <UAVariable NodeId="ns=2;i=644" BrowseName="2:range" DataType="Range" AccessLevel="3">
+    <DisplayName>range</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=209</Reference>
+    </References>
+    <Value>
+      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=885</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:Range>
+            <uax:Low>-40</uax:Low>
+            <uax:High>120</uax:High>
+          </uax:Range>
+        </uax:Body>
+      </uax:ExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=645" BrowseName="2:range" DataType="Range" AccessLevel="3">
+    <DisplayName>range</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=224</Reference>
+    </References>
+    <Value>
+      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=885</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:Range>
+            <uax:Low>260</uax:Low>
+            <uax:High>1260</uax:High>
+          </uax:Range>
+        </uax:Body>
+      </uax:ExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=2;i=646" BrowseName="2:range" DataType="Range" AccessLevel="3">
+    <DisplayName>range</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="i=47" IsForward="false">ns=2;i=237</Reference>
+    </References>
+    <Value>
+      <uax:ExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+        <uax:TypeId>
+          <uax:Identifier>i=885</uax:Identifier>
+        </uax:TypeId>
+        <uax:Body>
+          <uax:Range>
+            <uax:Low>0</uax:Low>
+            <uax:High>100</uax:High>
+          </uax:Range>
+        </uax:Body>
+      </uax:ExtensionObject>
+    </Value>
+  </UAVariable>
 </UANodeSet>

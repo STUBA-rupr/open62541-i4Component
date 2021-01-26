@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\open62541Validator"
+    "\\examples",
+    "\\examples\\nodeset"
   ],
-  "SelectedNode": "\\open62541Validator\\namespace_instance_generated.h",
+  "SelectedNode": "\\examples\\nodeset\\EcI4.0-STM32_rA03_Nodeset2_part2.xml",
   "PreviewInSolutionExplorer": false
 }

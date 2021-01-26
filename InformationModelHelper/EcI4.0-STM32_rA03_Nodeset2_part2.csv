@@ -1,555 +1,558 @@
-Identification,10,UAObject
-IdType,11,UAVariable
-Id,12,UAVariable
-Administration,13,UAObject
-Version,14,UAVariable
-Revision,15,UAVariable
-AASROOT,95,UAObject
-EcI4.0,135,UAObject
-Category,136,UAVariable
-Identification,137,UAObject
-IdType,138,UAVariable
-Id,139,UAVariable
-Administration,140,UAObject
-Version,141,UAVariable
-Revision,142,UAVariable
-DerivedFrom,143,UAObject
-Keys,144,UAVariable
-Asset,145,UAObject
-Category,146,UAVariable
-Identification,147,UAObject
-IdType,148,UAVariable
-Id,149,UAVariable
-Administration,150,UAObject
-Version,151,UAVariable
-Revision,152,UAVariable
-Kind,153,UAVariable
-AssetIdentificationModel,154,UAObject
-Keys,155,UAVariable
-Identification,156,UAObject
-Category,157,UAVariable
-Identification,158,UAObject
-IdType,159,UAVariable
-Id,160,UAVariable
-SemanticId,161,UAObject
-Keys,162,UAVariable
-Kind,163,UAVariable
-Manufacturer,164,UAObject
-Category,165,UAVariable
-SemanticId,166,UAObject
-Keys,167,UAVariable
-Kind,168,UAVariable
-ValueId,169,UAObject
-Keys,170,UAVariable
-ValueType,171,UAVariable
-Value,172,UAVariable
-ProductDesignation,173,UAObject
-Category,174,UAVariable
-SemanticId,175,UAObject
-Keys,176,UAVariable
-Kind,177,UAVariable
-ValueType,178,UAVariable
-Value,179,UAVariable
-TechnicalData,180,UAObject
-Category,181,UAVariable
-Identification,182,UAObject
-IdType,183,UAVariable
-Id,184,UAVariable
-SemanticId,185,UAObject
-Keys,186,UAVariable
-Kind,187,UAVariable
-OperationalData,188,UAObject
-Category,189,UAVariable
-Identification,190,UAObject
-IdType,191,UAVariable
-Id,192,UAVariable
-SemanticId,193,UAObject
-Keys,194,UAVariable
-Kind,195,UAVariable
-endPointURL,196,UAObject
-Category,197,UAVariable
-SemanticId,198,UAObject
-Keys,199,UAVariable
-Kind,200,UAVariable
-ValueType,201,UAVariable
-Value,202,UAVariable
-temperature,203,UAObject
-Category,204,UAVariable
-SemanticId,205,UAObject
-Keys,206,UAVariable
-Kind,207,UAVariable
-AllowDuplicates,208,UAVariable
-value,209,UAObject
-Category,210,UAVariable
-SemanticId,211,UAObject
-Keys,212,UAVariable
-Kind,213,UAVariable
-ValueId,214,UAObject
-Keys,215,UAVariable
-ValueType,216,UAVariable
-Value,217,UAVariable
-pressure,218,UAObject
-Category,219,UAVariable
-SemanticId,220,UAObject
-Keys,221,UAVariable
-Kind,222,UAVariable
-AllowDuplicates,223,UAVariable
-value,224,UAObject
-Category,225,UAVariable
-SemanticId,226,UAObject
-Keys,227,UAVariable
-Kind,228,UAVariable
-ValueType,229,UAVariable
-Value,230,UAVariable
-humidity,231,UAObject
-Category,232,UAVariable
-SemanticId,233,UAObject
-Keys,234,UAVariable
-Kind,235,UAVariable
-AllowDuplicates,236,UAVariable
-value,237,UAObject
-Category,238,UAVariable
-SemanticId,239,UAObject
-Keys,240,UAVariable
-Kind,241,UAVariable
-ValueType,242,UAVariable
-Value,243,UAVariable
-Documentation,244,UAObject
-Category,245,UAVariable
-Identification,246,UAObject
-IdType,247,UAVariable
-Id,248,UAVariable
-SemanticId,249,UAObject
-Keys,250,UAVariable
-Kind,251,UAVariable
-STM32F769I-DISC1,252,UAObject
-Category,253,UAVariable
-Identification,254,UAObject
-IdType,255,UAVariable
-Id,256,UAVariable
-Administration,257,UAObject
-Version,258,UAVariable
-Revision,259,UAVariable
-SemanticId,260,UAObject
-Keys,261,UAVariable
-Kind,262,UAVariable
-Identification,263,UAObject
-Category,264,UAVariable
-SemanticId,265,UAObject
-Keys,266,UAVariable
-Kind,267,UAVariable
-AllowDuplicates,268,UAVariable
-Manufacturer,269,UAObject
-Category,270,UAVariable
-SemanticId,271,UAObject
-Keys,272,UAVariable
-Kind,273,UAVariable
-ValueType,274,UAVariable
-Value,275,UAVariable
-ProductDesignation,276,UAObject
-Category,277,UAVariable
-SemanticId,278,UAObject
-Keys,279,UAVariable
-Kind,280,UAVariable
-ValueType,281,UAVariable
-Value,282,UAVariable
-SerialNumber,283,UAObject
-Category,284,UAVariable
-SemanticId,285,UAObject
-Keys,286,UAVariable
-Kind,287,UAVariable
-ValueType,288,UAVariable
-Value,289,UAVariable
-Revision,290,UAObject
-SemanticId,291,UAObject
-Keys,292,UAVariable
-Kind,293,UAVariable
-ValueType,294,UAVariable
-Value,295,UAVariable
-TechnicalData,296,UAObject
-Category,297,UAVariable
-SemanticId,298,UAObject
-Keys,299,UAVariable
-Kind,300,UAVariable
-AllowDuplicates,301,UAVariable
-Microcontroller ,302,UAObject
-Category,303,UAVariable
-SemanticId,304,UAObject
-Keys,305,UAVariable
-Kind,306,UAVariable
-ValueType,307,UAVariable
-Value,308,UAVariable
-FLASH,309,UAObject
-Category,310,UAVariable
-SemanticId,311,UAObject
-Keys,312,UAVariable
-Kind,313,UAVariable
-ValueType,314,UAVariable
-Value,315,UAVariable
-RAM,316,UAObject
-Category,317,UAVariable
-SemanticId,318,UAObject
-Keys,319,UAVariable
-Kind,320,UAVariable
-ValueType,321,UAVariable
-Value,322,UAVariable
-SDRAM,323,UAObject
-Category,324,UAVariable
-SemanticId,325,UAObject
-Keys,326,UAVariable
-Kind,327,UAVariable
-ValueType,328,UAVariable
-Value,329,UAVariable
-QSPI FLASH,330,UAObject
-Category,331,UAVariable
-SemanticId,332,UAObject
-Keys,333,UAVariable
-Kind,334,UAVariable
-ValueType,335,UAVariable
-Value,336,UAVariable
-OperationalData,337,UAObject
-Category,338,UAVariable
-SemanticId,339,UAObject
-Keys,340,UAVariable
-Kind,341,UAVariable
-AllowDuplicates,342,UAVariable
-OS,343,UAObject
-Category,344,UAVariable
-SemanticId,345,UAObject
-Keys,346,UAVariable
-Kind,347,UAVariable
-ValueType,348,UAVariable
-Value,349,UAVariable
-OPCUA,350,UAObject
-Category,351,UAVariable
-SemanticId,352,UAObject
-Keys,353,UAVariable
-Kind,354,UAVariable
-ValueType,355,UAVariable
-Value,356,UAVariable
-Documentation,357,UAObject
-Category,358,UAVariable
-SemanticId,359,UAObject
-Keys,360,UAVariable
-Kind,361,UAVariable
-AllowDuplicates,362,UAVariable
-User manual,363,UAObject
-Category,364,UAVariable
-SemanticId,365,UAObject
-Keys,366,UAVariable
-Kind,367,UAVariable
-AllowDuplicates,368,UAVariable
-DocumentId,369,UAObject
-Category,370,UAVariable
-SemanticId,371,UAObject
-Keys,372,UAVariable
-Kind,373,UAVariable
-ValueType,374,UAVariable
-Value,375,UAVariable
-Title,376,UAObject
-Category,377,UAVariable
-SemanticId,378,UAObject
-Keys,379,UAVariable
-Kind,380,UAVariable
-ValueType,381,UAVariable
-Value,382,UAVariable
-Language,383,UAObject
-Category,384,UAVariable
-SemanticId,385,UAObject
-Keys,386,UAVariable
-Kind,387,UAVariable
-ValueType,388,UAVariable
-Value,389,UAVariable
-PreviewImage,390,UAObject
-Category,391,UAVariable
-SemanticId,392,UAObject
-Keys,393,UAVariable
-Kind,394,UAVariable
-MimeType,395,UAVariable
-Value,396,UAVariable
-File,397,UAObject
-MimeType,398,UAVariable
-OpenCount,399,UAVariable
-Size,400,UAVariable
-UserWritable,401,UAVariable
-Writable,402,UAVariable
-Open,403,UAMethod
-InputArguments,404,UAVariable
-OutputArguments,405,UAVariable
-Close,406,UAMethod
-InputArguments,407,UAVariable
-Read,408,UAMethod
-InputArguments,409,UAVariable
-OutputArguments,410,UAVariable
-Write,411,UAMethod
-InputArguments,412,UAVariable
-GetPosition,413,UAMethod
-InputArguments,414,UAVariable
-OutputArguments,415,UAVariable
-SetPosition,416,UAMethod
-InputArguments,417,UAVariable
-DigitalFile_PDF,418,UAObject
-Category,419,UAVariable
-SemanticId,420,UAObject
-Keys,421,UAVariable
-Kind,422,UAVariable
-MimeType,423,UAVariable
-Value,424,UAVariable
-File,425,UAObject
-MimeType,426,UAVariable
-OpenCount,427,UAVariable
-Size,428,UAVariable
-UserWritable,429,UAVariable
-Writable,430,UAVariable
-Open,431,UAMethod
-InputArguments,432,UAVariable
-OutputArguments,433,UAVariable
-Close,434,UAMethod
-InputArguments,435,UAVariable
-Read,436,UAMethod
-InputArguments,437,UAVariable
-OutputArguments,438,UAVariable
-Write,439,UAMethod
-InputArguments,440,UAVariable
-GetPosition,441,UAMethod
-InputArguments,442,UAVariable
-OutputArguments,443,UAVariable
-SetPosition,444,UAMethod
-InputArguments,445,UAVariable
-X-NUCLEO-IKS01A3,446,UAObject
-Category,447,UAVariable
-Identification,448,UAObject
-IdType,449,UAVariable
-Id,450,UAVariable
-Administration,451,UAObject
-Version,452,UAVariable
-Revision,453,UAVariable
-SemanticId,454,UAObject
-Keys,455,UAVariable
-Kind,456,UAVariable
-Identification,457,UAObject
-Category,458,UAVariable
-SemanticId,459,UAObject
-Keys,460,UAVariable
-Kind,461,UAVariable
-AllowDuplicates,462,UAVariable
-Manufacturer,463,UAObject
-Category,464,UAVariable
-SemanticId,465,UAObject
-Keys,466,UAVariable
-Kind,467,UAVariable
-ValueType,468,UAVariable
-Value,469,UAVariable
-ProductDesignation,470,UAObject
-Category,471,UAVariable
-SemanticId,472,UAObject
-Keys,473,UAVariable
-Kind,474,UAVariable
-ValueType,475,UAVariable
-Value,476,UAVariable
-SerialNumber,477,UAObject
-Category,478,UAVariable
-SemanticId,479,UAObject
-Keys,480,UAVariable
-Kind,481,UAVariable
-ValueType,482,UAVariable
-Value,483,UAVariable
-Revision,484,UAObject
-SemanticId,485,UAObject
-Keys,486,UAVariable
-Kind,487,UAVariable
-ValueType,488,UAVariable
-Value,489,UAVariable
-TechnicalData,490,UAObject
-Category,491,UAVariable
-SemanticId,492,UAObject
-Keys,493,UAVariable
-Kind,494,UAVariable
-AllowDuplicates,495,UAVariable
-accelerometer,496,UAObject
-Category,497,UAVariable
-SemanticId,498,UAObject
-Keys,499,UAVariable
-Kind,500,UAVariable
-ValueType,501,UAVariable
-Value,502,UAVariable
-magnetometer,503,UAObject
-Category,504,UAVariable
-SemanticId,505,UAObject
-Keys,506,UAVariable
-Kind,507,UAVariable
-ValueType,508,UAVariable
-Value,509,UAVariable
-accelerometer,510,UAObject
-Category,511,UAVariable
-SemanticId,512,UAObject
-Keys,513,UAVariable
-Kind,514,UAVariable
-ValueType,515,UAVariable
-Value,516,UAVariable
-pressureSensor,517,UAObject
-Category,518,UAVariable
-SemanticId,519,UAObject
-Keys,520,UAVariable
-Kind,521,UAVariable
-ValueType,522,UAVariable
-Value,523,UAVariable
-temperatureSensor,524,UAObject
-Category,525,UAVariable
-SemanticId,526,UAObject
-Keys,527,UAVariable
-Kind,528,UAVariable
-ValueType,529,UAVariable
-Value,530,UAVariable
-humiditySensor,531,UAObject
-Category,532,UAVariable
-SemanticId,533,UAObject
-Keys,534,UAVariable
-Kind,535,UAVariable
-ValueType,536,UAVariable
-Value,537,UAVariable
-OperationalData,538,UAObject
-Category,539,UAVariable
-SemanticId,540,UAObject
-Keys,541,UAVariable
-Kind,542,UAVariable
-AllowDuplicates,543,UAVariable
-OperatingRange,544,UAObject
-Category,545,UAVariable
-SemanticId,546,UAObject
-Keys,547,UAVariable
-Kind,548,UAVariable
-ValueType,549,UAVariable
-Value,550,UAVariable
-Documentation,551,UAObject
-Category,552,UAVariable
-SemanticId,553,UAObject
-Keys,554,UAVariable
-Kind,555,UAVariable
-AllowDuplicates,556,UAVariable
-User manual,557,UAObject
-Category,558,UAVariable
-SemanticId,559,UAObject
-Keys,560,UAVariable
-Kind,561,UAVariable
-AllowDuplicates,562,UAVariable
-DocumentId,563,UAObject
-Category,564,UAVariable
-SemanticId,565,UAObject
-Keys,566,UAVariable
-Kind,567,UAVariable
-ValueType,568,UAVariable
-Value,569,UAVariable
-Title,570,UAObject
-Category,571,UAVariable
-SemanticId,572,UAObject
-Keys,573,UAVariable
-Kind,574,UAVariable
-ValueType,575,UAVariable
-Value,576,UAVariable
-Language,577,UAObject
-Category,578,UAVariable
-SemanticId,579,UAObject
-Keys,580,UAVariable
-Kind,581,UAVariable
-ValueType,582,UAVariable
-Value,583,UAVariable
-PreviewImage,584,UAObject
-Category,585,UAVariable
-SemanticId,586,UAObject
-Keys,587,UAVariable
-Kind,588,UAVariable
-MimeType,589,UAVariable
-Value,590,UAVariable
-File,591,UAObject
-MimeType,592,UAVariable
-OpenCount,593,UAVariable
-Size,594,UAVariable
-UserWritable,595,UAVariable
-Writable,596,UAVariable
-Open,597,UAMethod
-InputArguments,598,UAVariable
-OutputArguments,599,UAVariable
-Close,600,UAMethod
-InputArguments,601,UAVariable
-Read,602,UAMethod
-InputArguments,603,UAVariable
-OutputArguments,604,UAVariable
-Write,605,UAMethod
-InputArguments,606,UAVariable
-GetPosition,607,UAMethod
-InputArguments,608,UAVariable
-OutputArguments,609,UAVariable
-SetPosition,610,UAMethod
-InputArguments,611,UAVariable
-DigitalFile_PDF,612,UAObject
-Category,613,UAVariable
-SemanticId,614,UAObject
-Keys,615,UAVariable
-Kind,616,UAVariable
-MimeType,617,UAVariable
-Value,618,UAVariable
-File,619,UAObject
-MimeType,620,UAVariable
-OpenCount,621,UAVariable
-Size,622,UAVariable
-UserWritable,623,UAVariable
-Writable,624,UAVariable
-Open,625,UAMethod
-InputArguments,626,UAVariable
-OutputArguments,627,UAVariable
-Close,628,UAMethod
-InputArguments,629,UAVariable
-Read,630,UAMethod
-InputArguments,631,UAVariable
-OutputArguments,632,UAVariable
-Write,633,UAMethod
-InputArguments,634,UAVariable
-GetPosition,635,UAMethod
-InputArguments,636,UAVariable
-OutputArguments,637,UAVariable
-SetPosition,638,UAMethod
-InputArguments,639,UAVariable
-Dictionaries,96,UAObject
-ConceptDescriptions,97,UAObject
-www.example.com/ids/cd/9070_4140_1012_6743,99,UAObject
-Category,100,UAVariable
-Identification,101,UAObject
-IdType,102,UAVariable
-Id,103,UAVariable
-DataSpecification,104,UAObject
-Keys,105,UAVariable
-DataSpecificationIEC61360,106,UAObject
-PreferredName,107,UAVariable
-ShortName,108,UAVariable
-Unit,109,UAVariable
-DataType,110,UAVariable
-0:https://www.phi-ware.com/ids/cd/7281_3162_1102_1618,111,UAObject
-Category,112,UAVariable
-Identification,113,UAObject
-IdType,114,UAVariable
-Id,115,UAVariable
-DataSpecification,116,UAObject
-Keys,117,UAVariable
-DataSpecificationIEC61360,118,UAObject
-PreferredName,119,UAVariable
-ShortName,120,UAVariable
-Unit,121,UAVariable
-DataType,122,UAVariable
-0:https://www.phi-ware.com/ids/cd/1381_3162_1102_0495,123,UAObject
-Category,124,UAVariable
-Identification,125,UAObject
-IdType,126,UAVariable
-Id,127,UAVariable
-DataSpecification,128,UAObject
-Keys,129,UAVariable
-DataSpecificationIEC61360,130,UAObject
-PreferredName,131,UAVariable
-ShortName,132,UAVariable
-Unit,133,UAVariable
-DataType,134,UAVariable
-DictionaryEntries,98,UAObject
-0173-1#01-ADN198#009,640,UAObject
-0173-1#02-AAO677#002,641,UAObject
-0173-1#02-AAW338#001,642,UAObject
-0173-1#02-AAO694#001,643,UAObject
+Identification_10, 10,UAObject
+IdType_11, 11,UAVariable
+Id_12, 12,UAVariable
+Administration_13, 13,UAObject
+Version_14, 14,UAVariable
+Revision_15, 15,UAVariable
+AASROOT_95, 95,UAObject
+EcI4.0_135, 135,UAObject
+Category_136, 136,UAVariable
+Identification_137, 137,UAObject
+IdType_138, 138,UAVariable
+Id_139, 139,UAVariable
+Administration_140, 140,UAObject
+Version_141, 141,UAVariable
+Revision_142, 142,UAVariable
+DerivedFrom_143, 143,UAObject
+Keys_144, 144,UAVariable
+Asset_145, 145,UAObject
+Category_146, 146,UAVariable
+Identification_147, 147,UAObject
+IdType_148, 148,UAVariable
+Id_149, 149,UAVariable
+Administration_150, 150,UAObject
+Version_151, 151,UAVariable
+Revision_152, 152,UAVariable
+Kind_153, 153,UAVariable
+AssetIdentificationModel_154, 154,UAObject
+Keys_155, 155,UAVariable
+Identification_156, 156,UAObject
+Category_157, 157,UAVariable
+Identification_158, 158,UAObject
+IdType_159, 159,UAVariable
+Id_160, 160,UAVariable
+SemanticId_161, 161,UAObject
+Keys_162, 162,UAVariable
+Kind_163, 163,UAVariable
+Manufacturer_164, 164,UAObject
+Category_165, 165,UAVariable
+SemanticId_166, 166,UAObject
+Keys_167, 167,UAVariable
+Kind_168, 168,UAVariable
+ValueId_169, 169,UAObject
+Keys_170, 170,UAVariable
+ValueType_171, 171,UAVariable
+Value_172, 172,UAVariable
+ProductDesignation_173, 173,UAObject
+Category_174, 174,UAVariable
+SemanticId_175, 175,UAObject
+Keys_176, 176,UAVariable
+Kind_177, 177,UAVariable
+ValueType_178, 178,UAVariable
+Value_179, 179,UAVariable
+TechnicalData_180, 180,UAObject
+Category_181, 181,UAVariable
+Identification_182, 182,UAObject
+IdType_183, 183,UAVariable
+Id_184, 184,UAVariable
+SemanticId_185, 185,UAObject
+Keys_186, 186,UAVariable
+Kind_187, 187,UAVariable
+OperationalData_188, 188,UAObject
+Category_189, 189,UAVariable
+Identification_190, 190,UAObject
+IdType_191, 191,UAVariable
+Id_192, 192,UAVariable
+SemanticId_193, 193,UAObject
+Keys_194, 194,UAVariable
+Kind_195, 195,UAVariable
+endPointURL_196, 196,UAObject
+Category_197, 197,UAVariable
+SemanticId_198, 198,UAObject
+Keys_199, 199,UAVariable
+Kind_200, 200,UAVariable
+ValueType_201, 201,UAVariable
+Value_202, 202,UAVariable
+temperature_203, 203,UAObject
+Category_204, 204,UAVariable
+SemanticId_205, 205,UAObject
+Keys_206, 206,UAVariable
+Kind_207, 207,UAVariable
+AllowDuplicates_208, 208,UAVariable
+value_209, 209,UAObject
+Category_210, 210,UAVariable
+SemanticId_211, 211,UAObject
+Keys_212, 212,UAVariable
+Kind_213, 213,UAVariable
+ValueId_214, 214,UAObject
+Keys_215, 215,UAVariable
+ValueType_216, 216,UAVariable
+Value_217, 217,UAVariable
+pressure_218, 218,UAObject
+Category_219, 219,UAVariable
+SemanticId_220, 220,UAObject
+Keys_221, 221,UAVariable
+Kind_222, 222,UAVariable
+AllowDuplicates_223, 223,UAVariable
+value_224, 224,UAObject
+Category_225, 225,UAVariable
+SemanticId_226, 226,UAObject
+Keys_227, 227,UAVariable
+Kind_228, 228,UAVariable
+ValueType_229, 229,UAVariable
+Value_230, 230,UAVariable
+humidity_231, 231,UAObject
+Category_232, 232,UAVariable
+SemanticId_233, 233,UAObject
+Keys_234, 234,UAVariable
+Kind_235, 235,UAVariable
+AllowDuplicates_236, 236,UAVariable
+value_237, 237,UAObject
+Category_238, 238,UAVariable
+SemanticId_239, 239,UAObject
+Keys_240, 240,UAVariable
+Kind_241, 241,UAVariable
+ValueType_242, 242,UAVariable
+Value_243, 243,UAVariable
+Documentation_244, 244,UAObject
+Category_245, 245,UAVariable
+Identification_246, 246,UAObject
+IdType_247, 247,UAVariable
+Id_248, 248,UAVariable
+SemanticId_249, 249,UAObject
+Keys_250, 250,UAVariable
+Kind_251, 251,UAVariable
+STM32F769I-DISC1_252, 252,UAObject
+Category_253, 253,UAVariable
+Identification_254, 254,UAObject
+IdType_255, 255,UAVariable
+Id_256, 256,UAVariable
+Administration_257, 257,UAObject
+Version_258, 258,UAVariable
+Revision_259, 259,UAVariable
+SemanticId_260, 260,UAObject
+Keys_261, 261,UAVariable
+Kind_262, 262,UAVariable
+Identification_263, 263,UAObject
+Category_264, 264,UAVariable
+SemanticId_265, 265,UAObject
+Keys_266, 266,UAVariable
+Kind_267, 267,UAVariable
+AllowDuplicates_268, 268,UAVariable
+Manufacturer_269, 269,UAObject
+Category_270, 270,UAVariable
+SemanticId_271, 271,UAObject
+Keys_272, 272,UAVariable
+Kind_273, 273,UAVariable
+ValueType_274, 274,UAVariable
+Value_275, 275,UAVariable
+ProductDesignation_276, 276,UAObject
+Category_277, 277,UAVariable
+SemanticId_278, 278,UAObject
+Keys_279, 279,UAVariable
+Kind_280, 280,UAVariable
+ValueType_281, 281,UAVariable
+Value_282, 282,UAVariable
+SerialNumber_283, 283,UAObject
+Category_284, 284,UAVariable
+SemanticId_285, 285,UAObject
+Keys_286, 286,UAVariable
+Kind_287, 287,UAVariable
+ValueType_288, 288,UAVariable
+Value_289, 289,UAVariable
+Revision_290, 290,UAObject
+SemanticId_291, 291,UAObject
+Keys_292, 292,UAVariable
+Kind_293, 293,UAVariable
+ValueType_294, 294,UAVariable
+Value_295, 295,UAVariable
+TechnicalData_296, 296,UAObject
+Category_297, 297,UAVariable
+SemanticId_298, 298,UAObject
+Keys_299, 299,UAVariable
+Kind_300, 300,UAVariable
+AllowDuplicates_301, 301,UAVariable
+Microcontroller _302, 302,UAObject
+Category_303, 303,UAVariable
+SemanticId_304, 304,UAObject
+Keys_305, 305,UAVariable
+Kind_306, 306,UAVariable
+ValueType_307, 307,UAVariable
+Value_308, 308,UAVariable
+FLASH_309, 309,UAObject
+Category_310, 310,UAVariable
+SemanticId_311, 311,UAObject
+Keys_312, 312,UAVariable
+Kind_313, 313,UAVariable
+ValueType_314, 314,UAVariable
+Value_315, 315,UAVariable
+RAM_316, 316,UAObject
+Category_317, 317,UAVariable
+SemanticId_318, 318,UAObject
+Keys_319, 319,UAVariable
+Kind_320, 320,UAVariable
+ValueType_321, 321,UAVariable
+Value_322, 322,UAVariable
+SDRAM_323, 323,UAObject
+Category_324, 324,UAVariable
+SemanticId_325, 325,UAObject
+Keys_326, 326,UAVariable
+Kind_327, 327,UAVariable
+ValueType_328, 328,UAVariable
+Value_329, 329,UAVariable
+QSPI FLASH_330, 330,UAObject
+Category_331, 331,UAVariable
+SemanticId_332, 332,UAObject
+Keys_333, 333,UAVariable
+Kind_334, 334,UAVariable
+ValueType_335, 335,UAVariable
+Value_336, 336,UAVariable
+OperationalData_337, 337,UAObject
+Category_338, 338,UAVariable
+SemanticId_339, 339,UAObject
+Keys_340, 340,UAVariable
+Kind_341, 341,UAVariable
+AllowDuplicates_342, 342,UAVariable
+OS_343, 343,UAObject
+Category_344, 344,UAVariable
+SemanticId_345, 345,UAObject
+Keys_346, 346,UAVariable
+Kind_347, 347,UAVariable
+ValueType_348, 348,UAVariable
+Value_349, 349,UAVariable
+OPCUA_350, 350,UAObject
+Category_351, 351,UAVariable
+SemanticId_352, 352,UAObject
+Keys_353, 353,UAVariable
+Kind_354, 354,UAVariable
+ValueType_355, 355,UAVariable
+Value_356, 356,UAVariable
+Documentation_357, 357,UAObject
+Category_358, 358,UAVariable
+SemanticId_359, 359,UAObject
+Keys_360, 360,UAVariable
+Kind_361, 361,UAVariable
+AllowDuplicates_362, 362,UAVariable
+User manual_363, 363,UAObject
+Category_364, 364,UAVariable
+SemanticId_365, 365,UAObject
+Keys_366, 366,UAVariable
+Kind_367, 367,UAVariable
+AllowDuplicates_368, 368,UAVariable
+DocumentId_369, 369,UAObject
+Category_370, 370,UAVariable
+SemanticId_371, 371,UAObject
+Keys_372, 372,UAVariable
+Kind_373, 373,UAVariable
+ValueType_374, 374,UAVariable
+Value_375, 375,UAVariable
+Title_376, 376,UAObject
+Category_377, 377,UAVariable
+SemanticId_378, 378,UAObject
+Keys_379, 379,UAVariable
+Kind_380, 380,UAVariable
+ValueType_381, 381,UAVariable
+Value_382, 382,UAVariable
+Language_383, 383,UAObject
+Category_384, 384,UAVariable
+SemanticId_385, 385,UAObject
+Keys_386, 386,UAVariable
+Kind_387, 387,UAVariable
+ValueType_388, 388,UAVariable
+Value_389, 389,UAVariable
+PreviewImage_390, 390,UAObject
+Category_391, 391,UAVariable
+SemanticId_392, 392,UAObject
+Keys_393, 393,UAVariable
+Kind_394, 394,UAVariable
+MimeType_395, 395,UAVariable
+Value_396, 396,UAVariable
+File_397, 397,UAObject
+MimeType_398, 398,UAVariable
+OpenCount_399, 399,UAVariable
+Size_400, 400,UAVariable
+UserWritable_401, 401,UAVariable
+Writable_402, 402,UAVariable
+Open_403, 403,UAMethod
+InputArguments_404, 404,UAVariable
+OutputArguments_405, 405,UAVariable
+Close_406, 406,UAMethod
+InputArguments_407, 407,UAVariable
+Read_408, 408,UAMethod
+InputArguments_409, 409,UAVariable
+OutputArguments_410, 410,UAVariable
+Write_411, 411,UAMethod
+InputArguments_412, 412,UAVariable
+GetPosition_413, 413,UAMethod
+InputArguments_414, 414,UAVariable
+OutputArguments_415, 415,UAVariable
+SetPosition_416, 416,UAMethod
+InputArguments_417, 417,UAVariable
+DigitalFile_PDF_418, 418,UAObject
+Category_419, 419,UAVariable
+SemanticId_420, 420,UAObject
+Keys_421, 421,UAVariable
+Kind_422, 422,UAVariable
+MimeType_423, 423,UAVariable
+Value_424, 424,UAVariable
+File_425, 425,UAObject
+MimeType_426, 426,UAVariable
+OpenCount_427, 427,UAVariable
+Size_428, 428,UAVariable
+UserWritable_429, 429,UAVariable
+Writable_430, 430,UAVariable
+Open_431, 431,UAMethod
+InputArguments_432, 432,UAVariable
+OutputArguments_433, 433,UAVariable
+Close_434, 434,UAMethod
+InputArguments_435, 435,UAVariable
+Read_436, 436,UAMethod
+InputArguments_437, 437,UAVariable
+OutputArguments_438, 438,UAVariable
+Write_439, 439,UAMethod
+InputArguments_440, 440,UAVariable
+GetPosition_441, 441,UAMethod
+InputArguments_442, 442,UAVariable
+OutputArguments_443, 443,UAVariable
+SetPosition_444, 444,UAMethod
+InputArguments_445, 445,UAVariable
+X-NUCLEO-IKS01A3_446, 446,UAObject
+Category_447, 447,UAVariable
+Identification_448, 448,UAObject
+IdType_449, 449,UAVariable
+Id_450, 450,UAVariable
+Administration_451, 451,UAObject
+Version_452, 452,UAVariable
+Revision_453, 453,UAVariable
+SemanticId_454, 454,UAObject
+Keys_455, 455,UAVariable
+Kind_456, 456,UAVariable
+Identification_457, 457,UAObject
+Category_458, 458,UAVariable
+SemanticId_459, 459,UAObject
+Keys_460, 460,UAVariable
+Kind_461, 461,UAVariable
+AllowDuplicates_462, 462,UAVariable
+Manufacturer_463, 463,UAObject
+Category_464, 464,UAVariable
+SemanticId_465, 465,UAObject
+Keys_466, 466,UAVariable
+Kind_467, 467,UAVariable
+ValueType_468, 468,UAVariable
+Value_469, 469,UAVariable
+ProductDesignation_470, 470,UAObject
+Category_471, 471,UAVariable
+SemanticId_472, 472,UAObject
+Keys_473, 473,UAVariable
+Kind_474, 474,UAVariable
+ValueType_475, 475,UAVariable
+Value_476, 476,UAVariable
+SerialNumber_477, 477,UAObject
+Category_478, 478,UAVariable
+SemanticId_479, 479,UAObject
+Keys_480, 480,UAVariable
+Kind_481, 481,UAVariable
+ValueType_482, 482,UAVariable
+Value_483, 483,UAVariable
+Revision_484, 484,UAObject
+SemanticId_485, 485,UAObject
+Keys_486, 486,UAVariable
+Kind_487, 487,UAVariable
+ValueType_488, 488,UAVariable
+Value_489, 489,UAVariable
+TechnicalData_490, 490,UAObject
+Category_491, 491,UAVariable
+SemanticId_492, 492,UAObject
+Keys_493, 493,UAVariable
+Kind_494, 494,UAVariable
+AllowDuplicates_495, 495,UAVariable
+accelerometer_496, 496,UAObject
+Category_497, 497,UAVariable
+SemanticId_498, 498,UAObject
+Keys_499, 499,UAVariable
+Kind_500, 500,UAVariable
+ValueType_501, 501,UAVariable
+Value_502, 502,UAVariable
+magnetometer_503, 503,UAObject
+Category_504, 504,UAVariable
+SemanticId_505, 505,UAObject
+Keys_506, 506,UAVariable
+Kind_507, 507,UAVariable
+ValueType_508, 508,UAVariable
+Value_509, 509,UAVariable
+accelerometer_510, 510,UAObject
+Category_511, 511,UAVariable
+SemanticId_512, 512,UAObject
+Keys_513, 513,UAVariable
+Kind_514, 514,UAVariable
+ValueType_515, 515,UAVariable
+Value_516, 516,UAVariable
+pressureSensor_517, 517,UAObject
+Category_518, 518,UAVariable
+SemanticId_519, 519,UAObject
+Keys_520, 520,UAVariable
+Kind_521, 521,UAVariable
+ValueType_522, 522,UAVariable
+Value_523, 523,UAVariable
+temperatureSensor_524, 524,UAObject
+Category_525, 525,UAVariable
+SemanticId_526, 526,UAObject
+Keys_527, 527,UAVariable
+Kind_528, 528,UAVariable
+ValueType_529, 529,UAVariable
+Value_530, 530,UAVariable
+humiditySensor_531, 531,UAObject
+Category_532, 532,UAVariable
+SemanticId_533, 533,UAObject
+Keys_534, 534,UAVariable
+Kind_535, 535,UAVariable
+ValueType_536, 536,UAVariable
+Value_537, 537,UAVariable
+OperationalData_538, 538,UAObject
+Category_539, 539,UAVariable
+SemanticId_540, 540,UAObject
+Keys_541, 541,UAVariable
+Kind_542, 542,UAVariable
+AllowDuplicates_543, 543,UAVariable
+OperatingRange_544, 544,UAObject
+Category_545, 545,UAVariable
+SemanticId_546, 546,UAObject
+Keys_547, 547,UAVariable
+Kind_548, 548,UAVariable
+ValueType_549, 549,UAVariable
+Value_550, 550,UAVariable
+Documentation_551, 551,UAObject
+Category_552, 552,UAVariable
+SemanticId_553, 553,UAObject
+Keys_554, 554,UAVariable
+Kind_555, 555,UAVariable
+AllowDuplicates_556, 556,UAVariable
+User manual_557, 557,UAObject
+Category_558, 558,UAVariable
+SemanticId_559, 559,UAObject
+Keys_560, 560,UAVariable
+Kind_561, 561,UAVariable
+AllowDuplicates_562, 562,UAVariable
+DocumentId_563, 563,UAObject
+Category_564, 564,UAVariable
+SemanticId_565, 565,UAObject
+Keys_566, 566,UAVariable
+Kind_567, 567,UAVariable
+ValueType_568, 568,UAVariable
+Value_569, 569,UAVariable
+Title_570, 570,UAObject
+Category_571, 571,UAVariable
+SemanticId_572, 572,UAObject
+Keys_573, 573,UAVariable
+Kind_574, 574,UAVariable
+ValueType_575, 575,UAVariable
+Value_576, 576,UAVariable
+Language_577, 577,UAObject
+Category_578, 578,UAVariable
+SemanticId_579, 579,UAObject
+Keys_580, 580,UAVariable
+Kind_581, 581,UAVariable
+ValueType_582, 582,UAVariable
+Value_583, 583,UAVariable
+PreviewImage_584, 584,UAObject
+Category_585, 585,UAVariable
+SemanticId_586, 586,UAObject
+Keys_587, 587,UAVariable
+Kind_588, 588,UAVariable
+MimeType_589, 589,UAVariable
+Value_590, 590,UAVariable
+File_591, 591,UAObject
+MimeType_592, 592,UAVariable
+OpenCount_593, 593,UAVariable
+Size_594, 594,UAVariable
+UserWritable_595, 595,UAVariable
+Writable_596, 596,UAVariable
+Open_597, 597,UAMethod
+InputArguments_598, 598,UAVariable
+OutputArguments_599, 599,UAVariable
+Close_600, 600,UAMethod
+InputArguments_601, 601,UAVariable
+Read_602, 602,UAMethod
+InputArguments_603, 603,UAVariable
+OutputArguments_604, 604,UAVariable
+Write_605, 605,UAMethod
+InputArguments_606, 606,UAVariable
+GetPosition_607, 607,UAMethod
+InputArguments_608, 608,UAVariable
+OutputArguments_609, 609,UAVariable
+SetPosition_610, 610,UAMethod
+InputArguments_611, 611,UAVariable
+DigitalFile_PDF_612, 612,UAObject
+Category_613, 613,UAVariable
+SemanticId_614, 614,UAObject
+Keys_615, 615,UAVariable
+Kind_616, 616,UAVariable
+MimeType_617, 617,UAVariable
+Value_618, 618,UAVariable
+File_619, 619,UAObject
+MimeType_620, 620,UAVariable
+OpenCount_621, 621,UAVariable
+Size_622, 622,UAVariable
+UserWritable_623, 623,UAVariable
+Writable_624, 624,UAVariable
+Open_625, 625,UAMethod
+InputArguments_626, 626,UAVariable
+OutputArguments_627, 627,UAVariable
+Close_628, 628,UAMethod
+InputArguments_629, 629,UAVariable
+Read_630, 630,UAMethod
+InputArguments_631, 631,UAVariable
+OutputArguments_632, 632,UAVariable
+Write_633, 633,UAMethod
+InputArguments_634, 634,UAVariable
+GetPosition_635, 635,UAMethod
+InputArguments_636, 636,UAVariable
+OutputArguments_637, 637,UAVariable
+SetPosition_638, 638,UAMethod
+InputArguments_639, 639,UAVariable
+Dictionaries_96, 96,UAObject
+ConceptDescriptions_97, 97,UAObject
+www.example.com/ids/cd/9070_4140_1012_6743_99, 99,UAObject
+Category_100, 100,UAVariable
+Identification_101, 101,UAObject
+IdType_102, 102,UAVariable
+Id_103, 103,UAVariable
+DataSpecification_104, 104,UAObject
+Keys_105, 105,UAVariable
+DataSpecificationIEC61360_106, 106,UAObject
+PreferredName_107, 107,UAVariable
+ShortName_108, 108,UAVariable
+Unit_109, 109,UAVariable
+DataType_110, 110,UAVariable
+0:https://www.phi-ware.com/ids/cd/7281_3162_1102_1618_111, 111,UAObject
+Category_112, 112,UAVariable
+Identification_113, 113,UAObject
+IdType_114, 114,UAVariable
+Id_115, 115,UAVariable
+DataSpecification_116, 116,UAObject
+Keys_117, 117,UAVariable
+DataSpecificationIEC61360_118, 118,UAObject
+PreferredName_119, 119,UAVariable
+ShortName_120, 120,UAVariable
+Unit_121, 121,UAVariable
+DataType_122, 122,UAVariable
+0:https://www.phi-ware.com/ids/cd/1381_3162_1102_0495_123, 123,UAObject
+Category_124, 124,UAVariable
+Identification_125, 125,UAObject
+IdType_126, 126,UAVariable
+Id_127, 127,UAVariable
+DataSpecification_128, 128,UAObject
+Keys_129, 129,UAVariable
+DataSpecificationIEC61360_130, 130,UAObject
+PreferredName_131, 131,UAVariable
+ShortName_132, 132,UAVariable
+Unit_133, 133,UAVariable
+DataType_134, 134,UAVariable
+DictionaryEntries_98, 98,UAObject
+0173-1#01-ADN198#009_640, 640,UAObject
+0173-1#02-AAO677#002_641, 641,UAObject
+0173-1#02-AAW338#001_642, 642,UAObject
+0173-1#02-AAO694#001_643, 643,UAObject
+2:range_644, 644,UAVariable
+2:range_645, 645,UAVariable
+2:range_646, 646,UAVariable

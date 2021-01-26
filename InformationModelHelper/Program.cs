@@ -49,26 +49,32 @@ namespace InformationModelHelper
 
             // replace DataType="ns=1;i=1" or DataType="ns=1;i=2" with String
 
-            // Load range XML
-            var assembly = Assembly.GetExecutingAssembly();
             // Get the highest nodeid
-            int maxId = uaNodeSets[1].Items.Where(i => i.NodeId.Split(';')[0].Equals("ns=2")).Max(i => Int32.Parse(i.NodeId.Split(';')[1].Split('=')[1]));
+            uint maxId = uaNodeSets[1].Items.Where(i => i.NodeId.Split(';')[0].Equals("ns=2")).Max(i => UInt32.Parse(i.NodeId.Split(';')[1].Split('=')[1]));
 
-            using (Stream _stream = typeof(InformationModelHelper).Assembly.GetManifestResourceStream("InformationModelHelper.UAVariableRange.xml"))
-            {
-                XDocument xDoc = XDocument.Load(_stream);
+            // tempareture value range
+            uaNodeSets[1].Items = uaNodeSets[1].Items.Concat(new[] { InformationModelHelper.CreateUAVariable_Range(2, ++maxId, "-40", "120") }).ToArray();
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                dstNodeId: "ns=2;i=" + maxId.ToString(),
+                srcNodeId: "ns=2;i=209",
+                refType: InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
 
-                XElement root = xDoc.Root;
-                XPathNavigator nav = root.CreateNavigator();
-                XNamespace ns = nav.NamespaceURI;
+            // pressure.value range
+            uaNodeSets[1].Items = uaNodeSets[1].Items.Concat(new[] { InformationModelHelper.CreateUAVariable_Range(2, ++maxId, "260", "1260") }).ToArray();
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                dstNodeId: "ns=2;i=" + maxId.ToString(), 
+                srcNodeId: "ns=2;i=224",
+                refType: InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
 
-            }
+            // humidity.value range
+            uaNodeSets[1].Items = uaNodeSets[1].Items.Concat(new[] { InformationModelHelper.CreateUAVariable_Range(2, ++maxId, "0", "100") }).ToArray();
+            InformationModelHelper.AddReference(ref uaNodeSets[1],
+                dstNodeId: "ns=2;i=" + maxId.ToString(),
+                srcNodeId: "ns=2;i=237",
+                refType: InformationModelHelper.GetAliasValue("HasComponent"), addReverse: true, isForward: true);
 
-                
-            
 
-
-            return;
+            //            return;
 
 
             for (int ii = 0; ii < uaNodeSets.Count(); ii++)

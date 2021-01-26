@@ -8,7 +8,7 @@
 
 static UA_StatusCode function_namespace_i4aas_generated_0_begin(UA_Server *server, UA_UInt16* ns) {
 UA_StatusCode retVal = UA_STATUSCODE_GOOD;
-UA_ReferenceTypeAttributes attr = UA_ReferenceTypeAttributes_default;
+/*UA_ReferenceTypeAttributes attr = UA_ReferenceTypeAttributes_default;
 attr.inverseName  = UA_LOCALIZEDTEXT("", "AASReferencedBy");
 attr.displayName = UA_LOCALIZEDTEXT("", "AASReference");
 retVal |= UA_Server_addNode_begin(server, UA_NODECLASS_REFERENCETYPE,
@@ -17,12 +17,13 @@ UA_NODEID_NUMERIC(ns[0], 0),
 UA_NODEID_NUMERIC(ns[0], 0),
 UA_QUALIFIEDNAME(ns[0], "AASReference"),
  UA_NODEID_NULL,
-(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_REFERENCETYPEATTRIBUTES],NULL, NULL);
+(const UA_NodeAttributes*)&attr, &UA_TYPES[UA_TYPES_REFERENCETYPEATTRIBUTES],NULL, NULL);*/
 return retVal;
 }
 
 static UA_StatusCode function_namespace_i4aas_generated_0_finish(UA_Server *server, UA_UInt16* ns) {
-return UA_Server_addNode_finish(server, 
+    return UA_STATUSCODE_GOOD;
+        return UA_Server_addNode_finish(server, 
 UA_NODEID_NUMERIC(ns[1], 4000)
 );
 }

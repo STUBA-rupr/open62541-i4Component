@@ -12,7 +12,40 @@ using System.Reflection;
 namespace InformationModelHelper
 {
     public class InformationModelHelper
-    {        
+    {
+        public static Opc.Ua.Export.UANode CreateUAVariable_Range(uint nsIndex, uint nodeId, string low, string high)
+        {
+            using (Stream stream = typeof(InformationModelHelper).Assembly.GetManifestResourceStream("InformationModelHelper.UAVariableRange.xml"))
+            {
+                XDocument xDoc = XDocument.Load(stream);
+
+                XElement root = xDoc.Root;
+                XPathNavigator nav = root.CreateNavigator();
+                XNamespace ns = nav.NamespaceURI;
+                XName name = ns + "UAVariable";
+
+                Opc.Ua.Export.UANodeSet _uANodeSet;
+
+                // Define range for temperature
+                // -40:125
+                // update attributes
+                xDoc.Descendants(name).Attributes().First(e => e.Name.ToString().Equals("NodeId")).Value = "ns=" + nsIndex.ToString() + ";i=" + (nodeId).ToString();
+                xDoc.Descendants(name).Attributes().First(e => e.Name.ToString().Equals("BrowseName")).Value = nsIndex.ToString() + ":range";
+                // update range
+                xDoc.Descendants((XNamespace)"http://opcfoundation.org/UA/2008/02/Types.xsd" + "Low").First().Value = low;
+                xDoc.Descendants((XNamespace)"http://opcfoundation.org/UA/2008/02/Types.xsd" + "High").First().Value = high;
+                // save to stream 
+                Stream _stream = new MemoryStream();
+                xDoc.Save(_stream);
+                //xDoc.Save("c:/tmp/UAVariable.txt");
+                // Rewind the stream ready to read from it elsewhere
+                _stream.Position = 0;
+                // create nodeset
+                _uANodeSet = Opc.Ua.Export.UANodeSet.Read(_stream);
+                return _uANodeSet.Items[0];
+            }
+        }
+
         public static string GetAliasValue(string aliasName)
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -154,7 +187,7 @@ namespace InformationModelHelper
             StreamWriter streamWriter = new StreamWriter(stream);
             uaNodeSet.Items.ToList().ForEach(
                 i => streamWriter.WriteLine(
-                    i.BrowseName + "," +
+                    i.BrowseName + "_" + (uint)(new Opc.Ua.NodeId(i.NodeId)).Identifier +", " +
                     (uint)(new Opc.Ua.NodeId(i.NodeId)).Identifier + "," +
                     i.GetType().ToString().Substring(len + 1)
                 ));

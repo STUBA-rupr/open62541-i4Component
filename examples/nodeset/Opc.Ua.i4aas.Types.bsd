@@ -6,5 +6,11 @@
   DefaultByteOrder="LittleEndian"
   TargetNamespace="http://opcfoundation.org/UA/i4aas"
 >
-  <opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+<opc:Import Namespace="http://opcfoundation.org/UA/" Location="Opc.Ua.BinarySchema.bsd"/>
+<opc:EnumeratedType LengthInBits="32" Name="IdType">
+        <opc:EnumeratedValue Name="FragmentId" Value="1"/>
+        <opc:EnumeratedValue Name="IdShort" Value="2"/>
+        <opc:EnumeratedValue Name="IRDI" Value="3"/>
+        <opc:EnumeratedValue Name="IRI" Value="4"/>
+</opc:EnumeratedType>
 </opc:TypeDictionary>

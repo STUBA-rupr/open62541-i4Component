@@ -4,15 +4,23 @@
     <Uri>http://opcfoundation.org/UA/i4aas/</Uri>
     <Uri>http://admin-shell.io/samples/i4aas/instance/</Uri>
   </NamespaceUris>
-  <UAVariable NodeId="ns=1;i=1" BrowseName="IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
-    <DisplayName>IdType</DisplayName>
-    <Description Locale="en">IdType</Description>
-    <References>
-      <Reference ReferenceType="i=37">i=78</Reference>
-      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1000</Reference>
-      <Reference ReferenceType="i=40">i=68</Reference>
-    </References>
-  </UAVariable>
+  
+    <UADataType NodeId="ns=1;i=1" BrowseName="IdType">
+        <DisplayName>IdType</DisplayName>
+        <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part3/8.2.3</Documentation>
+        <References>
+            <Reference ReferenceType="HasProperty">i=7591</Reference>
+            <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
+        </References>
+        <Definition Name="IdType">
+            <Field Name="Custom" Value="0" />
+            <Field Name="FragmentId" Value="1" />
+            <Field Name="IdShort" Value="2" />
+            <Field Name="IRDI" Value="3" />
+            <Field Name="IRI" Value="4" />
+        </Definition>
+    </UADataType>    
+    
   <UAVariable NodeId="ns=1;i=2" BrowseName="Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>Id</DisplayName>
     <Description Locale="en">Id</Description>

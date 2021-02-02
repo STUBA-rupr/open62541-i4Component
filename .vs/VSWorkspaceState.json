@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\examples",
     "\\examples\\nodeset"
   ],
-  "SelectedNode": "\\examples\\nodeset\\EcI4.0-STM32_rA03_Nodeset2_part2.xml",
+  "SelectedNode": "\\buildWIN",
   "PreviewInSolutionExplorer": false
 }

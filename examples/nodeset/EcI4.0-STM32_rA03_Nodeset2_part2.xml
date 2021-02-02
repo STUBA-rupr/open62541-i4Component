@@ -1,4 +1,4 @@
-﻿<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            LastModified="2020-06-02T00:00:00Z"
            xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
@@ -9,6 +9,9 @@
     <Models>
         <Model ModelUri="http://opcfoundation.org/UA/i4aas" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" />
+        </Model>
+        <Model ModelUri="http://admin-shell.io/samples/i4aas/instance" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/i4aas" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z" />
         </Model>
     </Models>
   <Aliases>
@@ -2944,7 +2947,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=395" BrowseName="MimeType" ParentNodeId="ns=2;i=390" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=395" BrowseName="MimeType" ParentNodeId="ns=2;i=390" DataType="ns=1;i=2" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -2955,7 +2958,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">image/jpeg</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=396" BrowseName="Value" ParentNodeId="ns=2;i=390" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=396" BrowseName="Value" ParentNodeId="ns=2;i=390" DataType="ns=1;i=1" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -3492,7 +3495,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=423" BrowseName="MimeType" ParentNodeId="ns=2;i=418" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=423" BrowseName="MimeType" ParentNodeId="ns=2;i=418" DataType="ns=1;i=2" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -3503,7 +3506,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">application/pdf</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=424" BrowseName="Value" ParentNodeId="ns=2;i=418" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=424" BrowseName="Value" ParentNodeId="ns=2;i=418" DataType="ns=1;i=1" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -5516,7 +5519,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=589" BrowseName="MimeType" ParentNodeId="ns=2;i=584" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=589" BrowseName="MimeType" ParentNodeId="ns=2;i=584" DataType="ns=1;i=2" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -5527,7 +5530,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">image/jpeg</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=590" BrowseName="Value" ParentNodeId="ns=2;i=584" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=590" BrowseName="Value" ParentNodeId="ns=2;i=584" DataType="ns=1;i=1" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>
@@ -6064,7 +6067,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Instance</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=617" BrowseName="MimeType" ParentNodeId="ns=2;i=612" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=617" BrowseName="MimeType" ParentNodeId="ns=2;i=612" DataType="ns=1;i=2" AccessLevel="3">
     <DisplayName>MimeType</DisplayName>
     <Description Locale="en">MimeType</Description>
     <References>
@@ -6075,7 +6078,7 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">application/pdf</String>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=2;i=618" BrowseName="Value" ParentNodeId="ns=2;i=612" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=2;i=618" BrowseName="Value" ParentNodeId="ns=2;i=612" DataType="ns=1;i=1" AccessLevel="3">
     <DisplayName>Value</DisplayName>
     <Description Locale="en">Value</Description>
     <References>

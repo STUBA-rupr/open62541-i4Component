@@ -212,7 +212,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\examples\ALL_BUILD.vcxproj">
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\ALL_BUILD.vcxproj">
       <Project>{77E26A10-ED8A-388B-978B-6BACAB0EE90A}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

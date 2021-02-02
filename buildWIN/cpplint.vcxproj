@@ -105,7 +105,7 @@
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\types_generated.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/types_generated.c, src_generated/open62541/types_generated.h, src_generated/open62541/types_generated_handling.h, src_generated/open62541/types_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --type-bsd=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_minimal.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_method.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_subscriptions.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_query.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_dataaccess.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_typedescription.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -113,12 +113,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_minimal.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_method.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_subscriptions.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_query.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_dataaccess.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_typedescription.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/types_generated.c, src_generated/open62541/types_generated.h, src_generated/open62541/types_generated_handling.h, src_generated/open62541/types_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --type-bsd=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_minimal.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_method.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_subscriptions.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_query.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_dataaccess.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_typedescription.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -126,12 +126,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_minimal.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_method.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_subscriptions.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_query.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_dataaccess.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_typedescription.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/types_generated.c, src_generated/open62541/types_generated.h, src_generated/open62541/types_generated_handling.h, src_generated/open62541/types_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --type-bsd=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_minimal.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_method.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_subscriptions.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_query.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_dataaccess.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_typedescription.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,12 +139,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_minimal.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_method.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_subscriptions.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_query.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_dataaccess.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_typedescription.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/types_generated.c, src_generated/open62541/types_generated.h, src_generated/open62541/types_generated_handling.h, src_generated/open62541/types_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --type-bsd=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_minimal.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_method.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_subscriptions.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_query.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_dataaccess.txt --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_typedescription.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/types
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -152,7 +152,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.Types.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_minimal.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_method.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_subscriptions.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_query.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_dataaccess.txt;C:\Projects\open62541-i4Component\tools\schema\datatypes_typedescription.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\transport_generated.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -169,12 +169,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -182,12 +182,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -195,12 +195,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_datatypes.py --selected-types=C:/Projects/open62541-i4Component/tools/schema/datatypes_transport.txt --type-bsd=C:/Projects/open62541-i4Component/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.Types.bsd --type-csv=C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv --no-builtin --internal C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/transport
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -208,7 +208,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;C:\Projects\open62541-i4Component\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_handling.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -217,7 +217,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\statuscodes.h.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -225,12 +225,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -238,12 +238,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -251,12 +251,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,7 +264,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -273,7 +273,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\namespace0_generated.c.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/namespace0_generated.c, src_generated/open62541/namespace0_generated.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Reduced.xml --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Part8_Subset.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,12 +281,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.NodeSet2.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Reduced.xml;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Part8_Subset.xml;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/namespace0_generated.c, src_generated/open62541/namespace0_generated.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Reduced.xml --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Part8_Subset.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -294,12 +294,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.NodeSet2.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Reduced.xml;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Part8_Subset.xml;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/namespace0_generated.c, src_generated/open62541/namespace0_generated.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Reduced.xml --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Part8_Subset.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,12 +307,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.NodeSet2.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Reduced.xml;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Part8_Subset.xml;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/namespace0_generated.c, src_generated/open62541/namespace0_generated.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/Opc.Ua.NodeSet2.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/nodeset_compiler/nodeset_compiler.py --internal-headers --ignore=C:/Projects/open62541-i4Component/tools/nodeset_compiler/NodeID_NS0_Base.txt --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Reduced.xml --xml=C:/Projects/open62541-i4Component/tools/schema/Opc.Ua.NodeSet2.Part8_Subset.xml C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/namespace0_generated
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -320,7 +320,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\Opc.Ua.NodeSet2.xml;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset_compiler.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\nodeset.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\datatypes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_nodes.py;C:\Projects\open62541-i4Component\tools\nodeset_compiler\backend_open62541_datatypes.py;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Reduced.xml;C:\Projects\open62541-i4Component\tools\schema\Opc.Ua.NodeSet2.Part8_Subset.xml;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.c;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>

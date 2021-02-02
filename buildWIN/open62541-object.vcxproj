@@ -75,7 +75,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -95,10 +95,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -131,10 +131,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -147,7 +147,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -167,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /w44996</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
@@ -202,10 +202,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;UA_DYNAMIC_LINKING_EXPORT;UA_ARCHITECTURE_WIN32;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\arch\win32;C:\Projects\open62541-i4Component\include;C:\Projects\open62541-i4Component\plugins\include;C:\Projects\open62541-i4Component\deps;C:\Projects\open62541-i4Component\src\pubsub;C:\Projects\open62541-i4Component\buildWIN\src_generated;C:\Projects\open62541-i4Component\buildWIN;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\open62541-i4Component\buildWIN;C:\Projects\open62541-i4Component\arch;C:\Projects\open62541-i4Component\src;C:\Projects\open62541-i4Component\arch\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -273,105 +273,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_types.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_types_encoding_binary.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_types_print.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_util.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_timer.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_connection.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_securechannel.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_securechannel_crypto.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_session.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_nodes.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_ns0.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_config.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_binary.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_utils.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_discovery.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_server_async.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_networkmessage.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_writer.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_reader.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_manager.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_ns0.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_view.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_method.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_session.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_attribute.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_discovery.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_subscription.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_monitoreditem.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_securechannel.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_nodemanagement.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_services_discovery_multicast.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\client\ua_client.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\client\ua_client_connect.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\client\ua_client_discovery.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\client\ua_client_highlevel.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\client\ua_client_subscriptions.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\deps\libc_time.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\deps\pcg_basic.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\deps\base64.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_config.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\ua_types_lex.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_subscription.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_subscription_monitoreditem.c" />
-    <ClCompile Include="C:\Projects\open62541-i4Component\src\server\ua_subscription_datachange.c" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\open62541_queue.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\pcg_basic.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\libc_time.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\base64.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\ua_util_internal.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\ua_types_encoding_binary.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_encoding_binary.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_handling.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\transport_generated_encoding_binary.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\ua_connection_internal.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\ua_securechannel.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\ua_timer.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\server\ua_session.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\server\ua_subscription.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_networkmessage.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_manager.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_ns0.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\server\ua_server_async.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\server\ua_server_internal.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\server\ua_services.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\client\ua_client_internal.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\src\pubsub\ua_pubsub_config.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\namespace0_generated.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\config.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\arch\win32\ua_architecture.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ms_stdint.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\architecture_definitions.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\common.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\types.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\types_generated_handling.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\util.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\log.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\network.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\accesscontrol.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pki.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\securitypolicy.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\pubsub.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\deps\ziptree.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\plugin\nodestore.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\server_pubsub.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_subscriptions.h" />
-    <ClInclude Include="C:\Projects\open62541-i4Component\include\open62541\client_highlevel_async.h" />
+    <ClCompile Include="C:\Projects\open62541-i4Component\buildWIN\open62541.c" />
+    <ClInclude Include="C:\Projects\open62541-i4Component\buildWIN\open62541.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\ZERO_CHECK.vcxproj">

@@ -7,6 +7,8 @@
 .m4
 *.lo
 *.o
+*.obj
+*.exe
 *.a
 *.la
 *.so*

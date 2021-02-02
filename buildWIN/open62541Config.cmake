@@ -34,7 +34,7 @@ find_dependency(PythonInterp REQUIRED)
 
 include("${CMAKE_CURRENT_LIST_DIR}/open62541Macros.cmake")
 
-set(open62541_COMPONENTS_ALL FullNamespace;Methods;Subscriptions)
+set(open62541_COMPONENTS_ALL Methods;Subscriptions;Amalgamation)
 
 # find_dependency has no option to provide hints for modules, so temporary add the path to CMAKE_MODULE_PATH
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})

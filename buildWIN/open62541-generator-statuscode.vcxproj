@@ -105,7 +105,7 @@
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\nodeids.h.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/nodeids.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -113,12 +113,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/nodeids.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -126,12 +126,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/nodeids.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,12 +139,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/nodeids.h</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_nodeid_header.py C:/Projects/open62541-i4Component/tools/schema/NodeIds.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/nodeids NS0
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -152,7 +152,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_nodeid_header.py;C:\Projects\open62541-i4Component\tools\schema\NodeIds.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\nodeids.h</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <CustomBuild Include="C:\Projects\open62541-i4Component\buildWIN\CMakeFiles\b697fb6abc4207c1083d8840b93cbf54\statuscodes.h.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -169,12 +169,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -182,12 +182,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -195,12 +195,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/statuscodes.h, src_generated/open62541/statuscodes.c</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/deps/ua-nodeset/Schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
+C:\Users\rudolf\AppData\Local\Programs\Python\Python38\python.exe C:/Projects/open62541-i4Component/tools/generate_statuscode_descriptions.py C:/Projects/open62541-i4Component/tools/schema/StatusCode.csv C:/Projects/open62541-i4Component/buildWIN/src_generated/open62541/statuscodes
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -208,7 +208,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\deps\ua-nodeset\Schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\tools\generate_statuscode_descriptions.py;C:\Projects\open62541-i4Component\tools\schema\StatusCode.csv;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.h;C:\Projects\open62541-i4Component\buildWIN\src_generated\open62541\statuscodes.c</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>

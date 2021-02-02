@@ -68,7 +68,7 @@ int main() {
 
    
 
-
+        /*
     retval |= namespace_i4aas_generated(server);
     if(retval != UA_STATUSCODE_GOOD) {
         UA_LOG_ERROR(UA_Log_Stdout, UA_LOGCATEGORY_SERVER,
@@ -86,7 +86,7 @@ int main() {
                      "error output.");
         UA_Server_delete(server);
         return (int)UA_STATUSCODE_BADUNEXPECTEDERROR;
-    }
+    }*/
 
     // Add method call backs
     

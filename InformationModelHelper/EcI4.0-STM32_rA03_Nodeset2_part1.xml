@@ -1,8 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
-  <NamespaceUris>
-    <Uri>http://opcfoundation.org/UA/i4aas/</Uri>
-  </NamespaceUris>
+﻿<UANodeSet xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           LastModified="2020-06-02T00:00:00Z"
+           xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://opcfoundation.org/UA/i4aas</Uri>
+        <Uri>http://admin-shell.io/samples/i4aas/instance</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://opcfoundation.org/UA/i4aas" Version="1.02.2" PublicationDate="2020-06-02T00:00:00Z">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.4" PublicationDate="2020-01-08T00:00:00Z" />
+        </Model>
+    </Models>
   <Aliases>
     <Alias Alias="Boolean">i=1</Alias>
     <Alias Alias="SByte">i=2</Alias>
@@ -41,15 +49,21 @@
     <Alias Alias="HasDescription">i=39</Alias>
     <Alias Alias="Range">i=884</Alias>
   </Aliases>
-  <UAVariable NodeId="ns=1;i=1" BrowseName="IdType" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
+  <UADataType NodeId="ns=1;i=1" BrowseName="IdType">
     <DisplayName>IdType</DisplayName>
-    <Description Locale="en">IdType</Description>
+    <Documentation>https://reference.opcfoundation.org/v104/Core/docs/Part3/8.2.3</Documentation>
     <References>
-      <Reference ReferenceType="i=37">i=78</Reference>
-      <Reference ReferenceType="i=46" IsForward="false">ns=1;i=1000</Reference>
-      <Reference ReferenceType="i=40">i=68</Reference>
+      <Reference ReferenceType="HasProperty">i=7591</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=29</Reference>
     </References>
-  </UAVariable>
+    <Definition Name="IdType">
+      <Field Name="Custom" Value="0" />
+      <Field Name="FragmentId" Value="1" />
+      <Field Name="IdShort" Value="2" />
+      <Field Name="IRDI" Value="3" />
+      <Field Name="IRI" Value="4" />
+    </Definition>
+  </UADataType>
   <UAVariable NodeId="ns=1;i=2" BrowseName="Id" ParentNodeId="ns=1;i=1000" DataType="i=12" AccessLevel="3">
     <DisplayName>Id</DisplayName>
     <Description Locale="en">Id</Description>

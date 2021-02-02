@@ -215,9 +215,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-generator-namespace.vcxproj">
-      <Project>{F9D4D4DB-485E-369B-9E66-28BC68DD7491}</Project>
-      <Name>open62541-generator-namespace</Name>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-amalgamation-header.vcxproj">
+      <Project>{A873DD52-4C9A-3085-9651-43E95C885640}</Project>
+      <Name>open62541-amalgamation-header</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Projects\open62541-i4Component\buildWIN\open62541-amalgamation-source.vcxproj">
+      <Project>{2F273162-D2E6-36C2-9CDB-6CD4F9E7862C}</Project>
+      <Name>open62541-amalgamation-source</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>

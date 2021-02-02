@@ -320,7 +320,7 @@ UA_ARCH_LINKER_FLAGS:STRING=
 UA_ARCH_REMOVE_FLAGS:STRING=
 
 //Build example servers and clients
-UA_BUILD_EXAMPLES:BOOL=ON
+UA_BUILD_EXAMPLES:BOOL=OFF
 
 //Build the fuzzing executables
 UA_BUILD_FUZZING:BOOL=OFF
@@ -345,7 +345,7 @@ UA_DEBUG:BOOL=OFF
 UA_DEBUG_DUMP_PKGS:BOOL=OFF
 
 //Concatenate the library to a single file open62541.h/.c
-UA_ENABLE_AMALGAMATION:BOOL=OFF
+UA_ENABLE_AMALGAMATION:BOOL=ON
 
 //Enable clang coverage
 UA_ENABLE_CLANG_COV:BOOL=OFF
@@ -442,7 +442,7 @@ UA_ENABLE_PUBSUB_MQTT:BOOL=OFF
 
 //Enable query support in the client (most servers don't support
 // it)
-UA_ENABLE_QUERY:BOOL=OFF
+UA_ENABLE_QUERY:BOOL=ON
 
 //Enable installed static analyzer during build process (off/minimal/reduced/full)
 UA_ENABLE_STATIC_ANALYZER:STRING=OFF
@@ -501,7 +501,7 @@ UA_MSVC_FORCE_STATIC_CRT:BOOL=ON
 UA_MULTITHREADING:STRING=0
 
 //Completeness of the generated namespace zero (minimal/reduced/full)
-UA_NAMESPACE_ZERO:STRING=FULL
+UA_NAMESPACE_ZERO:STRING=REDUCED
 
 //Special build switch used in .deb packaging
 UA_PACK_DEBIAN:BOOL=OFF
@@ -650,7 +650,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER

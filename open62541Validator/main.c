@@ -38,9 +38,27 @@ int main() {
     UA_UInt32 sendBufferSize = 16000;  // 64 KB was too much for my platform
     UA_UInt32 recvBufferSize = 16000;  // 64 KB was too much for my platform
 
+    UA_Variant pVa;
+    UA_String *ps, *dest = 0;
+
+    
+    int d = 128;
+    ps = UA_String_new();
+    dest = UA_String_new();
+    
+    UA_String_init(ps);
+    UA_String_init(dest);
+    *ps = UA_STRING_ALLOC("Nejaky text");
+    
+    UA_Variant_setScalar(&pVa, ps, &UA_TYPES[UA_TYPES_STRING]);
+    
+    
+
     UA_Server *server = UA_Server_new();
 	UA_ServerConfig *config = UA_Server_getConfig(server);
 	retval = UA_ServerConfig_setMinimalCustomBuffer(config, 9696, 0, sendBufferSize, recvBufferSize);
+
+    
 
     // VERY IMPORTANT: Set the hostname with your IP before allocating the server
         UA_ServerConfig_setCustomHostname(config, UA_STRING("192.168.0.13"));

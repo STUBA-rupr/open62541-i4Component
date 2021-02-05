@@ -134,6 +134,7 @@
     <ClCompile Include="namespace_i4aas_generated.c" />
     <ClCompile Include="namespace_instance_generated.c" />
     <ClCompile Include="open62541.c" />
+    <ClCompile Include="query_helper.c" />
     <ClCompile Include="types_i4aas_generated.c" />
     <ClCompile Include="types_instance_generated.c" />
   </ItemGroup>
@@ -143,6 +144,7 @@
     <ClInclude Include="namespace_i4aas_generated.h" />
     <ClInclude Include="namespace_instance_generated.h" />
     <ClInclude Include="open62541.h" />
+    <ClInclude Include="query_helper.h" />
     <ClInclude Include="types_i4aas_generated.h" />
     <ClInclude Include="types_instance_generated.h" />
   </ItemGroup>

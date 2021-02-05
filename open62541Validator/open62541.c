@@ -26,6 +26,7 @@
 #endif
 
 #include "open62541.h"
+#include "query_helper.h"
 
 /*********************************** amalgamated original file
  * "C:/Projects/open62541-i4Component/deps/open62541_queue.h"
@@ -7793,6 +7794,9 @@ Service_UnregisterNodes(UA_Server *server, UA_Session *session,
  * ^^^^^^^^^^^^^^^^^^
  * This Service is used to issue a Query request to the Server. */
 /* Not Implemented */
+void
+Service_QueryFirst(UA_Server *server, UA_Session *session,
+                   const UA_QueryFirstRequest *request, UA_QueryFirstResponse *response);
 
 /**
  * QueryNext Service
@@ -27198,10 +27202,9 @@ getServicePointers(UA_UInt32 requestTypeId, const UA_DataType **requestType,
 
 #ifdef UA_ENABLE_QUERY
         case UA_NS0ID_QUERYFIRSTREQUEST_ENCODING_DEFAULTBINARY:
-            *service = (UA_Service)Service_Que;
-            *requestType = &UA_TYPES[UA_TYPES_DELETEREFERENCESREQUEST];
-            *responseType = &UA_TYPES[UA_TYPES_DELETEREFERENCESRESPONSE];
-
+            *service = (UA_Service)Service_QueryFirst;
+            *requestType = &UA_TYPES[UA_TYPES_QUERYFIRSTREQUEST];
+            *responseType = &UA_TYPES[UA_TYPES_QUERYFIRSTRESPONSE];
             break;
 #endif
 
@@ -27585,7 +27588,6 @@ processMSG(UA_Server *server, UA_SecureChannel *channel, UA_UInt32 requestId,
     if(requestTypeId.namespaceIndex != 0 ||
        requestTypeId.identifierType != UA_NODEIDTYPE_NUMERIC)
         UA_NodeId_clear(&requestTypeId); /* leads to badserviceunsupported */
-    printf("requestTypeId.identifierType: %d\n", requestTypeId.identifierType);
 
     size_t requestPos = offset; /* Store the offset (for sendServiceFault) */
 
@@ -57685,8 +57687,8 @@ namespace0_generated(UA_Server *server) {
 #define YYCURSOR pos
 #define YYMARKER context.marker
 #define YYPEEK()                                                                         \
-    (YYCURSOR < end) ? *YYCURSOR : 0 /* The lexer sees a stream of \           \                                                                           \
-                                      * \0 when the input ends*/
+    (YYCURSOR < end) ? *YYCURSOR : 0 /* The lexer sees a stream of \           \ \ \ \ \ \
+                                      * \ \ \0 when the input ends*/
 #define YYSKIP() ++YYCURSOR;
 #define YYBACKUP() YYMARKER = YYCURSOR
 #define YYRESTORE() YYCURSOR = YYMARKER
@@ -62938,8 +62940,8 @@ connection_recv(UA_Connection *connection, UA_ByteString *response, UA_UInt32 ti
 
 #define MAXBACKLOG 100
 #define NOHELLOTIMEOUT                                                                   \
-    120000 /* timeout in ms before close the connection \ if server does not receive \                                                                                       \
-            * Hello Message */
+    120000 /* timeout in ms before close the connection \ if server does not receive \ \ \
+            * \ \ \ \ \ Hello Message */
 
 typedef struct ConnectionEntry {
     UA_Connection connection;
@@ -63643,4 +63645,75 @@ UA_ClientConnectionTCP_init(UA_ConnectionConfig config, const UA_String endpoint
 
     /* Return connection with state UA_CONNECTIONSTATE_OPENING */
     return connection;
+}
+
+void
+Service_QueryFirst(UA_Server *server, UA_Session *session,
+    const UA_QueryFirstRequest *request, UA_QueryFirstResponse *response) {
+    printf("\nService_QueryFirst:\n");
+    UA_ExtensionObject *po;
+    UA_ElementOperand *p_eop;
+    UA_LiteralOperand *p_lop;
+    UA_SimpleAttributeOperand *p_aop;
+    UA_String *pStr;
+
+    UA_NodeMap *ns = server->config.nodestore.context;
+
+    UA_NodeId nodeid = UA_NODEID("ns=0;i=85");
+
+    UA_NodeMapSlot *slot = &ns->slots[(UA_UInt32)309];
+    UA_Node *node =  UA_NODESTORE_GET(server, &nodeid);
+
+    uint32_t jj = 0, ii = 0;
+    do
+    {
+        slot = &ns->slots[(UA_UInt32)jj++];
+        if (slot->entry > UA_NODEMAP_TOMBSTONE)
+        {
+            printf("browsename: %.*s\n", slot->entry->node.head.browseName.name.length, slot->entry->node.head.browseName.name.data);
+            ii++;
+        }
+
+    } while (ii < ns->count);
+
+    
+    
+    
+
+
+    for (int ee = 0; ee < request->filter.elementsSize; ee++) {
+        request->filter.elements[ee].filterOperator;
+        po = &request->filter.elements[ee].filterOperands;
+        printf("###########################################################################\n");
+        printf("operator: %d\n", request->filter.elements[ee].filterOperator);
+        for (int oo = 0; oo < request->filter.elements[ee].filterOperandsSize; oo++)
+        {
+            po = &request->filter.elements[ee].filterOperands[oo];
+
+            printf("index: %d\toperand: %d\ttypeId: %d\n",
+                ee, oo, po->content.decoded.type->typeId.identifier.numeric);
+            // do type convertion to access data          
+            switch (po->content.decoded.type->typeId.identifier.numeric)
+            {
+            case UA_NS0ID_ELEMENTOPERAND:
+                p_eop = po->content.decoded.data;
+                printf("\telement index: %d\n", p_eop->index);
+                break;
+            case UA_NS0ID_LITERALOPERAND:
+                p_lop = po->content.decoded.data;
+                printf_variant_value(&p_lop->value);
+
+                break;
+            case UA_NS0ID_SIMPLEATTRIBUTEOPERAND:
+                p_aop = po->content.decoded.data;
+                printf("\tattr id: %d\n", p_aop->attributeId);
+                //printf_variant_value(&p_aop->);
+
+                break;
+            default:
+                break;
+            }
+        }
+
+    }
 }
